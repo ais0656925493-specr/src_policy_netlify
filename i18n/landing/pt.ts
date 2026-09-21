@@ -36,34 +36,52 @@ export const ptLanding: LandingStrings = {
     sidebarSection: 'Políticas',
     sidebarLinks: [
       {
-        label: 'Coordenando Danos e Promovendo o Crime',
+        label: 'Violência e conduta criminosa',
       },
       {
-        label: 'Organizações e indivíduos perigosos',
-      },
-      {
-        label: 'Fraude, golpes e práticas enganosas',
+        label: 'Fraude e práticas enganosas',
       },
       {
         label: 'Bens e serviços restritos',
       },
       {
-        label: 'Exploração e abuso sexual infantil',
+        label: 'Bullying e assédio',
       },
       {
-        label: 'Suicídio, automutilação e transtornos alimentares',
+        label: 'Conduta de ódio',
       },
       {
-        label: 'Nudez adulta e atividade sexual',
+        label: 'Conteúdo violento ou gráfico',
       },
       {
-        label: 'Conteúdo violento e gráfico',
+        label: 'Nudez e atividade sexual de adultos',
       },
       {
-        label: 'Intimidação e assédio',
+        label: 'Exploração sexual infantil',
       },
       {
-        label: 'Discurso de ódio',
+        label: 'Exploração humana',
+      },
+      {
+        label: 'Suicídio, autolesão e transtornos alimentares',
+      },
+      {
+        label: 'Violações de privacidade',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Cibersegurança',
+      },
+      {
+        label: 'Comportamento inautêntico',
+      },
+      {
+        label: 'Desinformação',
+      },
+      {
+        label: 'Propriedade intelectual',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const ptLanding: LandingStrings = {
     title: 'Tópicos dos Padrões da Comunidade',
     items: [
       {
-        label: 'Coordenando Danos e Promovendo o Crime',
+        label: 'Violência e conduta criminosa',
       },
       {
-        label: 'Organizações e indivíduos perigosos',
-      },
-      {
-        label: 'Fraude, golpes e práticas enganosas',
+        label: 'Fraude e práticas enganosas',
       },
       {
         label: 'Bens e serviços restritos',
       },
       {
-        label: 'Exploração e abuso sexual infantil',
+        label: 'Bullying e assédio',
       },
       {
-        label: 'Suicídio, automutilação e transtornos alimentares',
+        label: 'Conduta de ódio',
       },
       {
-        label: 'Nudez adulta e atividade sexual',
+        label: 'Conteúdo violento ou gráfico',
       },
       {
-        label: 'Conteúdo violento e gráfico',
+        label: 'Nudez e atividade sexual de adultos',
       },
       {
-        label: 'Intimidação e assédio',
+        label: 'Exploração sexual infantil',
       },
       {
-        label: 'Discurso de ódio',
+        label: 'Exploração humana',
       },
       {
-        label: 'Violação de propriedade intelectual de terceiros',
+        label: 'Suicídio, autolesão e transtornos alimentares',
       },
       {
-        label: 'Conteúdo, produtos ou serviços localmente ilegais',
+        label: 'Violações de privacidade',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Cibersegurança',
+      },
+      {
+        label: 'Comportamento inautêntico',
+      },
+      {
+        label: 'Desinformação',
+      },
+      {
+        label: 'Propriedade intelectual',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const ptLanding: LandingStrings = {
   commonViolations: {
     title: 'Algumas violações dos Padrões da Comunidade',
     description:
-      'Os Padrões da Comunidade se aplicam a todo o conteúdo e à atividade em uma Fanpage. Abaixo estão áreas de política comumente identificadas durante a análise:',
+      'Os Padrões da Comunidade se aplicam a todo o conteúdo e à atividade em uma Fanpage. As áreas de política abaixo refletem os Padrões da Comunidade da Meta e são comumente identificadas durante a análise:',
     items: [
       {
-        title: 'Fraude, golpes e engano',
+        title: 'Violência e conduta criminosa',
         description:
-          'Conteúdo ou atividade destinados a enganar pessoas, obter informações ou bens indevidamente ou gerar confusão sobre identidade, produtos ou serviços.',
+          'Ameaças de violência, incitação ao dano, incentivo a crimes e organizações ou indivíduos perigosos.',
       },
       {
-        title: 'Produtos e serviços restritos',
+        title: 'Fraude e práticas enganosas',
         description:
-          'Promoção, venda ou facilitação de transações de itens ou serviços restritos pelas políticas da Meta ou pela legislação local aplicável.',
+          'Falsidade, golpes financeiros, sequestro de contas e outras formas de fraude.',
       },
       {
-        title: 'Exploração, abuso e assédio',
+        title: 'Bens e serviços restritos',
         description:
-          'Assédio, ameaças, bullying ou abuso direcionados a indivíduos ou grupos, incluindo conteúdo que possa causar dano psicológico ou físico.',
+          'Compra, venda ou promoção de determinados itens ou serviços controlados.',
       },
       {
-        title: 'Discurso de ódio',
+        title: 'Bullying e assédio',
         description:
-          'Conteúdo que ataca diretamente características protegidas de pessoas ou grupos, ou incita violência ou discriminação com base nessas características.',
+          'Ofensas, ameaças, humilhação ou assédio direcionado a uma pessoa.',
       },
       {
-        title: 'Conteúdo violento e gráfico',
+        title: 'Conduta de ódio',
         description:
-          'Imagens, vídeos ou descrições de violência extrema, gore ou material chocante podem ser restritos ou removidos conforme o contexto e a visibilidade.',
+          'Ataques com base em características protegidas pelas políticas da Meta.',
       },
       {
-        title: 'Indivíduos e organizações perigosos',
+        title: 'Conteúdo violento ou gráfico',
         description:
-          'Apoio, elogio ou representação de organizações ou indivíduos que a Meta determina representar risco grave de dano ou violência.',
+          'Imagens ou vídeos sangrentos ou de violência grave.',
+      },
+      {
+        title: 'Nudez e atividade sexual de adultos',
+        description:
+          'Determinado conteúdo sexual, nudez ou solicitação sexual.',
+      },
+      {
+        title: 'Exploração sexual infantil',
+        description:
+          'Conteúdo sexual, nudez ou conduta que coloca crianças em risco.',
+      },
+      {
+        title: 'Exploração humana',
+        description:
+          'Coação, exploração sexual, tráfico ou outras formas de exploração.',
+      },
+      {
+        title: 'Suicídio, autolesão e transtornos alimentares',
+        description:
+          'Especialmente conteúdo que incentiva ou instrui comportamentos prejudiciais.',
+      },
+      {
+        title: 'Violações de privacidade',
+        description:
+          'Publicar ou usar sem permissão determinadas informações pessoais sensíveis.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Publicações ou mensagens em massa, repetitivas ou enganosas para manipular interações.',
+      },
+      {
+        title: 'Cibersegurança',
+        description:
+          'Phishing, malware, roubo de credenciais ou ataques a sistemas.',
+      },
+      {
+        title: 'Comportamento inautêntico',
+        description:
+          'Uso de contas ou redes de contas para ocultar identidade ou propósito real.',
+      },
+      {
+        title: 'Desinformação',
+        description:
+          'Certas informações falsas com risco de dano real podem ser restringidas.',
+      },
+      {
+        title: 'Propriedade intelectual',
+        description:
+          'Uso não autorizado de conteúdo protegido por direitos autorais ou marcas.',
       },
     ],
   },

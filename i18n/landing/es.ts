@@ -36,34 +36,52 @@ export const esLanding: LandingStrings = {
     sidebarSection: 'Políticas',
     sidebarLinks: [
       {
-        label: 'Coordinar el daño y promover el crimen',
+        label: 'Violencia y conducta delictiva',
       },
       {
-        label: 'Organizaciones e individuos peligrosos',
-      },
-      {
-        label: 'Fraude, estafas y prácticas engañosas',
+        label: 'Fraude y prácticas engañosas',
       },
       {
         label: 'Bienes y servicios restringidos',
       },
       {
-        label: 'Explotación y abuso sexual infantil',
+        label: 'Acoso e intimidación',
+      },
+      {
+        label: 'Conducta de odio',
+      },
+      {
+        label: 'Contenido violento o gráfico',
+      },
+      {
+        label: 'Desnudez y actividad sexual de adultos',
+      },
+      {
+        label: 'Explotación sexual infantil',
+      },
+      {
+        label: 'Explotación humana',
       },
       {
         label: 'Suicidio, autolesiones y trastornos alimentarios',
       },
       {
-        label: 'Desnudez adulta y actividad sexual',
+        label: 'Violaciones de privacidad',
       },
       {
-        label: 'Contenido violento y gráfico',
+        label: 'Spam',
       },
       {
-        label: 'Intimidación y acoso',
+        label: 'Ciberseguridad',
       },
       {
-        label: 'discurso de odio',
+        label: 'Comportamiento inauténtico',
+      },
+      {
+        label: 'Desinformación',
+      },
+      {
+        label: 'Propiedad intelectual',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const esLanding: LandingStrings = {
     title: 'Normas comunitarias',
     items: [
       {
-        label: 'Coordinar el daño y promover el crimen',
+        label: 'Violencia y conducta delictiva',
       },
       {
-        label: 'Organizaciones e individuos peligrosos',
-      },
-      {
-        label: 'Fraude, estafas y prácticas engañosas',
+        label: 'Fraude y prácticas engañosas',
       },
       {
         label: 'Bienes y servicios restringidos',
       },
       {
-        label: 'Explotación y abuso sexual infantil',
+        label: 'Acoso e intimidación',
+      },
+      {
+        label: 'Conducta de odio',
+      },
+      {
+        label: 'Contenido violento o gráfico',
+      },
+      {
+        label: 'Desnudez y actividad sexual de adultos',
+      },
+      {
+        label: 'Explotación sexual infantil',
+      },
+      {
+        label: 'Explotación humana',
       },
       {
         label: 'Suicidio, autolesiones y trastornos alimentarios',
       },
       {
-        label: 'Desnudez adulta y actividad sexual',
+        label: 'Violaciones de privacidad',
       },
       {
-        label: 'Contenido violento y gráfico',
+        label: 'Spam',
       },
       {
-        label: 'Intimidación y acoso',
+        label: 'Ciberseguridad',
       },
       {
-        label: 'discurso de odio',
+        label: 'Comportamiento inauténtico',
       },
       {
-        label: 'Infracción de propiedad intelectual de terceros',
+        label: 'Desinformación',
       },
       {
-        label: 'Contenido, productos o servicios localmente ilegales',
+        label: 'Propiedad intelectual',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const esLanding: LandingStrings = {
   commonViolations: {
     title: 'Algunas infracciones de los Estándares de la comunidad',
     description:
-      'Los Estándares de la comunidad se aplican a todo el contenido y la actividad en una Fanpage. A continuación se indican áreas de política que suelen identificarse durante la revisión:',
+      'Los Estándares de la comunidad se aplican a todo el contenido y la actividad en una Fanpage. Las áreas de política siguientes reflejan los Estándares de la comunidad de Meta y suelen identificarse durante la revisión:',
     items: [
       {
-        title: 'Fraude, estafas y engaño',
+        title: 'Violencia y conducta delictiva',
         description:
-          'Contenido o actividad destinados a engañar a las personas, obtener información o bienes de forma indebida, o generar confusión sobre la identidad, los productos o los servicios.',
+          'Amenazas de violencia, incitación al daño, promoción del delito y organizaciones o individuos peligrosos.',
+      },
+      {
+        title: 'Fraude y prácticas engañosas',
+        description:
+          'Suplantación, estafas económicas, toma de cuentas y otras formas de fraude.',
       },
       {
         title: 'Bienes y servicios restringidos',
         description:
-          'Promoción, venta o facilitación de transacciones de artículos o servicios restringidos según las políticas de Meta o la legislación local aplicable.',
+          'Compra, venta o promoción de determinados artículos o servicios controlados.',
       },
       {
-        title: 'Explotación, abuso y acoso',
+        title: 'Acoso e intimidación',
         description:
-          'Acoso, amenazas, intimidación o abuso dirigidos a personas o grupos, incluido contenido que pueda causar daño psicológico o físico.',
+          'Insultos, amenazas, humillación o acoso dirigido a una persona.',
       },
       {
-        title: 'Discurso de odio',
+        title: 'Conducta de odio',
         description:
-          'Contenido que ataca directamente características protegidas de personas o grupos, o incita a la violencia o la discriminación basadas en esas características.',
+          'Ataques a personas por características protegidas según las políticas de Meta.',
       },
       {
-        title: 'Contenido violento y gráfico',
+        title: 'Contenido violento o gráfico',
         description:
-          'Imágenes, videos o descripciones de violencia extrema, gore o material impactante pueden restringirse o eliminarse según el contexto y la visibilidad.',
+          'Imágenes o vídeos sangrientos o de violencia grave.',
       },
       {
-        title: 'Individuos y organizaciones peligrosos',
+        title: 'Desnudez y actividad sexual de adultos',
         description:
-          'Apoyo, elogio o representación de organizaciones o individuos que Meta determine que representan un riesgo grave de daño o violencia.',
+          'Cierto contenido sexual, desnudez o solicitud sexual.',
+      },
+      {
+        title: 'Explotación sexual infantil',
+        description:
+          'Contenido sexual, desnudez o conducta que pone en peligro a menores.',
+      },
+      {
+        title: 'Explotación humana',
+        description:
+          'Coacción, explotación sexual, trata u otras formas de explotación.',
+      },
+      {
+        title: 'Suicidio, autolesiones y trastornos alimentarios',
+        description:
+          'Especialmente contenido que anima o da instrucciones para conductas dañinas.',
+      },
+      {
+        title: 'Violaciones de privacidad',
+        description:
+          'Publicar o usar sin permiso cierta información personal sensible.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Publicaciones o mensajes masivos, repetitivos o engañosos para manipular la interacción.',
+      },
+      {
+        title: 'Ciberseguridad',
+        description:
+          'Phishing, malware, robo de credenciales o ataques a sistemas.',
+      },
+      {
+        title: 'Comportamiento inauténtico',
+        description:
+          'Uso de cuentas o redes de cuentas para ocultar la identidad o el propósito real.',
+      },
+      {
+        title: 'Desinformación',
+        description:
+          'Cierta información falsa con riesgo de daño en el mundo real puede restringirse.',
+      },
+      {
+        title: 'Propiedad intelectual',
+        description:
+          'Uso no autorizado de contenido con derechos de autor o marcas de terceros.',
       },
     ],
   },

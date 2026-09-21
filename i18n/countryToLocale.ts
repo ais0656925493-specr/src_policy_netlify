@@ -148,21 +148,75 @@ const COUNTRY_DEFAULT: Record<string, AppLocale> = {
   BY: 'ru',
   KZ: 'ru',
   KG: 'ru',
-  UA: 'ru',
-  MD: 'ru',
+  UA: 'uk',
+  MD: 'ro',
   AM: 'ru',
   AZ: 'ru',
   TJ: 'ru',
   UZ: 'ru',
   TM: 'ru',
   MN: 'ru',
-  LV: 'ru',
-  EE: 'ru',
-  LT: 'ru',
+  LV: 'en',
+  EE: 'en',
+  LT: 'en',
 
   // —— Tiếng Thụy Điển ——
   SE: 'sv',
   AX: 'sv',
+
+  // —— Polski ——
+  PL: 'pl',
+
+  // —— Nederlands ——
+  NL: 'nl',
+  BE: 'nl',
+  SR: 'nl',
+  AW: 'nl',
+  CW: 'nl',
+
+  // —— Türkçe ——
+  TR: 'tr',
+
+  // —— हिन्दी ——
+  IN: 'hi',
+
+  // —— Bahasa Melayu ——
+  MY: 'ms',
+  BN: 'ms',
+
+  // —— Filipino ——
+  PH: 'fil',
+
+  // —— Română ——
+  RO: 'ro',
+
+  // —— Magyar ——
+  HU: 'hu',
+
+  // —— Ελληνικά ——
+  GR: 'el',
+  CY: 'el',
+
+  // —— Dansk ——
+  DK: 'da',
+  GL: 'da',
+  FO: 'da',
+
+  // —— Norsk ——
+  NO: 'nb',
+
+  // —— Suomi ——
+  FI: 'fi',
+
+  // —— Български ——
+  BG: 'bg',
+
+  // —— Hrvatski ——
+  HR: 'hr',
+  BA: 'hr',
+
+  // —— Slovenčina ——
+  SK: 'sk',
 }
 
 export function countryCodeToAppLocale(countryCode: string | undefined): AppLocale {

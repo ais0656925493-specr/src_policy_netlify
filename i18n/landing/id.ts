@@ -36,34 +36,52 @@ export const idLanding: LandingStrings = {
     sidebarSection: 'Kebijakan',
     sidebarLinks: [
       {
-        label: 'Mengkoordinasikan Kerugian dan Mempromosikan Kejahatan',
+        label: 'Kekerasan dan perilaku kriminal',
       },
       {
-        label: 'Organisasi dan Individu Berbahaya',
+        label: 'Penipuan dan praktik menyesatkan',
       },
       {
-        label: 'Penipuan, Penipuan, dan Praktik Penipuan',
+        label: 'Barang dan layanan yang dibatasi',
       },
       {
-        label: 'Barang dan Jasa yang Dibatasi',
+        label: 'Perundungan dan pelecehan',
       },
       {
-        label: 'Eksploitasi dan Pelecehan Seksual terhadap Anak',
+        label: 'Perilaku kebencian',
       },
       {
-        label: 'Bunuh Diri, Melukai Diri Sendiri, dan Gangguan Makan',
+        label: 'Konten kekerasan atau grafis',
       },
       {
-        label: 'Ketelanjangan Dewasa dan Aktivitas Seksual',
+        label: 'Ketelanjangan dan aktivitas seksual dewasa',
       },
       {
-        label: 'Konten Kekerasan dan Grafis',
+        label: 'Eksploitasi seksual anak',
       },
       {
-        label: 'Penindasan dan Pelecehan',
+        label: 'Eksploitasi manusia',
       },
       {
-        label: 'Ujaran Kebencian',
+        label: 'Bunuh diri, menyakiti diri, dan gangguan makan',
+      },
+      {
+        label: 'Pelanggaran privasi',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Keamanan siber',
+      },
+      {
+        label: 'Perilaku tidak autentik',
+      },
+      {
+        label: 'Informasi yang menyesatkan',
+      },
+      {
+        label: 'Kekayaan intelektual',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const idLanding: LandingStrings = {
     title: 'Topik Standar Komunitas',
     items: [
       {
-        label: 'Mengkoordinasikan Kerugian dan Mempromosikan Kejahatan',
+        label: 'Kekerasan dan perilaku kriminal',
       },
       {
-        label: 'Organisasi dan Individu Berbahaya',
+        label: 'Penipuan dan praktik menyesatkan',
       },
       {
-        label: 'Penipuan, Penipuan, dan Praktik Penipuan',
+        label: 'Barang dan layanan yang dibatasi',
       },
       {
-        label: 'Barang dan Jasa yang Dibatasi',
+        label: 'Perundungan dan pelecehan',
       },
       {
-        label: 'Eksploitasi dan Pelecehan Seksual terhadap Anak',
+        label: 'Perilaku kebencian',
       },
       {
-        label: 'Bunuh Diri, Melukai Diri Sendiri, dan Gangguan Makan',
+        label: 'Konten kekerasan atau grafis',
       },
       {
-        label: 'Ketelanjangan Dewasa dan Aktivitas Seksual',
+        label: 'Ketelanjangan dan aktivitas seksual dewasa',
       },
       {
-        label: 'Konten Kekerasan dan Grafis',
+        label: 'Eksploitasi seksual anak',
       },
       {
-        label: 'Penindasan dan Pelecehan',
+        label: 'Eksploitasi manusia',
       },
       {
-        label: 'Ujaran Kebencian',
+        label: 'Bunuh diri, menyakiti diri, dan gangguan makan',
       },
       {
-        label: 'Pelanggaran Kekayaan Intelektual Pihak Ketiga',
+        label: 'Pelanggaran privasi',
       },
       {
-        label: 'Konten, Produk, atau Layanan Ilegal Secara Lokal',
+        label: 'Spam',
+      },
+      {
+        label: 'Keamanan siber',
+      },
+      {
+        label: 'Perilaku tidak autentik',
+      },
+      {
+        label: 'Informasi yang menyesatkan',
+      },
+      {
+        label: 'Kekayaan intelektual',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const idLanding: LandingStrings = {
   commonViolations: {
     title: 'Beberapa pelanggaran Standar Komunitas',
     description:
-      'Standar Komunitas berlaku untuk semua konten dan aktivitas di Fanpage. Berikut adalah area kebijakan yang sering diidentifikasi selama peninjauan:',
+      'Standar Komunitas berlaku untuk semua konten dan aktivitas di Fanpage. Area kebijakan di bawah ini mengikuti Standar Komunitas Meta dan sering diidentifikasi selama peninjauan:',
     items: [
       {
-        title: 'Penipuan, scam, dan penyesatan',
+        title: 'Kekerasan dan perilaku kriminal',
         description:
-          'Konten atau aktivitas yang dimaksudkan untuk menyesatkan orang, memperoleh informasi atau aset secara tidak sah, atau menimbulkan kebingungan tentang identitas, produk, atau layanan.',
+          'Ancaman kekerasan, hasutan untuk merugikan, mempromosikan kejahatan, serta organisasi atau individu berbahaya.',
       },
       {
-        title: 'Barang dan layanan terbatas',
+        title: 'Penipuan dan praktik menyesatkan',
         description:
-          'Mempromosikan, menjual, atau memfasilitasi transaksi barang atau layanan yang dibatasi menurut kebijakan Meta atau hukum setempat yang berlaku.',
+          'Penyamaran, penipuan uang, pengambilalihan akun, dan bentuk penipuan lain.',
       },
       {
-        title: 'Eksploitasi, penyalahgunaan, dan pelecehan',
+        title: 'Barang dan layanan yang dibatasi',
         description:
-          'Pelecehan, ancaman, perundungan, atau penyalahgunaan yang ditujukan kepada individu atau kelompok, termasuk konten yang dapat menyebabkan kerugian psikologis atau fisik.',
+          'Membeli, menjual, atau mempromosikan barang atau layanan tertentu yang dikendalikan.',
       },
       {
-        title: 'Ujaran kebencian',
+        title: 'Perundungan dan pelecehan',
         description:
-          'Konten yang secara langsung menyerang karakteristik terlindungi orang atau kelompok, atau menghasut kekerasan atau diskriminasi berdasarkan karakteristik tersebut.',
+          'Menghina, mengancam, merendahkan, atau menargetkan seseorang untuk dilecehkan.',
       },
       {
-        title: 'Konten kekerasan dan grafis',
+        title: 'Perilaku kebencian',
         description:
-          'Gambar, video, atau deskripsi kekerasan ekstrem, gore, atau materi yang mengejutkan dapat dibatasi atau dihapus tergantung konteks dan visibilitas.',
+          'Menyerang orang berdasarkan karakteristik yang dilindungi kebijakan Meta.',
       },
       {
-        title: 'Individu dan organisasi berbahaya',
+        title: 'Konten kekerasan atau grafis',
         description:
-          'Mendukung, memuji, atau mewakili organisasi atau individu yang ditetapkan Meta sebagai menimbulkan risiko bahaya atau kekerasan yang serius.',
+          'Gambar atau video berdarah atau yang menampilkan kekerasan berat.',
+      },
+      {
+        title: 'Ketelanjangan dan aktivitas seksual dewasa',
+        description:
+          'Konten seksual tertentu, ketelanjangan, atau ajakan seksual.',
+      },
+      {
+        title: 'Eksploitasi seksual anak',
+        description:
+          'Konten seksual, ketelanjangan, atau perilaku yang membahayakan anak.',
+      },
+      {
+        title: 'Eksploitasi manusia',
+        description:
+          'Paksaan, eksploitasi seksual, perdagangan orang, atau bentuk eksploitasi lain.',
+      },
+      {
+        title: 'Bunuh diri, menyakiti diri, dan gangguan makan',
+        description:
+          'Terutama konten yang mendorong atau memberi petunjuk perilaku berbahaya.',
+      },
+      {
+        title: 'Pelanggaran privasi',
+        description:
+          'Memublikasikan atau menggunakan informasi pribadi sensitif tanpa izin.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Postingan atau pesan massal, berulang, atau menyesatkan untuk memanipulasi interaksi.',
+      },
+      {
+        title: 'Keamanan siber',
+        description:
+          'Phishing, malware, pencurian kredensial, atau serangan terhadap sistem.',
+      },
+      {
+        title: 'Perilaku tidak autentik',
+        description:
+          'Menggunakan akun atau jaringan akun untuk menyembunyikan identitas atau tujuan sebenarnya.',
+      },
+      {
+        title: 'Informasi yang menyesatkan',
+        description:
+          'Beberapa informasi palsu yang berisiko merugikan di dunia nyata dapat dibatasi.',
+      },
+      {
+        title: 'Kekayaan intelektual',
+        description:
+          'Penggunaan tanpa izin atas konten berhak cipta atau merek dagang orang lain.',
       },
     ],
   },

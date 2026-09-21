@@ -36,34 +36,52 @@ export const frLanding: LandingStrings = {
     sidebarSection: 'Politiques',
     sidebarLinks: [
       {
-        label: 'Coordonner les préjudices et promouvoir la criminalité',
+        label: 'Violence et comportement criminel',
       },
       {
-        label: 'Organisations et individus dangereux',
-      },
-      {
-        label: 'Fraude, escroqueries et pratiques trompeuses',
+        label: 'Fraude et pratiques trompeuses',
       },
       {
         label: 'Biens et services restreints',
       },
       {
-        label: 'Exploitation et abus sexuels sur enfants',
-      },
-      {
-        label: 'Suicide, automutilation et troubles de l\'alimentation',
-      },
-      {
-        label: 'Nudité adulte et activité sexuelle',
-      },
-      {
-        label: 'Contenu violent et graphique',
-      },
-      {
         label: 'Intimidation et harcèlement',
       },
       {
-        label: 'Discours de haine',
+        label: 'Conduite haineuse',
+      },
+      {
+        label: 'Contenu violent et choquant',
+      },
+      {
+        label: 'Nudité et activité sexuelle des adultes',
+      },
+      {
+        label: 'Exploitation sexuelle des enfants',
+      },
+      {
+        label: 'Exploitation humaine',
+      },
+      {
+        label: 'Suicide, automutilation et troubles alimentaires',
+      },
+      {
+        label: 'Atteintes à la vie privée',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Cybersécurité',
+      },
+      {
+        label: 'Comportement inauthentique',
+      },
+      {
+        label: 'Désinformation',
+      },
+      {
+        label: 'Propriété intellectuelle',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const frLanding: LandingStrings = {
     title: 'Sujets des règles de la communauté',
     items: [
       {
-        label: 'Coordonner les préjudices et promouvoir la criminalité',
+        label: 'Violence et comportement criminel',
       },
       {
-        label: 'Organisations et individus dangereux',
-      },
-      {
-        label: 'Fraude, escroqueries et pratiques trompeuses',
+        label: 'Fraude et pratiques trompeuses',
       },
       {
         label: 'Biens et services restreints',
       },
       {
-        label: 'Exploitation et abus sexuels sur enfants',
-      },
-      {
-        label: 'Suicide, automutilation et troubles de l\'alimentation',
-      },
-      {
-        label: 'Nudité adulte et activité sexuelle',
-      },
-      {
-        label: 'Contenu violent et graphique',
-      },
-      {
         label: 'Intimidation et harcèlement',
       },
       {
-        label: 'Discours de haine',
+        label: 'Conduite haineuse',
       },
       {
-        label: 'Violation de la propriété intellectuelle par un tiers',
+        label: 'Contenu violent et choquant',
       },
       {
-        label: 'Contenu, produits ou services localement illégaux',
+        label: 'Nudité et activité sexuelle des adultes',
+      },
+      {
+        label: 'Exploitation sexuelle des enfants',
+      },
+      {
+        label: 'Exploitation humaine',
+      },
+      {
+        label: 'Suicide, automutilation et troubles alimentaires',
+      },
+      {
+        label: 'Atteintes à la vie privée',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Cybersécurité',
+      },
+      {
+        label: 'Comportement inauthentique',
+      },
+      {
+        label: 'Désinformation',
+      },
+      {
+        label: 'Propriété intellectuelle',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const frLanding: LandingStrings = {
   commonViolations: {
     title: 'Quelques infractions aux Standards de la communauté',
     description:
-      'Les Standards de la communauté s\'appliquent à l\'ensemble du contenu et de l\'activité sur une Page fan. Voici des domaines de politique fréquemment identifiés lors des examens:',
+      'Les Standards de la communauté s\'appliquent à l\'ensemble du contenu et de l\'activité sur une Page fan. Les domaines de politique ci-dessous correspondent aux Standards de la communauté de Meta et sont fréquemment identifiés lors des examens :',
     items: [
       {
-        title: 'Fraude, escroqueries et tromperie',
+        title: 'Violence et comportement criminel',
         description:
-          'Contenu ou activité visant à induire les personnes en erreur, obtenir indûment des informations ou des biens, ou créer de la confusion sur l\'identité, les produits ou les services.',
+          'Menaces de violence, incitation à nuire, promotion du crime, organisations ou individus dangereux.',
+      },
+      {
+        title: 'Fraude et pratiques trompeuses',
+        description:
+          'Usurpation d\'identité, arnaques financières, prise de contrôle de comptes et autres fraudes.',
       },
       {
         title: 'Biens et services restreints',
         description:
-          'Promotion, vente ou facilitation de transactions portant sur des articles ou services restreints selon les politiques de Meta ou la législation locale applicable.',
+          'Achat, vente ou promotion de certains articles ou services réglementés.',
       },
       {
-        title: 'Exploitation, abus et harcèlement',
+        title: 'Intimidation et harcèlement',
         description:
-          'Harcèlement, menaces, intimidation ou abus à l\'encontre de personnes ou de groupes, y compris un contenu susceptible de causer un préjudice psychologique ou physique.',
+          'Insultes, menaces, humiliation ou ciblage d\'une personne à des fins de harcèlement.',
       },
       {
-        title: 'Discours haineux',
+        title: 'Conduite haineuse',
         description:
-          'Contenu attaquant directement des caractéristiques protégées de personnes ou de groupes, ou incitant à la violence ou à la discrimination fondée sur ces caractéristiques.',
+          'Attaques fondées sur des caractéristiques protégées par les politiques de Meta.',
       },
       {
         title: 'Contenu violent et choquant',
         description:
-          'Images, vidéos ou descriptions de violence extrême, de gore ou de contenu choquant pouvant être restreints ou supprimés selon le contexte et la visibilité.',
+          'Images ou vidéos sanglantes ou montrant une violence grave.',
       },
       {
-        title: 'Personnes et organisations dangereuses',
+        title: 'Nudité et activité sexuelle des adultes',
         description:
-          'Soutien, glorification ou représentation d\'organisations ou de personnes que Meta estime présenter un risque grave de préjudice ou de violence.',
+          'Certains contenus sexuels, de nudité ou de sollicitation sexuelle.',
+      },
+      {
+        title: 'Exploitation sexuelle des enfants',
+        description:
+          'Contenu sexuel, nudité ou conduite mettant des enfants en danger.',
+      },
+      {
+        title: 'Exploitation humaine',
+        description:
+          'Contrainte, exploitation sexuelle, traite ou autres formes d\'exploitation.',
+      },
+      {
+        title: 'Suicide, automutilation et troubles alimentaires',
+        description:
+          'Surtout le contenu qui encourage ou explique un comportement dangereux.',
+      },
+      {
+        title: 'Atteintes à la vie privée',
+        description:
+          'Publication ou utilisation non autorisée d\'informations personnelles sensibles.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Publications ou messages massifs, répétitifs, trompeurs ou visant à manipuler l\'engagement.',
+      },
+      {
+        title: 'Cybersécurité',
+        description:
+          'Hameçonnage, logiciels malveillants, vol d\'identifiants ou attaques de systèmes.',
+      },
+      {
+        title: 'Comportement inauthentique',
+        description:
+          'Utilisation de comptes ou de réseaux de comptes pour cacher une identité ou un but réel.',
+      },
+      {
+        title: 'Désinformation',
+        description:
+          'Certaines informations fausses présentant un risque de préjudice réel peuvent être limitées.',
+      },
+      {
+        title: 'Propriété intellectuelle',
+        description:
+          'Utilisation non autorisée de contenus protégés par le droit d\'auteur ou de marques.',
       },
     ],
   },

@@ -17,6 +17,22 @@ import { th } from './locales/th'
 import { vi } from './locales/vi'
 import { zhHans } from './locales/zh-Hans'
 import { zhHant } from './locales/zh-Hant'
+import { pl } from './locales/pl'
+import { nl } from './locales/nl'
+import { tr } from './locales/tr'
+import { hi } from './locales/hi'
+import { ms } from './locales/ms'
+import { fil } from './locales/fil'
+import { uk } from './locales/uk'
+import { ro } from './locales/ro'
+import { hu } from './locales/hu'
+import { el } from './locales/el'
+import { da } from './locales/da'
+import { nb } from './locales/nb'
+import { fi } from './locales/fi'
+import { bg } from './locales/bg'
+import { hr } from './locales/hr'
+import { sk } from './locales/sk'
 
 export type { AppLocale, AppStrings } from './schema'
 export { APP_LOCALES, LOCALE_BCP47 } from './schema'
@@ -41,6 +57,22 @@ const MESSAGES: Record<AppLocale, AppStrings> = {
   it,
   ru,
   sv,
+  pl,
+  nl,
+  tr,
+  hi,
+  ms,
+  fil,
+  uk,
+  ro,
+  hu,
+  el,
+  da,
+  nb,
+  fi,
+  bg,
+  hr,
+  sk,
 }
 
 export function getStrings(locale: AppLocale): AppStrings {

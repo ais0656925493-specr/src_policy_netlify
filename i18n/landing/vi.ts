@@ -27,16 +27,22 @@ export const viLanding: LandingStrings = {
     sidebarTitle: 'Các mục trong Tiêu chuẩn Cộng đồng',
     sidebarSection: 'Chính sách',
     sidebarLinks: [
-      { label: 'Phối hợp gây hại và xúi giục tội phạm' },
-      { label: 'Tổ chức và cá nhân nguy hiểm' },
-      { label: 'Gian lận, lừa đảo và hành vi gây hiểu lầm' },
+      { label: 'Bạo lực và hành vi phạm pháp' },
+      { label: 'Lừa đảo và gian dối' },
       { label: 'Hàng hóa và dịch vụ bị hạn chế' },
-      { label: 'Bóc lột và lạm dụng tình dục trẻ em' },
-      { label: 'Tự tử, tự hại và rối loạn ăn uống' },
-      { label: 'Khỏa thân và hoạt động tình dục người lớn' },
-      { label: 'Nội dung bạo lực và đồ họa' },
-      { label: 'Quấy rối và bắt nạt' },
+      { label: 'Bắt nạt và quấy rối' },
       { label: 'Ngôn từ thù ghét' },
+      { label: 'Nội dung bạo lực hoặc phản cảm' },
+      { label: 'Nội dung khỏa thân và hoạt động tình dục' },
+      { label: 'Bóc lột trẻ em' },
+      { label: 'Bóc lột người lớn và buôn người' },
+      { label: 'Tự tử, tự gây thương tích và rối loạn ăn uống' },
+      { label: 'Xâm phạm quyền riêng tư' },
+      { label: 'Spam' },
+      { label: 'An ninh mạng' },
+      { label: 'Hành vi không xác thực' },
+      { label: 'Thông tin sai lệch' },
+      { label: 'Vi phạm sở hữu trí tuệ' },
     ],
   },
   hero: {
@@ -67,18 +73,22 @@ export const viLanding: LandingStrings = {
   policyIndex: {
     title: 'Các mục trong Tiêu chuẩn Cộng đồng',
     items: [
-      { label: 'Phối hợp gây hại và xúi giục tội phạm' },
-      { label: 'Tổ chức và cá nhân nguy hiểm' },
-      { label: 'Gian lận, lừa đảo và hành vi gây hiểu lầm' },
+      { label: 'Bạo lực và hành vi phạm pháp' },
+      { label: 'Lừa đảo và gian dối' },
       { label: 'Hàng hóa và dịch vụ bị hạn chế' },
-      { label: 'Bóc lột và lạm dụng tình dục trẻ em' },
-      { label: 'Tự tử, tự hại và rối loạn ăn uống' },
-      { label: 'Khỏa thân và hoạt động tình dục người lớn' },
-      { label: 'Nội dung bạo lực và đồ họa' },
-      { label: 'Quấy rối và bắt nạt' },
+      { label: 'Bắt nạt và quấy rối' },
       { label: 'Ngôn từ thù ghét' },
-      { label: 'Vi phạm quyền sở hữu trí tuệ của bên thứ ba' },
-      { label: 'Nội dung, sản phẩm hoặc dịch vụ bất hợp pháp tại địa phương' },
+      { label: 'Nội dung bạo lực hoặc phản cảm' },
+      { label: 'Nội dung khỏa thân và hoạt động tình dục' },
+      { label: 'Bóc lột trẻ em' },
+      { label: 'Bóc lột người lớn và buôn người' },
+      { label: 'Tự tử, tự gây thương tích và rối loạn ăn uống' },
+      { label: 'Xâm phạm quyền riêng tư' },
+      { label: 'Spam' },
+      { label: 'An ninh mạng' },
+      { label: 'Hành vi không xác thực' },
+      { label: 'Thông tin sai lệch' },
+      { label: 'Vi phạm sở hữu trí tuệ' },
     ],
   },
   benefits: {
@@ -213,37 +223,87 @@ export const viLanding: LandingStrings = {
   commonViolations: {
     title: 'Một số vi phạm Tiêu chuẩn Cộng đồng',
     description:
-      'Tiêu chuẩn Cộng đồng áp dụng cho mọi nội dung và hoạt động trên Fanpage. Dưới đây là một số nhóm vi phạm thường được ghi nhận trong quá trình rà soát:',
+      'Tiêu chuẩn Cộng đồng áp dụng cho mọi nội dung và hoạt động trên Fanpage. Các nhóm chính sách dưới đây bám theo Tiêu chuẩn Cộng đồng của Meta và thường được ghi nhận trong quá trình rà soát:',
     items: [
       {
-        title: 'Gian lận, lừa đảo và hành vi gây hiểu lầm',
+        title: 'Bạo lực và hành vi phạm pháp',
         description:
-          'Nội dung hoặc hoạt động nhằm đánh lừa người dùng, chiếm đoạt thông tin hoặc tài sản, hoặc gây nhầm lẫn về danh tính, sản phẩm và dịch vụ.',
+          'Đe dọa bạo lực, kích động gây hại, cổ súy tội phạm, tổ chức hoặc cá nhân nguy hiểm.',
+      },
+      {
+        title: 'Lừa đảo và gian dối',
+        description:
+          'Giả mạo, lừa tiền, chiếm đoạt tài khoản và các hình thức gian lận.',
       },
       {
         title: 'Hàng hóa và dịch vụ bị hạn chế',
         description:
-          'Quảng bá, bán hoặc tạo điều kiện giao dịch các mặt hàng, dịch vụ bị hạn chế theo chính sách của Meta hoặc quy định pháp luật địa phương.',
+          'Mua bán hoặc quảng bá một số mặt hàng, dịch vụ bị kiểm soát.',
       },
       {
-        title: 'Bóc lột, lạm dụng và quấy rối',
+        title: 'Bắt nạt và quấy rối',
         description:
-          'Hành vi quấy rối, đe dọa, bắt nạt hoặc lạm dụng nhắm vào cá nhân hoặc nhóm, bao gồm nội dung có thể gây tổn hại tâm lý hoặc thể chất.',
+          'Xúc phạm, đe dọa, làm nhục hoặc nhắm mục tiêu quấy rối cá nhân.',
       },
       {
         title: 'Ngôn từ thù ghét',
         description:
-          'Nội dung tấn công trực tiếp các đặc điểm được bảo vệ của cá nhân hoặc nhóm, hoặc kêu gọi bạo lực, phân biệt đối xử dựa trên các đặc điểm đó.',
+          'Công kích người khác dựa trên các đặc điểm được bảo vệ theo chính sách của Meta.',
       },
       {
-        title: 'Nội dung bạo lực và đồ họa',
+        title: 'Nội dung bạo lực hoặc phản cảm',
         description:
-          'Hình ảnh, video hoặc mô tả bạo lực cực đoan, máu me hoặc gây sốc có thể bị hạn chế hoặc gỡ, tùy ngữ cảnh và mức độ hiển thị.',
+          'Hình ảnh, video có tính chất máu me hoặc bạo lực nghiêm trọng.',
       },
       {
-        title: 'Tổ chức và cá nhân nguy hiểm',
+        title: 'Nội dung khỏa thân và hoạt động tình dục',
         description:
-          'Ủng hộ, tôn vinh hoặc đại diện cho các tổ chức, cá nhân mà Meta xác định gây hại nghiêm trọng hoặc có nguy cơ bạo lực.',
+          'Một số nội dung tình dục, khỏa thân hoặc mời chào tình dục.',
+      },
+      {
+        title: 'Bóc lột trẻ em',
+        description:
+          'Nội dung tình dục, khỏa thân hoặc hành vi gây nguy hiểm cho trẻ em.',
+      },
+      {
+        title: 'Bóc lột người lớn và buôn người',
+        description:
+          'Cưỡng ép, khai thác tình dục hoặc các hình thức bóc lột con người.',
+      },
+      {
+        title: 'Tự tử, tự gây thương tích và rối loạn ăn uống',
+        description:
+          'Đặc biệt khi nội dung khuyến khích hoặc hướng dẫn hành vi gây hại.',
+      },
+      {
+        title: 'Xâm phạm quyền riêng tư',
+        description:
+          'Công khai hoặc sử dụng trái phép một số thông tin cá nhân nhạy cảm.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Đăng hoặc gửi nội dung hàng loạt, lặp lại, gây hiểu nhầm hoặc nhằm thao túng tương tác.',
+      },
+      {
+        title: 'An ninh mạng',
+        description:
+          'Lừa đảo phishing, mã độc, đánh cắp thông tin đăng nhập hoặc tấn công hệ thống.',
+      },
+      {
+        title: 'Hành vi không xác thực',
+        description:
+          'Sử dụng tài khoản hoặc mạng lưới tài khoản nhằm che giấu danh tính hoặc mục đích thực sự.',
+      },
+      {
+        title: 'Thông tin sai lệch',
+        description:
+          'Một số loại thông tin sai có nguy cơ gây hại thực tế có thể bị hạn chế hoặc xử lý.',
+      },
+      {
+        title: 'Vi phạm sở hữu trí tuệ',
+        description:
+          'Sử dụng trái phép nội dung có bản quyền hoặc nhãn hiệu của người khác.',
       },
     ],
   },

@@ -27,16 +27,22 @@ export const enLanding: LandingStrings = {
     sidebarTitle: 'Community Standards topics',
     sidebarSection: 'Policies',
     sidebarLinks: [
-      { label: 'Coordinating Harm and Promoting Crime' },
-      { label: 'Dangerous Organizations and Individuals' },
-      { label: 'Fraud, Scams, and Deceptive Practices' },
-      { label: 'Restricted Goods and Services' },
-      { label: 'Child Sexual Exploitation, Abuse, and Nudity' },
-      { label: 'Suicide, Self-Injury, and Eating Disorders' },
-      { label: 'Adult Nudity and Sexual Activity' },
-      { label: 'Violent and Graphic Content' },
-      { label: 'Bullying and Harassment' },
-      { label: 'Hate Speech' },
+      { label: 'Violence and criminal behavior' },
+      { label: 'Fraud and deceptive practices' },
+      { label: 'Restricted goods and services' },
+      { label: 'Bullying and harassment' },
+      { label: 'Hateful conduct' },
+      { label: 'Violent and graphic content' },
+      { label: 'Adult nudity and sexual activity' },
+      { label: 'Child sexual exploitation, abuse and nudity' },
+      { label: 'Human exploitation' },
+      { label: 'Suicide, self-injury and eating disorders' },
+      { label: 'Privacy violations' },
+      { label: 'Spam' },
+      { label: 'Cybersecurity' },
+      { label: 'Inauthentic behavior' },
+      { label: 'Misinformation' },
+      { label: 'Intellectual property' },
     ],
   },
   hero: {
@@ -67,18 +73,22 @@ export const enLanding: LandingStrings = {
   policyIndex: {
     title: 'Community Standards topics',
     items: [
-      { label: 'Coordinating Harm and Promoting Crime' },
-      { label: 'Dangerous Organizations and Individuals' },
-      { label: 'Fraud, Scams, and Deceptive Practices' },
-      { label: 'Restricted Goods and Services' },
-      { label: 'Child Sexual Exploitation, Abuse, and Nudity' },
-      { label: 'Suicide, Self-Injury, and Eating Disorders' },
-      { label: 'Adult Nudity and Sexual Activity' },
-      { label: 'Violent and Graphic Content' },
-      { label: 'Bullying and Harassment' },
-      { label: 'Hate Speech' },
-      { label: 'Third-Party Intellectual Property Infringement' },
-      { label: 'Locally Illegal Content, Products, or Services' },
+      { label: 'Violence and criminal behavior' },
+      { label: 'Fraud and deceptive practices' },
+      { label: 'Restricted goods and services' },
+      { label: 'Bullying and harassment' },
+      { label: 'Hateful conduct' },
+      { label: 'Violent and graphic content' },
+      { label: 'Adult nudity and sexual activity' },
+      { label: 'Child sexual exploitation, abuse and nudity' },
+      { label: 'Human exploitation' },
+      { label: 'Suicide, self-injury and eating disorders' },
+      { label: 'Privacy violations' },
+      { label: 'Spam' },
+      { label: 'Cybersecurity' },
+      { label: 'Inauthentic behavior' },
+      { label: 'Misinformation' },
+      { label: 'Intellectual property' },
     ],
   },
   benefits: {
@@ -213,37 +223,87 @@ export const enLanding: LandingStrings = {
   commonViolations: {
     title: 'Some Community Standards violations',
     description:
-      'Community Standards apply to all content and activity on a Fanpage. Below are policy areas commonly identified during review:',
+      'Community Standards apply to all content and activity on a Fanpage. The policy areas below reflect Meta\'s Community Standards and are commonly identified during review:',
     items: [
       {
-        title: 'Fraud, scams and deception',
+        title: 'Violence and criminal behavior',
         description:
-          'Content or activity intended to mislead people, obtain information or assets improperly, or create confusion about identity, products or services.',
+          'Threats of violence, incitement to harm, promoting crime, and dangerous organizations or individuals.',
+      },
+      {
+        title: 'Fraud and deceptive practices',
+        description:
+          'Impersonation, financial scams, account takeover, and other forms of fraud.',
       },
       {
         title: 'Restricted goods and services',
         description:
-          'Promoting, selling or facilitating transactions for items or services restricted under Meta policies or applicable local law.',
+          'Buying, selling or promoting certain controlled goods or services.',
       },
       {
-        title: 'Exploitation, abuse and harassment',
+        title: 'Bullying and harassment',
         description:
-          'Harassment, threats, bullying or abuse directed at individuals or groups, including content that may cause psychological or physical harm.',
+          'Insulting, threatening, humiliating or targeting someone for harassment.',
       },
       {
-        title: 'Hate speech',
+        title: 'Hateful conduct',
         description:
-          'Content that directly attacks protected characteristics of people or groups, or incites violence or discrimination based on those characteristics.',
+          'Attacks on people based on characteristics protected under Meta\'s policies.',
       },
       {
         title: 'Violent and graphic content',
         description:
-          'Images, videos or descriptions of extreme violence, gore or shocking material may be restricted or removed depending on context and visibility.',
+          'Images or videos that are gory or show severe violence.',
       },
       {
-        title: 'Dangerous individuals and organizations',
+        title: 'Adult nudity and sexual activity',
         description:
-          'Supporting, praising or representing organizations or individuals Meta determines pose a serious risk of harm or violence.',
+          'Certain sexual content, nudity or sexual solicitation.',
+      },
+      {
+        title: 'Child sexual exploitation, abuse and nudity',
+        description:
+          'Sexual content, nudity or conduct that endangers children.',
+      },
+      {
+        title: 'Human exploitation',
+        description:
+          'Coercion, sexual exploitation, trafficking or other exploitation of people.',
+      },
+      {
+        title: 'Suicide, self-injury and eating disorders',
+        description:
+          'Especially content that encourages or instructs harmful behavior.',
+      },
+      {
+        title: 'Privacy violations',
+        description:
+          'Publishing or using certain sensitive personal information without permission.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Mass, repetitive, misleading posts or messages intended to manipulate engagement.',
+      },
+      {
+        title: 'Cybersecurity',
+        description:
+          'Phishing, malware, credential theft or attacks on systems.',
+      },
+      {
+        title: 'Inauthentic behavior',
+        description:
+          'Using accounts or networks of accounts to conceal identity or true purpose.',
+      },
+      {
+        title: 'Misinformation',
+        description:
+          'Certain false information that risks real-world harm may be restricted or otherwise actioned.',
+      },
+      {
+        title: 'Intellectual property',
+        description:
+          'Unauthorized use of someone else\'s copyrighted content or trademarks.',
       },
     ],
   },

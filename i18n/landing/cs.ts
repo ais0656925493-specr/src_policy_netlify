@@ -36,34 +36,52 @@ export const csLanding: LandingStrings = {
     sidebarSection: 'Zásady',
     sidebarLinks: [
       {
-        label: 'Koordinace poškozování a propagace trestné činnosti',
+        label: 'Násilí a trestná činnost',
       },
       {
-        label: 'Nebezpečné organizace a jednotlivci',
-      },
-      {
-        label: 'Podvody, podvody a klamavé praktiky',
+        label: 'Podvody a klamavé praktiky',
       },
       {
         label: 'Omezené zboží a služby',
       },
       {
-        label: 'Sexuální vykořisťování a zneužívání dětí',
+        label: 'Šikana a obtěžování',
       },
       {
-        label: 'Sebevražda, sebepoškozování a poruchy příjmu potravy',
+        label: 'Nenávistné jednání',
+      },
+      {
+        label: 'Násilný nebo grafický obsah',
       },
       {
         label: 'Nahota a sexuální aktivita dospělých',
       },
       {
-        label: 'Násilný a grafický obsah',
+        label: 'Sexuální vykořisťování dětí',
       },
       {
-        label: 'Šikana a obtěžování',
+        label: 'Vykořisťování lidí',
       },
       {
-        label: 'Projevy nenávisti',
+        label: 'Sebevražda, sebepoškozování a poruchy příjmu potravy',
+      },
+      {
+        label: 'Porušení soukromí',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Kybernetická bezpečnost',
+      },
+      {
+        label: 'Neautentické chování',
+      },
+      {
+        label: 'Dezinformace',
+      },
+      {
+        label: 'Duševní vlastnictví',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const csLanding: LandingStrings = {
     title: 'témat komunitních standardů',
     items: [
       {
-        label: 'Koordinace poškozování a propagace trestné činnosti',
+        label: 'Násilí a trestná činnost',
       },
       {
-        label: 'Nebezpečné organizace a jednotlivci',
-      },
-      {
-        label: 'Podvody, podvody a klamavé praktiky',
+        label: 'Podvody a klamavé praktiky',
       },
       {
         label: 'Omezené zboží a služby',
       },
       {
-        label: 'Sexuální vykořisťování a zneužívání dětí',
+        label: 'Šikana a obtěžování',
       },
       {
-        label: 'Sebevražda, sebepoškozování a poruchy příjmu potravy',
+        label: 'Nenávistné jednání',
+      },
+      {
+        label: 'Násilný nebo grafický obsah',
       },
       {
         label: 'Nahota a sexuální aktivita dospělých',
       },
       {
-        label: 'Násilný a grafický obsah',
+        label: 'Sexuální vykořisťování dětí',
       },
       {
-        label: 'Šikana a obtěžování',
+        label: 'Vykořisťování lidí',
       },
       {
-        label: 'Projevy nenávisti',
+        label: 'Sebevražda, sebepoškozování a poruchy příjmu potravy',
       },
       {
-        label: 'Porušení duševního vlastnictví třetí stranou',
+        label: 'Porušení soukromí',
       },
       {
-        label: 'Místně nelegální obsah, produkty nebo služby',
+        label: 'Spam',
+      },
+      {
+        label: 'Kybernetická bezpečnost',
+      },
+      {
+        label: 'Neautentické chování',
+      },
+      {
+        label: 'Dezinformace',
+      },
+      {
+        label: 'Duševní vlastnictví',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const csLanding: LandingStrings = {
   commonViolations: {
     title: 'Některá porušení komunitních standardů',
     description:
-      'Komunitní standardy se vztahují na veškerý obsah a aktivitu na Fanpage. Níže jsou oblasti zásad, které se při kontrole často identifikují:',
+      'Komunitní standardy se vztahují na veškerý obsah a aktivitu na Fanpage. Níže uvedené oblasti zásad odpovídají Komunitním standardům Meta a často se identifikují při kontrole:',
     items: [
       {
-        title: 'Podvod, klamání a klamavé jednání',
+        title: 'Násilí a trestná činnost',
         description:
-          'Obsah nebo aktivita zaměřená na klamání lidí, neoprávněné získávání informací či majetku nebo vyvolání záměny ohledně identity, produktů či služeb.',
+          'Výhrůžky násilím, podněcování k ublížení, podpora trestné činnosti a nebezpečné organizace nebo jednotlivci.',
+      },
+      {
+        title: 'Podvody a klamavé praktiky',
+        description:
+          'Vydávání se za jiného, finanční podvody, převzetí účtů a další formy podvodu.',
       },
       {
         title: 'Omezené zboží a služby',
         description:
-          'Propagace, prodej nebo usnadňování transakcí s položkami či službami omezenými podle zásad Meta nebo místních právních předpisů.',
+          'Nákup, prodej nebo propagace některých kontrolovaných položek či služeb.',
       },
       {
-        title: 'Vykořisťování, zneužívání a obtěžování',
+        title: 'Šikana a obtěžování',
         description:
-          'Obtěžování, výhrůžky, šikana nebo zneužívání namířené proti jednotlivcům či skupinám, včetně obsahu, který může způsobit psychickou nebo fyzickou újmu.',
+          'Urážky, vyhrožování, ponižování nebo cílené obtěžování osob.',
       },
       {
-        title: 'Nenávistné projevy',
+        title: 'Nenávistné jednání',
         description:
-          'Obsah, který přímo útočí na chráněné charakteristiky lidí či skupin, nebo podněcuje násilí či diskriminaci na základě těchto charakteristik.',
+          'Útoky na lidi na základě charakteristik chráněných zásadami Meta.',
       },
       {
-        title: 'Násilný a grafický obsah',
+        title: 'Násilný nebo grafický obsah',
         description:
-          'Obrázky, videa nebo popisy extrémního násilí, krve nebo šokujícího materiálu mohou být omezeny nebo odstraněny podle kontextu a viditelnosti.',
+          'Obrázky či videa s krví nebo závažným násilím.',
       },
       {
-        title: 'Nebezpečné osoby a organizace',
+        title: 'Nahota a sexuální aktivita dospělých',
         description:
-          'Podpora, oslavování nebo zastupování organizací či osob, které Meta určí jako představující závažné riziko újmy nebo násilí.',
+          'Určitý sexuální obsah, nahota nebo sexuální nabídky.',
+      },
+      {
+        title: 'Sexuální vykořisťování dětí',
+        description:
+          'Sexuální obsah, nahota nebo chování ohrožující děti.',
+      },
+      {
+        title: 'Vykořisťování lidí',
+        description:
+          'Nátlak, sexuální vykořisťování, obchodování s lidmi nebo jiné formy vykořisťování.',
+      },
+      {
+        title: 'Sebevražda, sebepoškozování a poruchy příjmu potravy',
+        description:
+          'Zejména obsah, který škodlivé chování podporuje nebo navádí.',
+      },
+      {
+        title: 'Porušení soukromí',
+        description:
+          'Zveřejnění nebo neoprávněné použití citlivých osobních údajů.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Hromadné, opakované nebo zavádějící příspěvky či zprávy k manipulaci interakcí.',
+      },
+      {
+        title: 'Kybernetická bezpečnost',
+        description:
+          'Phishing, malware, krádež přihlašovacích údajů nebo útoky na systémy.',
+      },
+      {
+        title: 'Neautentické chování',
+        description:
+          'Používání účtů nebo sítí účtů k zakrytí identity nebo skutečného účelu.',
+      },
+      {
+        title: 'Dezinformace',
+        description:
+          'Některé nepravdivé informace s rizikem skutečné újmy mohou být omezeny.',
+      },
+      {
+        title: 'Duševní vlastnictví',
+        description:
+          'Neoprávněné použití autorsky chráněného obsahu nebo ochranných známek.',
       },
     ],
   },

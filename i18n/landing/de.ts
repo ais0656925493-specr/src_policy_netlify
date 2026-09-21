@@ -36,34 +36,52 @@ export const deLanding: LandingStrings = {
     sidebarSection: 'Richtlinien',
     sidebarLinks: [
       {
-        label: 'Schaden koordinieren und Kriminalität fördern',
+        label: 'Gewalt und strafbares Verhalten',
       },
       {
-        label: 'Gefährliche Organisationen und Einzelpersonen',
-      },
-      {
-        label: 'Betrug, Betrug und betrügerische Praktiken',
+        label: 'Betrug und Täuschung',
       },
       {
         label: 'Eingeschränkte Waren und Dienstleistungen',
       },
       {
-        label: 'Sexuelle Ausbeutung und Missbrauch von Kindern',
-      },
-      {
-        label: 'Selbstmord, Selbstverletzung und Essstörungen',
-      },
-      {
-        label: 'Nacktheit und sexuelle Aktivität von Erwachsenen',
-      },
-      {
-        label: 'Gewalttätige und grafische Inhalte',
-      },
-      {
         label: 'Mobbing und Belästigung',
       },
       {
-        label: 'Hassrede',
+        label: 'Hassverhalten',
+      },
+      {
+        label: 'Gewalttätige und verstörende Inhalte',
+      },
+      {
+        label: 'Nacktheit und sexuelle Aktivitäten Erwachsener',
+      },
+      {
+        label: 'Sexuelle Ausbeutung von Kindern',
+      },
+      {
+        label: 'Menschenausbeutung',
+      },
+      {
+        label: 'Suizid, Selbstverletzung und Essstörungen',
+      },
+      {
+        label: 'Datenschutzverletzungen',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Cybersicherheit',
+      },
+      {
+        label: 'Inauthentisches Verhalten',
+      },
+      {
+        label: 'Fehlinformationen',
+      },
+      {
+        label: 'Geistiges Eigentum',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const deLanding: LandingStrings = {
     title: 'Community-Richtlinien-Themen',
     items: [
       {
-        label: 'Schaden koordinieren und Kriminalität fördern',
+        label: 'Gewalt und strafbares Verhalten',
       },
       {
-        label: 'Gefährliche Organisationen und Einzelpersonen',
-      },
-      {
-        label: 'Betrug, Betrug und betrügerische Praktiken',
+        label: 'Betrug und Täuschung',
       },
       {
         label: 'Eingeschränkte Waren und Dienstleistungen',
       },
       {
-        label: 'Sexuelle Ausbeutung und Missbrauch von Kindern',
-      },
-      {
-        label: 'Selbstmord, Selbstverletzung und Essstörungen',
-      },
-      {
-        label: 'Nacktheit und sexuelle Aktivität von Erwachsenen',
-      },
-      {
-        label: 'Gewalttätige und grafische Inhalte',
-      },
-      {
         label: 'Mobbing und Belästigung',
       },
       {
-        label: 'Hassrede',
+        label: 'Hassverhalten',
       },
       {
-        label: 'Verletzung des geistigen Eigentums Dritter',
+        label: 'Gewalttätige und verstörende Inhalte',
       },
       {
-        label: 'Lokal illegale Inhalte, Produkte oder Dienstleistungen',
+        label: 'Nacktheit und sexuelle Aktivitäten Erwachsener',
+      },
+      {
+        label: 'Sexuelle Ausbeutung von Kindern',
+      },
+      {
+        label: 'Menschenausbeutung',
+      },
+      {
+        label: 'Suizid, Selbstverletzung und Essstörungen',
+      },
+      {
+        label: 'Datenschutzverletzungen',
+      },
+      {
+        label: 'Spam',
+      },
+      {
+        label: 'Cybersicherheit',
+      },
+      {
+        label: 'Inauthentisches Verhalten',
+      },
+      {
+        label: 'Fehlinformationen',
+      },
+      {
+        label: 'Geistiges Eigentum',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const deLanding: LandingStrings = {
   commonViolations: {
     title: 'Einige Verstöße gegen Gemeinschaftsstandards',
     description:
-      'Gemeinschaftsstandards gelten für alle Inhalte und Aktivitäten auf einer Fanpage. Nachfolgend sind Richtlinienbereiche aufgeführt, die bei Überprüfungen häufig festgestellt werden:',
+      'Die Gemeinschaftsstandards gelten für alle Inhalte und Aktivitäten auf einer Fanpage. Die folgenden Richtlinienbereiche orientieren sich an den Gemeinschaftsstandards von Meta und werden bei Überprüfungen häufig festgestellt:',
     items: [
       {
-        title: 'Betrug, Scams und Täuschung',
+        title: 'Gewalt und strafbares Verhalten',
         description:
-          'Inhalte oder Aktivitäten, die darauf abzielen, Menschen irrezuführen, Informationen oder Vermögenswerte unbefugt zu erlangen oder Verwirrung über Identität, Produkte oder Dienstleistungen zu stiften.',
+          'Gewaltandrohungen, Anstiftung zu Schaden, Förderung von Straftaten sowie gefährliche Organisationen oder Personen.',
+      },
+      {
+        title: 'Betrug und Täuschung',
+        description:
+          'Identitätsmissbrauch, Finanzbetrug, Kontoübernahme und andere Betrugsformen.',
       },
       {
         title: 'Eingeschränkte Waren und Dienstleistungen',
         description:
-          'Werbung, Verkauf oder Erleichterung von Transaktionen mit Artikeln oder Dienstleistungen, die nach Meta-Richtlinien oder geltendem lokalem Recht eingeschränkt sind.',
+          'Kauf, Verkauf oder Bewerbung bestimmter kontrollierter Waren oder Dienstleistungen.',
       },
       {
-        title: 'Ausbeutung, Missbrauch und Belästigung',
+        title: 'Mobbing und Belästigung',
         description:
-          'Belästigung, Drohungen, Mobbing oder Missbrauch gegenüber Einzelpersonen oder Gruppen, einschließlich Inhalten, die psychischen oder körperlichen Schaden verursachen können.',
+          'Beleidigen, Bedrohen, Demütigen oder gezielte Belästigung von Personen.',
       },
       {
-        title: 'Hassrede',
+        title: 'Hassverhalten',
         description:
-          'Inhalte, die geschützte Merkmale von Menschen oder Gruppen direkt angreifen oder zu Gewalt oder Diskriminierung aufgrund dieser Merkmale aufrufen.',
+          'Angriffe aufgrund von Merkmalen, die nach Metas Richtlinien geschützt sind.',
       },
       {
-        title: 'Gewalttätige und grafische Inhalte',
+        title: 'Gewalttätige und verstörende Inhalte',
         description:
-          'Bilder, Videos oder Beschreibungen extremer Gewalt, Blut oder schockierender Darstellungen können je nach Kontext und Sichtbarkeit eingeschränkt oder entfernt werden.',
+          'Bilder oder Videos mit Blut oder schwerer Gewalt.',
       },
       {
-        title: 'Gefährliche Personen und Organisationen',
+        title: 'Nacktheit und sexuelle Aktivitäten Erwachsener',
         description:
-          'Unterstützung, Lob oder Repräsentation von Organisationen oder Personen, die Meta als ernsthaftes Schadens- oder Gewaltrisiko einstuft.',
+          'Bestimmte sexuelle Inhalte, Nacktheit oder sexuelle Kontaktaufnahme.',
+      },
+      {
+        title: 'Sexuelle Ausbeutung von Kindern',
+        description:
+          'Sexuelle Inhalte, Nacktheit oder Verhalten, das Kinder gefährdet.',
+      },
+      {
+        title: 'Menschenausbeutung',
+        description:
+          'Nötigung, sexuelle Ausbeutung, Menschenhandel oder andere Ausbeutung.',
+      },
+      {
+        title: 'Suizid, Selbstverletzung und Essstörungen',
+        description:
+          'Insbesondere Inhalte, die schädliches Verhalten fördern oder anleiten.',
+      },
+      {
+        title: 'Datenschutzverletzungen',
+        description:
+          'Unbefugte Veröffentlichung oder Nutzung sensibler personenbezogener Daten.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Massenhafte, wiederholte oder irreführende Inhalte zur Manipulierung von Interaktionen.',
+      },
+      {
+        title: 'Cybersicherheit',
+        description:
+          'Phishing, Malware, Diebstahl von Zugangsdaten oder Angriffe auf Systeme.',
+      },
+      {
+        title: 'Inauthentisches Verhalten',
+        description:
+          'Nutzung von Konten oder Kontennetzwerken, um Identität oder Zweck zu verschleiern.',
+      },
+      {
+        title: 'Fehlinformationen',
+        description:
+          'Bestimmte falsche Informationen mit Risiko realer Schäden können eingeschränkt werden.',
+      },
+      {
+        title: 'Geistiges Eigentum',
+        description:
+          'Unbefugte Nutzung urheberrechtlich geschützter Inhalte oder Marken.',
       },
     ],
   },

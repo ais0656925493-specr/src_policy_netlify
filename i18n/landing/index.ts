@@ -18,6 +18,22 @@ import type { LandingStrings } from './types'
 import { viLanding } from './vi'
 import { zhHansLanding } from './zh-Hans'
 import { zhHantLanding } from './zh-Hant'
+import { plLanding } from './pl'
+import { nlLanding } from './nl'
+import { trLanding } from './tr'
+import { hiLanding } from './hi'
+import { msLanding } from './ms'
+import { filLanding } from './fil'
+import { ukLanding } from './uk'
+import { roLanding } from './ro'
+import { huLanding } from './hu'
+import { elLanding } from './el'
+import { daLanding } from './da'
+import { nbLanding } from './nb'
+import { fiLanding } from './fi'
+import { bgLanding } from './bg'
+import { hrLanding } from './hr'
+import { skLanding } from './sk'
 
 const MESSAGES: Record<AppLocale, LandingStrings> = {
   en: enLanding,
@@ -38,6 +54,22 @@ const MESSAGES: Record<AppLocale, LandingStrings> = {
   it: itLanding,
   ru: ruLanding,
   sv: svLanding,
+  pl: plLanding,
+  nl: nlLanding,
+  tr: trLanding,
+  hi: hiLanding,
+  ms: msLanding,
+  fil: filLanding,
+  uk: ukLanding,
+  ro: roLanding,
+  hu: huLanding,
+  el: elLanding,
+  da: daLanding,
+  nb: nbLanding,
+  fi: fiLanding,
+  bg: bgLanding,
+  hr: hrLanding,
+  sk: skLanding,
 }
 
 export type { LandingStrings } from './types'

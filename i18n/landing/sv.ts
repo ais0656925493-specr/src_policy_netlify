@@ -36,34 +36,52 @@ export const svLanding: LandingStrings = {
     sidebarSection: 'Policyer',
     sidebarLinks: [
       {
-        label: 'Samordning av skada och främjande av brottslighet',
+        label: 'Våld och kriminellt beteende',
       },
       {
-        label: 'Farliga organisationer och individer',
-      },
-      {
-        label: 'Bedrägeri, bedrägerier och vilseledande metoder',
+        label: 'Bedrägeri och vilseledande metoder',
       },
       {
         label: 'Begränsade varor och tjänster',
       },
       {
-        label: 'Sexuellt utnyttjande och övergrepp av barn',
+        label: 'Mobbning och trakasserier',
+      },
+      {
+        label: 'Hatkänsligt beteende',
+      },
+      {
+        label: 'Våldsamt eller grafiskt innehåll',
+      },
+      {
+        label: 'Vuxennakenhet och sexuell aktivitet',
+      },
+      {
+        label: 'Sexuellt utnyttjande av barn',
+      },
+      {
+        label: 'Människoutnyttjande',
       },
       {
         label: 'Självmord, självskada och ätstörningar',
       },
       {
-        label: 'Vuxen nakenhet och sexuell aktivitet',
+        label: 'Integritetsöverträdelser',
       },
       {
-        label: 'Våldsamt och grafiskt innehåll',
+        label: 'Spam',
       },
       {
-        label: 'Mobbning och trakasserier',
+        label: 'Cybersäkerhet',
       },
       {
-        label: 'Hattal',
+        label: 'Inautentiskt beteende',
+      },
+      {
+        label: 'Desinformation',
+      },
+      {
+        label: 'Immateriella rättigheter',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const svLanding: LandingStrings = {
     title: 'Communityregler – ämnen',
     items: [
       {
-        label: 'Samordning av skada och främjande av brottslighet',
+        label: 'Våld och kriminellt beteende',
       },
       {
-        label: 'Farliga organisationer och individer',
-      },
-      {
-        label: 'Bedrägeri, bedrägerier och vilseledande metoder',
+        label: 'Bedrägeri och vilseledande metoder',
       },
       {
         label: 'Begränsade varor och tjänster',
       },
       {
-        label: 'Sexuellt utnyttjande och övergrepp av barn',
+        label: 'Mobbning och trakasserier',
+      },
+      {
+        label: 'Hatkänsligt beteende',
+      },
+      {
+        label: 'Våldsamt eller grafiskt innehåll',
+      },
+      {
+        label: 'Vuxennakenhet och sexuell aktivitet',
+      },
+      {
+        label: 'Sexuellt utnyttjande av barn',
+      },
+      {
+        label: 'Människoutnyttjande',
       },
       {
         label: 'Självmord, självskada och ätstörningar',
       },
       {
-        label: 'Vuxen nakenhet och sexuell aktivitet',
+        label: 'Integritetsöverträdelser',
       },
       {
-        label: 'Våldsamt och grafiskt innehåll',
+        label: 'Spam',
       },
       {
-        label: 'Mobbning och trakasserier',
+        label: 'Cybersäkerhet',
       },
       {
-        label: 'Hattal',
+        label: 'Inautentiskt beteende',
       },
       {
-        label: 'Tredjeparts intrång i immateriella rättigheter',
+        label: 'Desinformation',
       },
       {
-        label: 'Lokalt olagligt innehåll, produkter eller tjänster',
+        label: 'Immateriella rättigheter',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const svLanding: LandingStrings = {
   commonViolations: {
     title: 'Vissa överträdelser av communityreglerna',
     description:
-      'Communityreglerna gäller allt innehåll och all aktivitet på en fansida. Nedan följer policyområden som ofta identifieras vid granskning:',
+      'Communityreglerna gäller allt innehåll och all aktivitet på en fansida. Policyområdena nedan följer Metas communityregler och identifieras ofta vid granskning:',
     items: [
       {
-        title: 'Bedrägeri, scams och vilseledning',
+        title: 'Våld och kriminellt beteende',
         description:
-          'Innehåll eller aktivitet som syftar till att vilseleda människor, erhålla information eller tillgångar på otillbörligt sätt eller skapa förvirring om identitet, produkter eller tjänster.',
+          'Våldshot, uppvigling till skada, främjande av brott och farliga organisationer eller individer.',
+      },
+      {
+        title: 'Bedrägeri och vilseledande metoder',
+        description:
+          'Imitation, ekonomiska bedrägerier, kontokapning och andra former av bedrägeri.',
       },
       {
         title: 'Begränsade varor och tjänster',
         description:
-          'Marknadsföring, försäljning eller underlättande av transaktioner med varor eller tjänster som begränsas enligt Metas policyer eller tillämplig lokal lag.',
+          'Köp, försäljning eller marknadsföring av vissa kontrollerade varor eller tjänster.',
       },
       {
-        title: 'Utnyttjande, missbruk och trakasserier',
+        title: 'Mobbning och trakasserier',
         description:
-          'Trakasserier, hot, mobbning eller missbruk riktat mot individer eller grupper, inklusive innehåll som kan orsaka psykisk eller fysisk skada.',
+          'Förolämpningar, hot, förödmjukelse eller riktade trakasserier.',
       },
       {
-        title: 'Hatpropaganda',
+        title: 'Hatkänsligt beteende',
         description:
-          'Innehåll som direkt angriper skyddade egenskaper hos människor eller grupper, eller uppmanar till våld eller diskriminering baserat på dessa egenskaper.',
+          'Angrepp baserade på egenskaper som skyddas av Metas policyer.',
       },
       {
-        title: 'Våldsamt och grafiskt innehåll',
+        title: 'Våldsamt eller grafiskt innehåll',
         description:
-          'Bilder, videor eller beskrivningar av extremt våld, blod eller chockerande material kan begränsas eller tas bort beroende på sammanhang och synlighet.',
+          'Bilder eller videor som är blodiga eller visar grovt våld.',
       },
       {
-        title: 'Farliga individer och organisationer',
+        title: 'Vuxennakenhet och sexuell aktivitet',
         description:
-          'Stöd, lovord eller representation av organisationer eller individer som Meta bedömer utgör en allvarlig risk för skada eller våld.',
+          'Viss sexuellt innehåll, nakenhet eller sexuell uppmaning.',
+      },
+      {
+        title: 'Sexuellt utnyttjande av barn',
+        description:
+          'Sexuellt innehåll, nakenhet eller beteende som utsätter barn för fara.',
+      },
+      {
+        title: 'Människoutnyttjande',
+        description:
+          'Tvång, sexuellt utnyttjande, människohandel eller andra former av utnyttjande.',
+      },
+      {
+        title: 'Självmord, självskada och ätstörningar',
+        description:
+          'Särskilt innehåll som uppmuntrar eller instruerar skadligt beteende.',
+      },
+      {
+        title: 'Integritetsöverträdelser',
+        description:
+          'Publicering eller otillåten användning av viss känslig personlig information.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Massiva, upprepade eller vilseledande inlägg eller meddelanden för att manipulera engagemang.',
+      },
+      {
+        title: 'Cybersäkerhet',
+        description:
+          'Nätfiske, skadlig kod, stöld av inloggningsuppgifter eller attacker mot system.',
+      },
+      {
+        title: 'Inautentiskt beteende',
+        description:
+          'Användning av konton eller kontonätverk för att dölja identitet eller verkligt syfte.',
+      },
+      {
+        title: 'Desinformation',
+        description:
+          'Viss felaktig information med risk för verklig skada kan begränsas.',
+      },
+      {
+        title: 'Immateriella rättigheter',
+        description:
+          'Otillåten användning av andras upphovsrättsskyddade innehåll eller varumärken.',
       },
     ],
   },

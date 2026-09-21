@@ -36,34 +36,52 @@ export const itLanding: LandingStrings = {
     sidebarSection: 'Politiche',
     sidebarLinks: [
       {
-        label: 'Coordinare il danno e promuovere la criminalità',
+        label: 'Violenza e condotta criminale',
       },
       {
-        label: 'Organizzazioni e individui pericolosi',
-      },
-      {
-        label: 'Frode, truffe e pratiche ingannevoli',
+        label: 'Frode e pratiche ingannevoli',
       },
       {
         label: 'Beni e servizi soggetti a restrizioni',
       },
       {
-        label: 'Sfruttamento e abuso sessuale sui minori',
+        label: 'Bullismo e molestie',
+      },
+      {
+        label: 'Condotta d\'odio',
+      },
+      {
+        label: 'Contenuti violenti o grafici',
+      },
+      {
+        label: 'Nudità e attività sessuale degli adulti',
+      },
+      {
+        label: 'Sfruttamento sessuale dei minori',
+      },
+      {
+        label: 'Sfruttamento umano',
       },
       {
         label: 'Suicidio, autolesionismo e disturbi alimentari',
       },
       {
-        label: 'Nudità adulta e attività sessuale',
+        label: 'Violazioni della privacy',
       },
       {
-        label: 'Contenuti violenti e grafici',
+        label: 'Spam',
       },
       {
-        label: 'Bullismo e molestie',
+        label: 'Sicurezza informatica',
       },
       {
-        label: 'Discorso di odio',
+        label: 'Comportamento inautentico',
+      },
+      {
+        label: 'Disinformazione',
+      },
+      {
+        label: 'Proprietà intellettuale',
       },
     ],
   },
@@ -92,40 +110,52 @@ export const itLanding: LandingStrings = {
     title: 'Argomenti degli standard della community',
     items: [
       {
-        label: 'Coordinare il danno e promuovere la criminalità',
+        label: 'Violenza e condotta criminale',
       },
       {
-        label: 'Organizzazioni e individui pericolosi',
-      },
-      {
-        label: 'Frode, truffe e pratiche ingannevoli',
+        label: 'Frode e pratiche ingannevoli',
       },
       {
         label: 'Beni e servizi soggetti a restrizioni',
       },
       {
-        label: 'Sfruttamento e abuso sessuale sui minori',
+        label: 'Bullismo e molestie',
+      },
+      {
+        label: 'Condotta d\'odio',
+      },
+      {
+        label: 'Contenuti violenti o grafici',
+      },
+      {
+        label: 'Nudità e attività sessuale degli adulti',
+      },
+      {
+        label: 'Sfruttamento sessuale dei minori',
+      },
+      {
+        label: 'Sfruttamento umano',
       },
       {
         label: 'Suicidio, autolesionismo e disturbi alimentari',
       },
       {
-        label: 'Nudità adulta e attività sessuale',
+        label: 'Violazioni della privacy',
       },
       {
-        label: 'Contenuti violenti e grafici',
+        label: 'Spam',
       },
       {
-        label: 'Bullismo e molestie',
+        label: 'Sicurezza informatica',
       },
       {
-        label: 'Discorso di odio',
+        label: 'Comportamento inautentico',
       },
       {
-        label: 'Violazione della proprietà intellettuale di terzi',
+        label: 'Disinformazione',
       },
       {
-        label: 'Contenuti, prodotti o servizi localmente illegali',
+        label: 'Proprietà intellettuale',
       },
     ],
   },
@@ -254,37 +284,87 @@ export const itLanding: LandingStrings = {
   commonViolations: {
     title: 'Alcune violazioni degli Standard della community',
     description:
-      'Gli Standard della community si applicano a tutti i contenuti e alle attività su una Fanpage. Di seguito sono riportate aree di policy comunemente identificate durante la revisione:',
+      'Gli Standard della community si applicano a tutti i contenuti e alle attività su una Fanpage. Le aree di policy seguenti riflettono gli Standard della community di Meta e vengono comunemente identificate durante la revisione:',
     items: [
       {
-        title: 'Frode, truffe e inganno',
+        title: 'Violenza e condotta criminale',
         description:
-          'Contenuti o attività volti a ingannare le persone, ottenere informazioni o beni in modo improprio o creare confusione su identità, prodotti o servizi.',
+          'Minacce di violenza, istigazione al danno, promozione di reati e organizzazioni o individui pericolosi.',
+      },
+      {
+        title: 'Frode e pratiche ingannevoli',
+        description:
+          'Impersonificazione, truffe finanziarie, sequestri di account e altre frodi.',
       },
       {
         title: 'Beni e servizi soggetti a restrizioni',
         description:
-          'Promozione, vendita o facilitazione di transazioni di articoli o servizi soggetti a restrizioni secondo le policy di Meta o la legge locale applicabile.',
+          'Acquisto, vendita o promozione di determinati articoli o servizi controllati.',
       },
       {
-        title: 'Sfruttamento, abuso e molestie',
+        title: 'Bullismo e molestie',
         description:
-          'Molestie, minacce, bullismo o abusi rivolti a individui o gruppi, inclusi contenuti che possono causare danni psicologici o fisici.',
+          'Insulti, minacce, umiliazione o molestie mirate verso una persona.',
       },
       {
-        title: 'Incitamento all\'odio',
+        title: 'Condotta d\'odio',
         description:
-          'Contenuti che attaccano direttamente caratteristiche protette di persone o gruppi, o incitano alla violenza o alla discriminazione basata su tali caratteristiche.',
+          'Attacchi basati su caratteristiche protette dalle policy di Meta.',
       },
       {
-        title: 'Contenuti violenti e grafici',
+        title: 'Contenuti violenti o grafici',
         description:
-          'Immagini, video o descrizioni di violenza estrema, gore o materiale scioccante possono essere limitati o rimossi a seconda del contesto e della visibilità.',
+          'Immagini o video cruenti o di violenza grave.',
       },
       {
-        title: 'Individui e organizzazioni pericolosi',
+        title: 'Nudità e attività sessuale degli adulti',
         description:
-          'Sostegno, esaltazione o rappresentazione di organizzazioni o individui che Meta determina presentino un grave rischio di danno o violenza.',
+          'Determinati contenuti sessuali, nudità o sollecitazioni sessuali.',
+      },
+      {
+        title: 'Sfruttamento sessuale dei minori',
+        description:
+          'Contenuti sessuali, nudità o condotte che mettono in pericolo i minori.',
+      },
+      {
+        title: 'Sfruttamento umano',
+        description:
+          'Coercizione, sfruttamento sessuale, tratta o altre forme di sfruttamento.',
+      },
+      {
+        title: 'Suicidio, autolesionismo e disturbi alimentari',
+        description:
+          'In particolare contenuti che incoraggiano o istruiscono comportamenti dannosi.',
+      },
+      {
+        title: 'Violazioni della privacy',
+        description:
+          'Pubblicazione o uso non autorizzato di alcune informazioni personali sensibili.',
+      },
+      {
+        title: 'Spam',
+        description:
+          'Post o messaggi massivi, ripetuti o fuorvianti per manipolare l\'engagement.',
+      },
+      {
+        title: 'Sicurezza informatica',
+        description:
+          'Phishing, malware, furto di credenziali o attacchi ai sistemi.',
+      },
+      {
+        title: 'Comportamento inautentico',
+        description:
+          'Uso di account o reti di account per nascondere identità o scopo reale.',
+      },
+      {
+        title: 'Disinformazione',
+        description:
+          'Alcune informazioni false con rischio di danni reali possono essere limitate.',
+      },
+      {
+        title: 'Proprietà intellettuale',
+        description:
+          'Uso non autorizzato di contenuti protetti da copyright o marchi altrui.',
       },
     ],
   },
