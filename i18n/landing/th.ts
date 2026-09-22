@@ -83,6 +83,9 @@ export const thLanding: LandingStrings = {
       {
         label: 'ทรัพย์สินทางปัญญา',
       },
+      {
+        label: 'เนื้อหาที่สร้างโดย AI',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const thLanding: LandingStrings = {
       },
       {
         label: 'ทรัพย์สินทางปัญญา',
+      },
+      {
+        label: 'เนื้อหาที่สร้างโดย AI',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const thLanding: LandingStrings = {
         title: 'ทรัพย์สินทางปัญญา',
         description:
           'การใช้เนื้อหาที่มีลิขสิทธิ์หรือเครื่องหมายการค้าของผู้อื่นโดยไม่ได้รับอนุญาต',
+      },
+      {
+        title: 'เนื้อหาที่สร้างโดย AI',
+        description:
+          'เนื้อหา AI ที่ปลอม หลอกลวง ก่อให้เข้าใจผิด หรือละเมิดนโยบายของ Meta',
       },
     ],
   },

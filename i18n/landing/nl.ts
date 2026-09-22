@@ -83,6 +83,9 @@ export const nlLanding: LandingStrings = {
       {
         label: 'Intellectueel eigendom',
       },
+      {
+        label: 'Door AI gegenereerde content',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const nlLanding: LandingStrings = {
       },
       {
         label: 'Intellectueel eigendom',
+      },
+      {
+        label: 'Door AI gegenereerde content',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const nlLanding: LandingStrings = {
         title: 'Intellectueel eigendom',
         description:
           'Ongeoorloofd gebruik van auteursrechtelijk beschermde content of handelsmerken.',
+      },
+      {
+        title: 'Door AI gegenereerde content',
+        description:
+          'Valse, misleidende, frauduleuze AI-content of content die het Meta-beleid schendt.',
       },
     ],
   },

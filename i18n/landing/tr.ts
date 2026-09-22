@@ -83,6 +83,9 @@ export const trLanding: LandingStrings = {
       {
         label: 'Fikri mülkiyet',
       },
+      {
+        label: 'Yapay zeka tarafından oluşturulan içerik',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const trLanding: LandingStrings = {
       },
       {
         label: 'Fikri mülkiyet',
+      },
+      {
+        label: 'Yapay zeka tarafından oluşturulan içerik',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const trLanding: LandingStrings = {
         title: 'Fikri mülkiyet',
         description:
           'Başkasının telif hakkıyla korunan içeriğinin veya markasının izinsiz kullanımı.',
+      },
+      {
+        title: 'Yapay zeka tarafından oluşturulan içerik',
+        description:
+          'Sahte, yanıltıcı, dolandırıcılık amaçlı veya Meta politikalarını ihlal eden yapay zeka içeriği.',
       },
     ],
   },

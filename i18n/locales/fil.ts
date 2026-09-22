@@ -89,6 +89,7 @@ export const fil: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Hindi tunay na pag-uugali' },
       { id: 'misinformation', label: 'Maling impormasyon' },
       { id: 'intellectual_property', label: 'Intelektwal na ari-arian' },
+      { id: 'ai_generated_content', label: 'Nilalamang ginawa ng AI' },
       { id: 'other', label: 'Iba pa (ilarawan sa ibaba)' },
     ],
     errAppealContent: 'Pumili ng kahit isang policy area.',

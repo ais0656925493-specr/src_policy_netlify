@@ -107,6 +107,7 @@ export const he: AppStrings = {
       { id: 'inauthentic_behavior', label: 'התנהגות לא אותנטית' },
       { id: 'misinformation', label: 'מידע כוזב' },
       { id: 'intellectual_property', label: 'קניין רוחני' },
+      { id: 'ai_generated_content', label: 'תוכן שנוצר בינה מלאכותית' },
       { id: 'other', label: 'אחר (תארו למטה)' },
     ],
     errAppealContent: 'נא לבחור לפחות תחום מדיניות אחד.',

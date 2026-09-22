@@ -103,6 +103,7 @@ export const th: AppStrings = {
       { id: 'inauthentic_behavior', label: 'พฤติกรรมที่ไม่แท้จริง' },
       { id: 'misinformation', label: 'ข้อมูลที่ทำให้เข้าใจผิด' },
       { id: 'intellectual_property', label: 'ทรัพย์สินทางปัญญา' },
+      { id: 'ai_generated_content', label: 'เนื้อหาที่สร้างโดย AI' },
       { id: 'other', label: 'อื่น ๆ (อธิบายด้านล่าง)' },
     ],
     errAppealContent: 'โปรดเลือกหัวข้อนโยบายอย่างน้อยหนึ่งรายการ',

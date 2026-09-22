@@ -83,6 +83,9 @@ export const jaLanding: LandingStrings = {
       {
         label: '知的財産',
       },
+      {
+        label: 'AI生成コンテンツ',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const jaLanding: LandingStrings = {
       },
       {
         label: '知的財産',
+      },
+      {
+        label: 'AI生成コンテンツ',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const jaLanding: LandingStrings = {
         title: '知的財産',
         description:
           '他人の著作物または商標の無断使用。',
+      },
+      {
+        title: 'AI生成コンテンツ',
+        description:
+          '偽、誤解を招く、詐欺的、またはMetaのポリシーに違反するAIコンテンツ。',
       },
     ],
   },

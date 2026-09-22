@@ -89,6 +89,7 @@ export const el: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Μη αυθεντική συμπεριφορά' },
       { id: 'misinformation', label: 'Παραπληροφόρηση' },
       { id: 'intellectual_property', label: 'Πνευματική ιδιοκτησία' },
+      { id: 'ai_generated_content', label: 'Περιεχόμενο που δημιουργήθηκε από ΤΝ' },
       { id: 'other', label: 'Άλλο (περιγράψτε παρακάτω)' },
     ],
     errAppealContent: 'Επιλέξτε τουλάχιστον έναν τομέα πολιτικής.',

@@ -89,6 +89,7 @@ export const ms: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Tingkah laku tidak tulen' },
       { id: 'misinformation', label: 'Maklumat salah' },
       { id: 'intellectual_property', label: 'Harta intelek' },
+      { id: 'ai_generated_content', label: 'Kandungan dijana AI' },
       { id: 'other', label: 'Lain-lain (terangkan di bawah)' },
     ],
     errAppealContent: 'Pilih sekurang-kurangnya satu bidang dasar.',

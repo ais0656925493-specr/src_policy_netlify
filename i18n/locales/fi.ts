@@ -89,6 +89,7 @@ export const fi: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Epäaito käytös' },
       { id: 'misinformation', label: 'Väärät tiedot' },
       { id: 'intellectual_property', label: 'Immateriaalioikeudet' },
+      { id: 'ai_generated_content', label: 'Tekoälyn tuottama sisältö' },
       { id: 'other', label: 'Muu (kuvaile alla)' },
     ],
     errAppealContent: 'Valitse vähintään yksi käytäntöalue.',

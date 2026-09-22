@@ -83,6 +83,9 @@ export const idLanding: LandingStrings = {
       {
         label: 'Kekayaan intelektual',
       },
+      {
+        label: 'Konten buatan AI',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const idLanding: LandingStrings = {
       },
       {
         label: 'Kekayaan intelektual',
+      },
+      {
+        label: 'Konten buatan AI',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const idLanding: LandingStrings = {
         title: 'Kekayaan intelektual',
         description:
           'Penggunaan tanpa izin atas konten berhak cipta atau merek dagang orang lain.',
+      },
+      {
+        title: 'Konten buatan AI',
+        description:
+          'Konten AI palsu, menyesatkan, penipuan, atau yang melanggar kebijakan Meta.',
       },
     ],
   },

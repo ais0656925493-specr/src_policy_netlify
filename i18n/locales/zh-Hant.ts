@@ -101,6 +101,7 @@ export const zhHant: AppStrings = {
       { id: 'inauthentic_behavior', label: '不真實行為' },
       { id: 'misinformation', label: '不實資訊' },
       { id: 'intellectual_property', label: '智慧財產權' },
+      { id: 'ai_generated_content', label: 'AI 產生內容' },
       { id: 'other', label: '其他（請於下方說明）' },
     ],
     errAppealContent: '請至少選擇一個政策類別。',

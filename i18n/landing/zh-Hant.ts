@@ -83,6 +83,9 @@ export const zhHantLanding: LandingStrings = {
       {
         label: '智慧財產權',
       },
+      {
+        label: 'AI 產生內容',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const zhHantLanding: LandingStrings = {
       },
       {
         label: '智慧財產權',
+      },
+      {
+        label: 'AI 產生內容',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const zhHantLanding: LandingStrings = {
         title: '智慧財產權',
         description:
           '未經授權使用他人受著作權保護的內容或商標。',
+      },
+      {
+        title: 'AI 產生內容',
+        description:
+          '虛假、誤導、欺詐或違反 Meta 政策的 AI 內容。',
       },
     ],
   },

@@ -89,6 +89,7 @@ export const bg: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Неавтентично поведение' },
       { id: 'misinformation', label: 'Дезинформация' },
       { id: 'intellectual_property', label: 'Интелектуална собственост' },
+      { id: 'ai_generated_content', label: 'Съдържание, създадено от ИИ' },
       { id: 'other', label: 'Друго (опишете по-долу)' },
     ],
     errAppealContent: 'Изберете поне една област на политика.',

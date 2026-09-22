@@ -89,6 +89,7 @@ export const hu: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Hiteltelen viselkedés' },
       { id: 'misinformation', label: 'Félretájékoztatás' },
       { id: 'intellectual_property', label: 'Szellemi tulajdon' },
+      { id: 'ai_generated_content', label: 'MI által létrehozott tartalom' },
       { id: 'other', label: 'Egyéb (írja le lent)' },
     ],
     errAppealContent: 'Válasszon legalább egy szabályzati területet.',

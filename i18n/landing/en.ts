@@ -43,6 +43,7 @@ export const enLanding: LandingStrings = {
       { label: 'Inauthentic behavior' },
       { label: 'Misinformation' },
       { label: 'Intellectual property' },
+      { label: 'AI-generated content' },
     ],
   },
   hero: {
@@ -89,6 +90,7 @@ export const enLanding: LandingStrings = {
       { label: 'Inauthentic behavior' },
       { label: 'Misinformation' },
       { label: 'Intellectual property' },
+      { label: 'AI-generated content' },
     ],
   },
   benefits: {
@@ -304,6 +306,11 @@ export const enLanding: LandingStrings = {
         title: 'Intellectual property',
         description:
           'Unauthorized use of someone else\'s copyrighted content or trademarks.',
+      },
+      {
+        title: 'AI-generated content',
+        description:
+          'AI content that is fake, misleading, deceptive, or otherwise violates Meta policies.',
       },
     ],
   },

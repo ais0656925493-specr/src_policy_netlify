@@ -83,6 +83,9 @@ export const heLanding: LandingStrings = {
       {
         label: 'קניין רוחני',
       },
+      {
+        label: 'תוכן שנוצר בינה מלאכותית',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const heLanding: LandingStrings = {
       },
       {
         label: 'קניין רוחני',
+      },
+      {
+        label: 'תוכן שנוצר בינה מלאכותית',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const heLanding: LandingStrings = {
         title: 'קניין רוחני',
         description:
           'שימוש לא מורשה בתוכן המוגן בזכויות יוצרים או בסימני מסחר.',
+      },
+      {
+        title: 'תוכן שנוצר בינה מלאכותית',
+        description:
+          'תוכן AI מזויף, מטעה, מרמה או שמפר את מדיניות Meta.',
       },
     ],
   },

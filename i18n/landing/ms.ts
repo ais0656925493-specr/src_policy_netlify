@@ -83,6 +83,9 @@ export const msLanding: LandingStrings = {
       {
         label: 'Harta intelek',
       },
+      {
+        label: 'Kandungan dijana AI',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const msLanding: LandingStrings = {
       },
       {
         label: 'Harta intelek',
+      },
+      {
+        label: 'Kandungan dijana AI',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const msLanding: LandingStrings = {
         title: 'Harta intelek',
         description:
           'Penggunaan tanpa kebenaran kandungan berhak cipta atau tanda dagangan orang lain.',
+      },
+      {
+        title: 'Kandungan dijana AI',
+        description:
+          'Kandungan AI palsu, mengelirukan, penipuan atau yang melanggar dasar Meta.',
       },
     ],
   },

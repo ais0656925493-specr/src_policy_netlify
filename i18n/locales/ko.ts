@@ -103,6 +103,7 @@ export const ko: AppStrings = {
       { id: 'inauthentic_behavior', label: '비진정성 행위' },
       { id: 'misinformation', label: '허위 정보' },
       { id: 'intellectual_property', label: '지적 재산권' },
+      { id: 'ai_generated_content', label: 'AI 생성 콘텐츠' },
       { id: 'other', label: '기타(아래에 설명)' },
     ],
     errAppealContent: '정책 항목을 하나 이상 선택하세요.',

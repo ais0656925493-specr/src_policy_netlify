@@ -83,6 +83,9 @@ export const nbLanding: LandingStrings = {
       {
         label: 'Immaterielle rettigheter',
       },
+      {
+        label: 'AI-generert innhold',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const nbLanding: LandingStrings = {
       },
       {
         label: 'Immaterielle rettigheter',
+      },
+      {
+        label: 'AI-generert innhold',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const nbLanding: LandingStrings = {
         title: 'Immaterielle rettigheter',
         description:
           'Uautorisert bruk av andres opphavsrettsbeskyttede innhold eller varemerker.',
+      },
+      {
+        title: 'AI-generert innhold',
+        description:
+          'Falskt, villedende, svindelaktig AI-innhold eller innhold som bryter Metas retningslinjer.',
       },
     ],
   },

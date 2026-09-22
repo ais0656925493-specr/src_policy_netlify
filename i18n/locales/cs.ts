@@ -103,6 +103,7 @@ export const cs: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Neautentické chování' },
       { id: 'misinformation', label: 'Dezinformace' },
       { id: 'intellectual_property', label: 'Duševní vlastnictví' },
+      { id: 'ai_generated_content', label: 'Obsah vytvořený AI' },
       { id: 'other', label: 'Jiné (popište níže)' },
     ],
     errAppealContent: 'Vyberte alespoň jednu oblast zásad.',

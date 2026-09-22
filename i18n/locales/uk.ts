@@ -89,6 +89,7 @@ export const uk: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Неавтентична поведінка' },
       { id: 'misinformation', label: 'Дезінформація' },
       { id: 'intellectual_property', label: 'Інтелектуальна власність' },
+      { id: 'ai_generated_content', label: 'Контент, створений ШІ' },
       { id: 'other', label: 'Інше (опишіть нижче)' },
     ],
     errAppealContent: 'Оберіть принаймні одну сферу політики.',

@@ -89,6 +89,7 @@ export const hr: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Neautentično ponašanje' },
       { id: 'misinformation', label: 'Dezinformacije' },
       { id: 'intellectual_property', label: 'Intelektualno vlasništvo' },
+      { id: 'ai_generated_content', label: 'Sadržaj generiran umjetnom inteligencijom' },
       { id: 'other', label: 'Ostalo (opišite u nastavku)' },
     ],
     errAppealContent: 'Odaberite barem jedno područje politike.',

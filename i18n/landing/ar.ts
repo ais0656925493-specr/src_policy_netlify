@@ -83,6 +83,9 @@ export const arLanding: LandingStrings = {
       {
         label: 'الملكية الفكرية',
       },
+      {
+        label: 'محتوى مُنشأ بالذكاء الاصطناعي',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const arLanding: LandingStrings = {
       },
       {
         label: 'الملكية الفكرية',
+      },
+      {
+        label: 'محتوى مُنشأ بالذكاء الاصطناعي',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const arLanding: LandingStrings = {
         title: 'الملكية الفكرية',
         description:
           'استخدام غير مصرح به لمحتوى محمي بحقوق النشر أو علامات تجارية تخص الآخرين.',
+      },
+      {
+        title: 'محتوى مُنشأ بالذكاء الاصطناعي',
+        description:
+          'محتوى ذكاء اصطناعي مزيف أو مضلل أو احتيالي أو ينتهك سياسات Meta.',
       },
     ],
   },

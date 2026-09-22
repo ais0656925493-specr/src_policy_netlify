@@ -108,6 +108,7 @@ export const sv: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Inautentiskt beteende' },
       { id: 'misinformation', label: 'Desinformation' },
       { id: 'intellectual_property', label: 'Immateriella rättigheter' },
+      { id: 'ai_generated_content', label: 'AI-genererat innehåll' },
       { id: 'other', label: 'Annat (beskriv nedan)' },
     ],
     errAppealContent: 'Välj minst ett policyområde.',

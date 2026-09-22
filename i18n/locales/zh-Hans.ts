@@ -101,6 +101,7 @@ export const zhHans: AppStrings = {
       { id: 'inauthentic_behavior', label: '不真实行为' },
       { id: 'misinformation', label: '虚假信息' },
       { id: 'intellectual_property', label: '知识产权' },
+      { id: 'ai_generated_content', label: 'AI 生成内容' },
       { id: 'other', label: '其他（请在下方说明）' },
     ],
     errAppealContent: '请至少选择一个政策类别。',

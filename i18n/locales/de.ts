@@ -103,6 +103,7 @@ export const de: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Inauthentisches Verhalten' },
       { id: 'misinformation', label: 'Fehlinformationen' },
       { id: 'intellectual_property', label: 'Geistiges Eigentum' },
+      { id: 'ai_generated_content', label: 'KI-generierte Inhalte' },
       { id: 'other', label: 'Sonstiges (unten beschreiben)' },
     ],
     errAppealContent: 'Bitte wähle mindestens einen Richtlinienbereich aus.',

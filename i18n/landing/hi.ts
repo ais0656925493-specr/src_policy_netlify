@@ -83,6 +83,9 @@ export const hiLanding: LandingStrings = {
       {
         label: 'बौद्धिक संपदा',
       },
+      {
+        label: 'AI-जनित सामग्री',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const hiLanding: LandingStrings = {
       },
       {
         label: 'बौद्धिक संपदा',
+      },
+      {
+        label: 'AI-जनित सामग्री',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const hiLanding: LandingStrings = {
         title: 'बौद्धिक संपदा',
         description:
           'किसी और की कॉपीराइट सामग्री या ट्रेडमार्क का अनधिकृत उपयोग।',
+      },
+      {
+        title: 'AI-जनित सामग्री',
+        description:
+          'नकली, भ्रमित करने वाली, धोखाधड़ी वाली या Meta नीति का उल्लंघन करने वाली AI सामग्री।',
       },
     ],
   },

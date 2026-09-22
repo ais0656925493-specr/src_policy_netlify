@@ -83,6 +83,9 @@ export const huLanding: LandingStrings = {
       {
         label: 'Szellemi tulajdon',
       },
+      {
+        label: 'MI által létrehozott tartalom',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const huLanding: LandingStrings = {
       },
       {
         label: 'Szellemi tulajdon',
+      },
+      {
+        label: 'MI által létrehozott tartalom',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const huLanding: LandingStrings = {
         title: 'Szellemi tulajdon',
         description:
           'Mások szerzői joggal védett tartalmának vagy védjegyének jogosulatlan használata.',
+      },
+      {
+        title: 'MI által létrehozott tartalom',
+        description:
+          'Hamis, félrevezető, csalárd vagy a Meta szabályzatát sértő MI-tartalom.',
       },
     ],
   },

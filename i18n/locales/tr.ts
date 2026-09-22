@@ -89,6 +89,7 @@ export const tr: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Sahte davranış' },
       { id: 'misinformation', label: 'Yanlış bilgi' },
       { id: 'intellectual_property', label: 'Fikri mülkiyet' },
+      { id: 'ai_generated_content', label: 'Yapay zeka tarafından oluşturulan içerik' },
       { id: 'other', label: 'Diğer (aşağıda açıklayın)' },
     ],
     errAppealContent: 'En az bir politika alanı seçin.',

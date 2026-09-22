@@ -89,6 +89,7 @@ export const nl: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Onecht gedrag' },
       { id: 'misinformation', label: 'Desinformatie' },
       { id: 'intellectual_property', label: 'Intellectueel eigendom' },
+      { id: 'ai_generated_content', label: 'Door AI gegenereerde content' },
       { id: 'other', label: 'Overig (hieronder beschrijven)' },
     ],
     errAppealContent: 'Selecteer minstens één beleidsgebied.',

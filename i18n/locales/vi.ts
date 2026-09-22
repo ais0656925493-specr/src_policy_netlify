@@ -108,6 +108,7 @@ export const vi: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Hành vi không xác thực' },
       { id: 'misinformation', label: 'Thông tin sai lệch' },
       { id: 'intellectual_property', label: 'Vi phạm sở hữu trí tuệ' },
+      { id: 'ai_generated_content', label: 'Nội dung do AI tạo ra' },
       { id: 'other', label: 'Khác (mô tả bên dưới)' },
     ],
     errAppealContent: 'Vui lòng chọn ít nhất một mục chính sách.',

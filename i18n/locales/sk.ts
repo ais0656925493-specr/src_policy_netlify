@@ -89,6 +89,7 @@ export const sk: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Neautentické správanie' },
       { id: 'misinformation', label: 'Dezinformácie' },
       { id: 'intellectual_property', label: 'Duševné vlastníctvo' },
+      { id: 'ai_generated_content', label: 'Obsah vytvorený AI' },
       { id: 'other', label: 'Iné (popíšte nižšie)' },
     ],
     errAppealContent: 'Vyberte aspoň jednu oblasť politiky.',

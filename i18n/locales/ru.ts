@@ -108,6 +108,7 @@ export const ru: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Неаутентичное поведение' },
       { id: 'misinformation', label: 'Дезинформация' },
       { id: 'intellectual_property', label: 'Интеллектуальная собственность' },
+      { id: 'ai_generated_content', label: 'Контент, созданный ИИ' },
       { id: 'other', label: 'Другое (опишите ниже)' },
     ],
     errAppealContent: 'Выберите хотя бы одну область политики.',

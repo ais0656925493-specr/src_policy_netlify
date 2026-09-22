@@ -103,6 +103,7 @@ export const id: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Perilaku tidak autentik' },
       { id: 'misinformation', label: 'Informasi yang menyesatkan' },
       { id: 'intellectual_property', label: 'Kekayaan intelektual' },
+      { id: 'ai_generated_content', label: 'Konten buatan AI' },
       { id: 'other', label: 'Lainnya (jelaskan di bawah)' },
     ],
     errAppealContent: 'Pilih setidaknya satu area kebijakan.',

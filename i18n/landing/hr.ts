@@ -83,6 +83,9 @@ export const hrLanding: LandingStrings = {
       {
         label: 'Intelektualno vlasništvo',
       },
+      {
+        label: 'Sadržaj generiran umjetnom inteligencijom',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const hrLanding: LandingStrings = {
       },
       {
         label: 'Intelektualno vlasništvo',
+      },
+      {
+        label: 'Sadržaj generiran umjetnom inteligencijom',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const hrLanding: LandingStrings = {
         title: 'Intelektualno vlasništvo',
         description:
           'Neovlašteno korištenje tuđeg sadržaja zaštićenog autorskim pravom ili žigova.',
+      },
+      {
+        title: 'Sadržaj generiran umjetnom inteligencijom',
+        description:
+          'Lažni, obmanjujući, prijevarni AI sadržaj ili sadržaj koji krši Meta pravila.',
       },
     ],
   },

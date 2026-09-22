@@ -103,6 +103,7 @@ export const ja: AppStrings = {
       { id: 'inauthentic_behavior', label: '真正でない行為' },
       { id: 'misinformation', label: '誤情報' },
       { id: 'intellectual_property', label: '知的財産' },
+      { id: 'ai_generated_content', label: 'AI生成コンテンツ' },
       { id: 'other', label: 'その他（以下に記入）' },
     ],
     errAppealContent: '少なくとも1つのポリシー項目を選択してください。',

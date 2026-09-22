@@ -83,6 +83,9 @@ export const fiLanding: LandingStrings = {
       {
         label: 'Immateriaalioikeudet',
       },
+      {
+        label: 'Tekoälyn tuottama sisältö',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const fiLanding: LandingStrings = {
       },
       {
         label: 'Immateriaalioikeudet',
+      },
+      {
+        label: 'Tekoälyn tuottama sisältö',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const fiLanding: LandingStrings = {
         title: 'Immateriaalioikeudet',
         description:
           'Toisen tekijänoikeudella suojatun sisällön tai tavaramerkkien luvaton käyttö.',
+      },
+      {
+        title: 'Tekoälyn tuottama sisältö',
+        description:
+          'Väärennetty, harhaanjohtava, petollinen tekoälysisältö tai Meta-käytäntöjä rikkova sisältö.',
       },
     ],
   },

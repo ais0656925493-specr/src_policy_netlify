@@ -83,6 +83,9 @@ export const ptLanding: LandingStrings = {
       {
         label: 'Propriedade intelectual',
       },
+      {
+        label: 'Conteúdo gerado por IA',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const ptLanding: LandingStrings = {
       },
       {
         label: 'Propriedade intelectual',
+      },
+      {
+        label: 'Conteúdo gerado por IA',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const ptLanding: LandingStrings = {
         title: 'Propriedade intelectual',
         description:
           'Uso não autorizado de conteúdo protegido por direitos autorais ou marcas.',
+      },
+      {
+        title: 'Conteúdo gerado por IA',
+        description:
+          'Conteúdo de IA falso, enganoso, fraudulento ou que viola as políticas da Meta.',
       },
     ],
   },

@@ -89,6 +89,7 @@ export const nb: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Uekte atferd' },
       { id: 'misinformation', label: 'Feilinformasjon' },
       { id: 'intellectual_property', label: 'Immaterielle rettigheter' },
+      { id: 'ai_generated_content', label: 'AI-generert innhold' },
       { id: 'other', label: 'Annet (beskriv nedenfor)' },
     ],
     errAppealContent: 'Velg minst ett politikkområde.',

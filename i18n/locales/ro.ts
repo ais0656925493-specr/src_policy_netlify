@@ -89,6 +89,7 @@ export const ro: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Comportament neautentic' },
       { id: 'misinformation', label: 'Dezinformare' },
       { id: 'intellectual_property', label: 'Proprietate intelectuală' },
+      { id: 'ai_generated_content', label: 'Conținut generat de IA' },
       { id: 'other', label: 'Altele (descrieți mai jos)' },
     ],
     errAppealContent: 'Selectați cel puțin un domeniu de politică.',

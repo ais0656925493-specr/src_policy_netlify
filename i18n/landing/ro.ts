@@ -83,6 +83,9 @@ export const roLanding: LandingStrings = {
       {
         label: 'Proprietate intelectuală',
       },
+      {
+        label: 'Conținut generat de IA',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const roLanding: LandingStrings = {
       },
       {
         label: 'Proprietate intelectuală',
+      },
+      {
+        label: 'Conținut generat de IA',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const roLanding: LandingStrings = {
         title: 'Proprietate intelectuală',
         description:
           'Utilizarea neautorizată a conținutului protejat prin drepturi de autor sau a mărcilor.',
+      },
+      {
+        title: 'Conținut generat de IA',
+        description:
+          'Conținut IA fals, înșelător, fraudulos sau care încalcă politicile Meta.',
       },
     ],
   },

@@ -83,6 +83,9 @@ export const zhHansLanding: LandingStrings = {
       {
         label: '知识产权',
       },
+      {
+        label: 'AI 生成内容',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const zhHansLanding: LandingStrings = {
       },
       {
         label: '知识产权',
+      },
+      {
+        label: 'AI 生成内容',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const zhHansLanding: LandingStrings = {
         title: '知识产权',
         description:
           '未经授权使用他人受版权保护的内容或商标。',
+      },
+      {
+        title: 'AI 生成内容',
+        description:
+          '虚假、误导、欺诈或违反 Meta 政策的 AI 内容。',
       },
     ],
   },

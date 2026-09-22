@@ -89,6 +89,7 @@ export const da: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Uægte adfærd' },
       { id: 'misinformation', label: 'Misinformation' },
       { id: 'intellectual_property', label: 'Immaterielle rettigheder' },
+      { id: 'ai_generated_content', label: 'AI-genereret indhold' },
       { id: 'other', label: 'Andet (beskriv nedenfor)' },
     ],
     errAppealContent: 'Vælg mindst ét politikområde.',

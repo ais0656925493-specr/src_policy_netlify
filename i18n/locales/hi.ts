@@ -89,6 +89,7 @@ export const hi: AppStrings = {
       { id: 'inauthentic_behavior', label: 'अप्रामाणिक व्यवहार' },
       { id: 'misinformation', label: 'गलत सूचना' },
       { id: 'intellectual_property', label: 'बौद्धिक संपदा' },
+      { id: 'ai_generated_content', label: 'AI-जनित सामग्री' },
       { id: 'other', label: 'अन्य (नीचे वर्णन करें)' },
     ],
     errAppealContent: 'कम से कम एक नीति क्षेत्र चुनें।',

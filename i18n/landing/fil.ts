@@ -83,6 +83,9 @@ export const filLanding: LandingStrings = {
       {
         label: 'Intelektwal na ari-arian',
       },
+      {
+        label: 'Nilalamang ginawa ng AI',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const filLanding: LandingStrings = {
       },
       {
         label: 'Intelektwal na ari-arian',
+      },
+      {
+        label: 'Nilalamang ginawa ng AI',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const filLanding: LandingStrings = {
         title: 'Intelektwal na ari-arian',
         description:
           'Hindi awtorisadong paggamit ng copyrighted content o trademark ng iba.',
+      },
+      {
+        title: 'Nilalamang ginawa ng AI',
+        description:
+          'Pekeng, mapanlinlang, mapanloko, o nilalamang AI na lumalabag sa mga patakaran ng Meta.',
       },
     ],
   },

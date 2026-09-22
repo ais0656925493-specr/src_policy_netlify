@@ -83,6 +83,9 @@ export const deLanding: LandingStrings = {
       {
         label: 'Geistiges Eigentum',
       },
+      {
+        label: 'KI-generierte Inhalte',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const deLanding: LandingStrings = {
       },
       {
         label: 'Geistiges Eigentum',
+      },
+      {
+        label: 'KI-generierte Inhalte',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const deLanding: LandingStrings = {
         title: 'Geistiges Eigentum',
         description:
           'Unbefugte Nutzung urheberrechtlich geschützter Inhalte oder Marken.',
+      },
+      {
+        title: 'KI-generierte Inhalte',
+        description:
+          'Gefälschte, irreführende, betrügerische KI-Inhalte oder solche, die gegen Meta-Richtlinien verstoßen.',
       },
     ],
   },

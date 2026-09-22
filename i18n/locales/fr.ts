@@ -103,6 +103,7 @@ export const fr: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Comportement inauthentique' },
       { id: 'misinformation', label: 'Désinformation' },
       { id: 'intellectual_property', label: 'Propriété intellectuelle' },
+      { id: 'ai_generated_content', label: 'Contenu généré par l\'IA' },
       { id: 'other', label: 'Autre (décrivez ci-dessous)' },
     ],
     errAppealContent: 'Veuillez sélectionner au moins un domaine de politique.',

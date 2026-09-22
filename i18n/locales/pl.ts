@@ -89,6 +89,7 @@ export const pl: AppStrings = {
       { id: 'inauthentic_behavior', label: 'Nieautentyczne zachowania' },
       { id: 'misinformation', label: 'Dezinformacja' },
       { id: 'intellectual_property', label: 'Własność intelektualna' },
+      { id: 'ai_generated_content', label: 'Treści generowane przez AI' },
       { id: 'other', label: 'Inne (opisz poniżej)' },
     ],
     errAppealContent: 'Wybierz co najmniej jeden obszar polityki.',

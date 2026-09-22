@@ -83,6 +83,9 @@ export const koLanding: LandingStrings = {
       {
         label: '지적 재산권',
       },
+      {
+        label: 'AI 생성 콘텐츠',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const koLanding: LandingStrings = {
       },
       {
         label: '지적 재산권',
+      },
+      {
+        label: 'AI 생성 콘텐츠',
       },
     ],
   },
@@ -365,6 +371,11 @@ export const koLanding: LandingStrings = {
         title: '지적 재산권',
         description:
           '타인의 저작권 콘텐츠 또는 상표의 무단 사용.',
+      },
+      {
+        title: 'AI 생성 콘텐츠',
+        description:
+          '허위·오해의 소지·사기성이거나 Meta 정책을 위반하는 AI 콘텐츠.',
       },
     ],
   },

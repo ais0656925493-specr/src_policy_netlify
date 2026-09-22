@@ -43,6 +43,7 @@ export const viLanding: LandingStrings = {
       { label: 'Hành vi không xác thực' },
       { label: 'Thông tin sai lệch' },
       { label: 'Vi phạm sở hữu trí tuệ' },
+      { label: 'Nội dung do AI tạo ra' },
     ],
   },
   hero: {
@@ -89,6 +90,7 @@ export const viLanding: LandingStrings = {
       { label: 'Hành vi không xác thực' },
       { label: 'Thông tin sai lệch' },
       { label: 'Vi phạm sở hữu trí tuệ' },
+      { label: 'Nội dung do AI tạo ra' },
     ],
   },
   benefits: {
@@ -304,6 +306,11 @@ export const viLanding: LandingStrings = {
         title: 'Vi phạm sở hữu trí tuệ',
         description:
           'Sử dụng trái phép nội dung có bản quyền hoặc nhãn hiệu của người khác.',
+      },
+      {
+        title: 'Nội dung do AI tạo ra',
+        description:
+          'Nội dung AI giả mạo, gây hiểu nhầm, lừa đảo hoặc vi phạm chính sách Meta.',
       },
     ],
   },

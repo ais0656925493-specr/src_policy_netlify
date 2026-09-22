@@ -108,6 +108,7 @@ export const ar: AppStrings = {
       { id: 'inauthentic_behavior', label: 'السلوك غير الأصيل' },
       { id: 'misinformation', label: 'المعلومات المضللة' },
       { id: 'intellectual_property', label: 'الملكية الفكرية' },
+      { id: 'ai_generated_content', label: 'محتوى مُنشأ بالذكاء الاصطناعي' },
       { id: 'other', label: 'أخرى (صف أدناه)' },
     ],
     errAppealContent: 'يرجى اختيار مجال سياسة واحد على الأقل.',

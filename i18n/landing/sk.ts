@@ -83,6 +83,9 @@ export const skLanding: LandingStrings = {
       {
         label: 'Duševné vlastníctvo',
       },
+      {
+        label: 'Obsah vytvorený AI',
+      },
     ],
   },
   hero: {
@@ -156,6 +159,9 @@ export const skLanding: LandingStrings = {
       },
       {
         label: 'Duševné vlastníctvo',
+      },
+      {
+        label: 'Obsah vytvorený AI',
       },
     ],
   },
@@ -356,6 +362,11 @@ export const skLanding: LandingStrings = {
         title: 'Duševné vlastníctvo',
         description:
           'Neoprávnené použitie obsahu chráneného autorským právom alebo ochranných známok.',
+      },
+      {
+        title: 'Obsah vytvorený AI',
+        description:
+          'Falošný, zavádzajúci, podvodný AI obsah alebo obsah porušujúci pravidlá Meta.',
       },
     ],
   },
