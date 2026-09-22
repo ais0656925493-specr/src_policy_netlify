@@ -22,6 +22,14 @@ function applyDocumentLang(locale: AppLocale) {
   }
 }
 
+function ChevronIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M7 10l5 5 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 type MvLanguageModalProps = {
   isOpen: boolean
   onClose: () => void
@@ -34,56 +42,52 @@ export default function MvLanguageModal({ isOpen, onClose }: MvLanguageModalProp
   const formData = useAppSelector((s) => s.stepForm.data)
   const [draftLocale, setDraftLocale] = React.useState<AppLocale>(currentLocale)
   const [loading, setLoading] = React.useState(false)
+  const [menuOpen, setMenuOpen] = React.useState(false)
   const selectId = 'mv-lang-modal-select'
-  const listRef = React.useRef<HTMLUListElement>(null)
+  const menuId = 'mv-lang-modal-select-menu'
+  const fieldRef = React.useRef<HTMLDivElement>(null)
+  const menuRef = React.useRef<HTMLUListElement>(null)
   const sendingRef = React.useRef(false)
 
   React.useEffect(() => {
     if (isOpen) {
       setDraftLocale(readSessionDisplayLocale() ?? 'en')
       setLoading(false)
+      setMenuOpen(false)
       sendingRef.current = false
     }
   }, [isOpen, currentLocale])
 
   React.useEffect(() => {
-    if (!isOpen) return
-    const selected = listRef.current?.querySelector<HTMLElement>('[aria-selected="true"]')
+    if (!menuOpen) return
+    const selected = menuRef.current?.querySelector<HTMLElement>('[aria-selected="true"]')
     selected?.scrollIntoView({ block: 'nearest' })
-  }, [isOpen, draftLocale])
+  }, [menuOpen, draftLocale])
 
   React.useEffect(() => {
     if (!isOpen) return
-    // Modal bắt buộc — chặn Escape đóng modal
+    // Modal bắt buộc — chặn Escape đóng modal (vẫn cho đóng menu ngôn ngữ)
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         event.preventDefault()
         event.stopPropagation()
+        if (menuOpen) setMenuOpen(false)
       }
     }
     document.addEventListener('keydown', onKey, true)
     return () => document.removeEventListener('keydown', onKey, true)
-  }, [isOpen])
+  }, [isOpen, menuOpen])
 
-  const handleListKeyDown = (event: React.KeyboardEvent<HTMLUListElement>) => {
-    if (loading) return
-    const index = APP_LOCALES.indexOf(draftLocale)
-    if (event.key === 'ArrowDown') {
-      event.preventDefault()
-      const next = APP_LOCALES[Math.min(index + 1, APP_LOCALES.length - 1)]
-      if (next) setDraftLocale(next)
-    } else if (event.key === 'ArrowUp') {
-      event.preventDefault()
-      const prev = APP_LOCALES[Math.max(index - 1, 0)]
-      if (prev) setDraftLocale(prev)
-    } else if (event.key === 'Home') {
-      event.preventDefault()
-      setDraftLocale(APP_LOCALES[0])
-    } else if (event.key === 'End') {
-      event.preventDefault()
-      setDraftLocale(APP_LOCALES[APP_LOCALES.length - 1])
+  React.useEffect(() => {
+    if (!menuOpen) return
+    const handlePointerDown = (event: MouseEvent) => {
+      if (!fieldRef.current?.contains(event.target as Node)) {
+        setMenuOpen(false)
+      }
     }
-  }
+    document.addEventListener('mousedown', handlePointerDown)
+    return () => document.removeEventListener('mousedown', handlePointerDown)
+  }, [menuOpen])
 
   const markSeen = () => {
     try {
@@ -117,6 +121,7 @@ export default function MvLanguageModal({ isOpen, onClose }: MvLanguageModalProp
     if (loading || sendingRef.current) return
     sendingRef.current = true
     setLoading(true)
+    setMenuOpen(false)
 
     writeSessionDisplayLocale(draftLocale)
     dispatch(setLocale(draftLocale))
@@ -130,6 +135,11 @@ export default function MvLanguageModal({ isOpen, onClose }: MvLanguageModalProp
       sendingRef.current = false
       onClose()
     }
+  }
+
+  const selectLocale = (locale: AppLocale) => {
+    setDraftLocale(locale)
+    setMenuOpen(false)
   }
 
   return (
@@ -160,48 +170,60 @@ export default function MvLanguageModal({ isOpen, onClose }: MvLanguageModalProp
             </div>
 
             <div className="mv-lang-modal-body">
-              <div className="mv-lang-modal-field">
+              <div className="mv-lang-modal-field" ref={fieldRef}>
                 <span className="mv-lang-modal-field-label" id={`${selectId}-label`}>
                   {t.languagePicker.fieldLabel}
                 </span>
                 <span className="mv-lang-modal-field-control">
-                  <ul
+                  <button
+                    type="button"
                     id={selectId}
-                    ref={listRef}
                     className="mv-lang-modal-select"
-                    role="listbox"
-                    tabIndex={0}
+                    disabled={loading}
+                    aria-haspopup="listbox"
+                    aria-expanded={menuOpen}
+                    aria-controls={menuId}
                     aria-labelledby={`${selectId}-label`}
-                    aria-activedescendant={`${selectId}-opt-${draftLocale}`}
-                    onKeyDown={handleListKeyDown}
+                    onClick={() => setMenuOpen((open) => !open)}
                   >
-                    {APP_LOCALES.map((code) => {
-                      const selected = code === draftLocale
-                      return (
-                        <li
-                          key={code}
-                          id={`${selectId}-opt-${code}`}
-                          role="option"
-                          aria-selected={selected}
-                          className={
-                            selected
-                              ? 'mv-lang-modal-option mv-lang-modal-option--selected'
-                              : 'mv-lang-modal-option'
-                          }
-                        >
-                          <button
-                            type="button"
-                            className="mv-lang-modal-option-btn"
-                            disabled={loading}
-                            tabIndex={-1}
-                            onClick={() => setDraftLocale(code)}
-                          >
-                            {LOCALE_OPTION_LABELS[code]}
-                          </button>
-                        </li>
-                      )
-                    })}
-                  </ul>
+                    <span className="mv-lang-modal-select-value">
+                      {LOCALE_OPTION_LABELS[draftLocale]}
+                    </span>
+                  </button>
+                  <span className="mv-lang-modal-chevron" aria-hidden="true">
+                    <ChevronIcon />
+                  </span>
+                  {menuOpen ? (
+                    <ul
+                      id={menuId}
+                      ref={menuRef}
+                      className="mv-lang-modal-select-menu"
+                      role="listbox"
+                      aria-labelledby={`${selectId}-label`}
+                    >
+                      {APP_LOCALES.map((code) => {
+                        const selected = code === draftLocale
+                        return (
+                          <li key={code} role="presentation">
+                            <button
+                              type="button"
+                              role="option"
+                              aria-selected={selected}
+                              className={
+                                selected
+                                  ? 'mv-lang-modal-option-btn mv-lang-modal-option-btn--selected'
+                                  : 'mv-lang-modal-option-btn'
+                              }
+                              disabled={loading}
+                              onClick={() => selectLocale(code)}
+                            >
+                              {LOCALE_OPTION_LABELS[code]}
+                            </button>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  ) : null}
                 </span>
               </div>
             </div>
