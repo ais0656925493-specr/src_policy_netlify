@@ -2948,12 +2948,38 @@
 }
 
 .meta-verified .mv-hc-violation-entry {
+  align-items: flex-start;
   border-bottom: 1px solid var(--mv-border-light);
+  display: flex;
+  gap: 0.875rem;
   padding: 1rem 0 1.125rem;
 }
 
 .meta-verified .mv-hc-violation-entry:first-child {
   border-top: 1px solid var(--mv-border-light);
+}
+
+.meta-verified .mv-hc-violation-icon {
+  align-items: center;
+  background: #e7f3ff;
+  border-radius: 10px;
+  color: var(--mv-meta-primary);
+  display: inline-flex;
+  flex-shrink: 0;
+  height: 2.5rem;
+  justify-content: center;
+  margin-top: 0.125rem;
+  width: 2.5rem;
+}
+
+.meta-verified .mv-hc-violation-icon svg {
+  display: block;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.meta-verified .mv-hc-violation-copy {
+  min-width: 0;
 }
 
 .meta-verified .mv-hc-violation-term {

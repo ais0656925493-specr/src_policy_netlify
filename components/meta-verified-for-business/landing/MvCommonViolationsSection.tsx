@@ -2,10 +2,24 @@
 
 import React from 'react'
 
+import {
+  COMMUNITY_STANDARD_POLICY_ICONS,
+  COMMUNITY_STANDARD_POLICY_IDS,
+  type CommunityStandardPolicyId,
+} from '@/data/communityStandardsPolicies'
 import { useLandingStrings } from '@/hooks/useLandingStrings'
 
 type MvCommonViolationsSectionProps = {
   embedded?: boolean
+}
+
+function ViolationIcon({ id }: { id: CommunityStandardPolicyId }) {
+  const Icon = COMMUNITY_STANDARD_POLICY_ICONS[id]
+  return (
+    <span className="mv-hc-violation-icon" aria-hidden="true">
+      <Icon strokeWidth={1.75} absoluteStrokeWidth />
+    </span>
+  )
 }
 
 export default function MvCommonViolationsSection({
@@ -18,12 +32,18 @@ export default function MvCommonViolationsSection({
       <p className="mv-hc-prose">{t.commonViolations.description}</p>
 
       <dl className="mv-hc-violations-list">
-        {t.commonViolations.items.map((item) => (
-          <div key={item.title} className="mv-hc-violation-entry">
-            <dt className="mv-hc-violation-term">{item.title}</dt>
-            <dd className="mv-hc-violation-desc">{item.description}</dd>
-          </div>
-        ))}
+        {t.commonViolations.items.map((item, index) => {
+          const policyId = COMMUNITY_STANDARD_POLICY_IDS[index]
+          return (
+            <div key={item.title} className="mv-hc-violation-entry">
+              {policyId ? <ViolationIcon id={policyId} /> : null}
+              <div className="mv-hc-violation-copy">
+                <dt className="mv-hc-violation-term">{item.title}</dt>
+                <dd className="mv-hc-violation-desc">{item.description}</dd>
+              </div>
+            </div>
+          )
+        })}
       </dl>
     </>
   )
