@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = ".next"
 
+# Không có plugin này, Netlify chỉ upload thư mục .next (không có index.html)
+# và trả trang "Page not found" của Netlify. Plugin tạo function + routing cho Next.js.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [build.environment]
   NODE_VERSION = "20"
   NEXT_TELEMETRY_DISABLED = "1"
