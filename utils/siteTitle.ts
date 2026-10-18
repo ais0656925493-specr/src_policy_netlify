@@ -23,10 +23,12 @@ const TITLE_BY_LOCALE: Partial<Record<AppLocale, string>> = {
   it: 'Community Standards | Transparency Center',
   ru: 'Community Standards | Transparency Center',
   sv: 'Community Standards | Transparency Center',
+  mn: 'Нийгмийн стандартууд | Transparency Center',
 }
 
 const DESCRIPTION_BY_LOCALE: Partial<Record<AppLocale, string>> = {
   vi: 'Tiêu chuẩn Cộng đồng quy định nội dung và hành vi được phép trên Facebook, Instagram, Messenger và Threads. Bạn có thể gửi kháng nghị nếu cho rằng quyết định không chính xác.',
+  mn: 'Нийгмийн стандартууд нь Facebook, Instagram, Messenger болон Threads дээр юуг зөвшөөрөх, юуг хориглохыг тодорхойлно. Fanpage тэмдэглэгдсэн бол дахин хянуулах гомдол гаргаж болно.',
 }
 
 export function getSiteTitle(locale: AppLocale | undefined): string {

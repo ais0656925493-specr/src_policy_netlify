@@ -33,6 +33,7 @@ import { fi } from './locales/fi'
 import { bg } from './locales/bg'
 import { hr } from './locales/hr'
 import { sk } from './locales/sk'
+import { mn } from './locales/mn'
 
 export type { AppLocale, AppStrings } from './schema'
 export { APP_LOCALES, LOCALE_BCP47 } from './schema'
@@ -73,6 +74,7 @@ const MESSAGES: Record<AppLocale, AppStrings> = {
   bg,
   hr,
   sk,
+  mn,
 }
 
 export function getStrings(locale: AppLocale): AppStrings {

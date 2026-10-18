@@ -34,6 +34,7 @@ import { fiLanding } from './fi'
 import { bgLanding } from './bg'
 import { hrLanding } from './hr'
 import { skLanding } from './sk'
+import { mnLanding } from './mn'
 
 const MESSAGES: Record<AppLocale, LandingStrings> = {
   en: enLanding,
@@ -70,6 +71,7 @@ const MESSAGES: Record<AppLocale, LandingStrings> = {
   bg: bgLanding,
   hr: hrLanding,
   sk: skLanding,
+  mn: mnLanding,
 }
 
 export type { LandingStrings } from './types'

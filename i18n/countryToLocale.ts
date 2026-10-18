@@ -155,10 +155,12 @@ const COUNTRY_DEFAULT: Record<string, AppLocale> = {
   TJ: 'ru',
   UZ: 'ru',
   TM: 'ru',
-  MN: 'ru',
   LV: 'en',
   EE: 'en',
   LT: 'en',
+
+  // —— Tiếng Mông Cổ ——
+  MN: 'mn',
 
   // —— Tiếng Thụy Điển ——
   SE: 'sv',

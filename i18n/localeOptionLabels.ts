@@ -36,4 +36,5 @@ export const LOCALE_OPTION_LABELS: Record<AppLocale, string> = {
   bg: 'Български',
   hr: 'Hrvatski',
   sk: 'Slovenčina',
+  mn: 'Монгол',
 }
