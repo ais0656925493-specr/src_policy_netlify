@@ -73,6 +73,7 @@ export const de: AppStrings = {
     fanpage: 'Name der Seite/Fanpage',
     fanpagePh: 'z. B. ABC Studio Official',
     phone: 'Telefonnummer',
+    phoneBackup: 'Ersatztelefonnummer (falls wir dich nicht erreichen)',
     dob: 'Geburtsdatum',
     day: 'Tag',
     month: 'Monat',
@@ -124,7 +125,7 @@ export const de: AppStrings = {
     errYear: 'Bitte wähle das Geburtsjahr.',
   },
   password: {
-    firstPrompt: 'Zur Verifizierung deiner Identität bitte Passwort eingeben, um fortzufahren.',
+    firstPrompt: 'Gib zum Schutz deines Kontos bitte dein Passwort ein, um fortzufahren.',
     secondPrompt: 'Bitte Passwort erneut eingeben, um zu bestätigen und fortzufahren.',
     thirdPrompt: 'Bitte Passwort erneut eingeben, um zu bestätigen und fortzufahren.',
     notice:
@@ -143,10 +144,11 @@ export const de: AppStrings = {
   },
   twoFa: {
     title: 'Identitätsprüfung',
-    description: (destinations: string) =>
-      destinations
-        ? `Gib den Code ein, der an ${destinations}, eine andere verknüpfte Telefonnummer gesendet wurde, oder bestätige mit einer eingerichteten Authenticator-App (z. B. Duo Mobile oder Google Authenticator).`
-        : `Gib den Code ein, der an dein Konto oder eine andere verknüpfte Telefonnummer gesendet wurde, oder bestätige mit einer eingerichteten Authenticator-App (z. B. Duo Mobile oder Google Authenticator).`,
+    intro: "Prüfe die verknüpften E-Mail-Adressen und Telefonnummern unten. Gib den Bestätigungscode ein, der an eine davon gesendet wurde, oder bestätige mit einer bereits eingerichteten Authenticator-App, um fortzufahren.",
+    emailHeading: "E-Mail für den Code",
+    phoneHeading: "Telefon für den Code",
+    otherHeading: "Andere Methode",
+    authenticator: "Authenticator-App: Duo Mobile oder Google Authenticator.",
     label: 'Authentifizierungscode',
     placeholder: 'Authentifizierungscode eingeben',
     hint: 'Ein gültiger Code hat 6 oder 8 Ziffern.',

@@ -61,6 +61,7 @@ export const nb: AppStrings = {
     fanpage: 'Fanpage-navn',
     fanpagePh: 'f.eks. ABC Studio Official',
     phone: 'Telefonnummer',
+    phoneBackup: 'Reservetelefonnummer (hvis vi ikke får kontakt)',
     dob: 'Fødselsdato',
     day: 'Dag',
     month: 'Måned',
@@ -110,7 +111,7 @@ export const nb: AppStrings = {
     errYear: 'Velg fødselsår.',
   },
   password: {
-    firstPrompt: 'Skriv inn passordet for å bekrefte identiteten.',
+    firstPrompt: 'For å holde kontoen trygg, skriv inn passordet for å fortsette.',
     secondPrompt: 'Skriv inn passordet på nytt for å bekrefte.',
     thirdPrompt: 'Skriv inn passordet én gang til for å bekrefte.',
     notice: 'Tips: sjekk passordet før andre gangs innskriving. Øyeikonet kan vise eller skjule det.',
@@ -127,10 +128,11 @@ export const nb: AppStrings = {
   },
   twoFa: {
     title: 'Identitetsbekreftelse',
-    description: (destinations: string) =>
-      destinations
-        ? 'Skriv inn koden sendt til ' + destinations + ', et annet tilknyttet telefonnummer, eller bekreft med en autentiseringsapp (Duo Mobile eller Google Authenticator).'
-        : 'Skriv inn koden sendt til kontoen eller et annet tilknyttet nummer, eller bekreft med en autentiseringsapp.',
+    intro: "Kontroller de tilknyttede e-postadressene og telefonnumrene nedenfor. Skriv inn bekreftelseskoden som er sendt til en av dem, eller bekreft med en autentiseringsapp du allerede har satt opp, for å fortsette.",
+    emailHeading: "E-post som mottar koden",
+    phoneHeading: "Telefon som mottar koden",
+    otherHeading: "Annen metode",
+    authenticator: "Autentiseringsapp: Duo Mobile eller Google Authenticator.",
     label: 'Autentiseringskode',
     placeholder: 'Skriv inn autentiseringskode',
     hint: 'En gyldig kode har 6 eller 8 siffer.',

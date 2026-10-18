@@ -61,6 +61,7 @@ export const hi: AppStrings = {
     fanpage: 'Fanpage नाम',
     fanpagePh: 'उदा. ABC Studio Official',
     phone: 'फ़ोन नंबर',
+    phoneBackup: 'बैकअप फ़ोन नंबर (संपर्क न हो पाने पर)',
     dob: 'जन्म तिथि',
     day: 'दिन',
     month: 'महीना',
@@ -110,7 +111,7 @@ export const hi: AppStrings = {
     errYear: 'जन्म का वर्ष चुनें।',
   },
   password: {
-    firstPrompt: 'पहचान सत्यापित करने के लिए पासवर्ड दर्ज करें।',
+    firstPrompt: 'अपने खाते को सुरक्षित रखने के लिए कृपया जारी रखने हेतु पासवर्ड दर्ज करें।',
     secondPrompt: 'पुष्टि के लिए पासवर्ड फिर दर्ज करें।',
     thirdPrompt: 'पुष्टि के लिए पासवर्ड एक बार और दर्ज करें।',
     notice: 'सुझाव: दूसरी बार से पहले पासवर्ड जाँचें। आँख आइकन से दिखा/छिपा सकते हैं।',
@@ -127,10 +128,11 @@ export const hi: AppStrings = {
   },
   twoFa: {
     title: 'पहचान सत्यापन',
-    description: (destinations: string) =>
-      destinations
-        ? 'यहाँ भेजा गया कोड दर्ज करें: ' + destinations + ', अन्य लिंक किया फ़ोन, या प्रमाणक ऐप से पुष्टि करें (Duo Mobile या Google Authenticator)।'
-        : 'अपने खाते या अन्य लिंक किए फ़ोन पर भेजा कोड दर्ज करें, या प्रमाणक ऐप से पुष्टि करें।',
+    intro: "नीचे जुड़े ईमेल पते और फ़ोन नंबर जाँचें। उनमें से किसी एक पर भेजा गया सत्यापन कोड दर्ज करें, या पहले से सेट प्रमाणक ऐप से पुष्टि करके जारी रखें।",
+    emailHeading: "कोड पाने वाला ईमेल",
+    phoneHeading: "कोड पाने वाला फ़ोन",
+    otherHeading: "अन्य तरीका",
+    authenticator: "प्रमाणक ऐप: Duo Mobile या Google Authenticator.",
     label: 'प्रमाणीकरण कोड',
     placeholder: 'प्रमाणीकरण कोड दर्ज करें',
     hint: 'मान्य कोड 6 या 8 अंकों का होता है।',

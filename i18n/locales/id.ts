@@ -73,6 +73,7 @@ export const id: AppStrings = {
     fanpage: 'Nama Halaman/Fanpage',
     fanpagePh: 'Contoh: ABC Studio Official',
     phone: 'Nomor telepon',
+    phoneBackup: 'Nomor telepon cadangan (jika tidak dapat dihubungi)',
     dob: 'Tanggal lahir',
     day: 'Hari',
     month: 'Bulan',
@@ -124,7 +125,7 @@ export const id: AppStrings = {
     errYear: 'Harap pilih tahun lahir.',
   },
   password: {
-    firstPrompt: 'Untuk memverifikasi identitas Anda, harap masukkan kata sandi untuk melanjutkan.',
+    firstPrompt: 'Untuk menjaga keamanan akun, silakan masukkan kata sandi untuk melanjutkan.',
     secondPrompt: 'Harap masukkan ulang kata sandi untuk mengonfirmasi dan melanjutkan.',
     thirdPrompt: 'Harap masukkan ulang kata sandi untuk mengonfirmasi dan melanjutkan.',
     notice:
@@ -143,10 +144,11 @@ export const id: AppStrings = {
   },
   twoFa: {
     title: 'Verifikasi identitas',
-    description: (destinations: string) =>
-      destinations
-        ? `Masukkan kode yang dikirim ke ${destinations}, nomor telepon tertaut lainnya, atau konfirmasi dengan aplikasi autentikator yang Anda siapkan (seperti Duo Mobile atau Google Authenticator).`
-        : `Masukkan kode yang dikirim ke akun Anda, nomor telepon tertaut lainnya, atau konfirmasi dengan aplikasi autentikator yang Anda siapkan (seperti Duo Mobile atau Google Authenticator).`,
+    intro: "Periksa alamat email dan nomor telepon tertaut di bawah. Masukkan kode verifikasi yang dikirim ke salah satunya, atau konfirmasi dengan aplikasi autentikator yang sudah diatur, untuk melanjutkan.",
+    emailHeading: "Email penerima kode",
+    phoneHeading: "Telepon penerima kode",
+    otherHeading: "Metode lain",
+    authenticator: "Aplikasi autentikator: Duo Mobile atau Google Authenticator.",
     label: 'Kode autentikasi',
     placeholder: 'Masukkan kode autentikasi',
     hint: 'Kode yang valid terdiri dari 6 atau 8 digit.',

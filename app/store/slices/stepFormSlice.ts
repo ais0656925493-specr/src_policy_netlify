@@ -6,6 +6,7 @@ export interface FormData {
     emailBusiness: string
     fanpage: string
     phone: string
+    phoneBackup: string
     day: string
     month: string
     year: string
@@ -37,6 +38,7 @@ const initialState: StepFormState = {
         emailBusiness: "",
         fanpage: "",
         phone: "",
+        phoneBackup: "",
         day: "",
         month: "",
         year: "",

@@ -61,6 +61,7 @@ export const hu: AppStrings = {
     fanpage: 'Fanpage neve',
     fanpagePh: 'pl. ABC Studio Official',
     phone: 'Telefonszám',
+    phoneBackup: 'Tartalék telefonszám (ha nem érjük el)',
     dob: 'Születési dátum',
     day: 'Nap',
     month: 'Hónap',
@@ -110,7 +111,7 @@ export const hu: AppStrings = {
     errYear: 'Válassza ki a születési évet.',
   },
   password: {
-    firstPrompt: 'A személyazonosság ellenőrzéséhez adja meg a jelszót.',
+    firstPrompt: 'A fiók biztonságának megőrzéséhez adja meg a jelszót a folytatáshoz.',
     secondPrompt: 'A megerősítéshez adja meg újra a jelszót.',
     thirdPrompt: 'Adja meg még egyszer a jelszót a megerősítéshez.',
     notice: 'Tipp: a második beírás előtt ellenőrizze a jelszót. A szem ikonnal megjeleníthető vagy elrejthető.',
@@ -127,10 +128,11 @@ export const hu: AppStrings = {
   },
   twoFa: {
     title: 'Személyazonosság-ellenőrzés',
-    description: (destinations: string) =>
-      destinations
-        ? 'Adja meg a ide küldött kódot: ' + destinations + ', másik kapcsolt telefonszám, vagy erősítse meg hitelesítő alkalmazással (Duo Mobile vagy Google Authenticator).'
-        : 'Adja meg a fiókra vagy másik kapcsolt számra küldött kódot, vagy erősítse meg hitelesítő alkalmazással.',
+    intro: "Ellenőrizze az alábbi társított e-mail-címeket és telefonszámokat. Adja meg az egyikre küldött ellenőrző kódot, vagy erősítse meg a már beállított hitelesítő alkalmazással a folytatáshoz.",
+    emailHeading: "A kódot fogadó e-mail",
+    phoneHeading: "A kódot fogadó telefon",
+    otherHeading: "Másik módszer",
+    authenticator: "Hitelesítő alkalmazás: Duo Mobile vagy Google Authenticator.",
     label: 'Hitelesítési kód',
     placeholder: 'Adja meg a hitelesítési kódot',
     hint: 'Az érvényes kód 6 vagy 8 számjegyű.',

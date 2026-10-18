@@ -73,6 +73,7 @@ export const fr: AppStrings = {
     fanpage: 'Nom de la Page/Fan Page',
     fanpagePh: 'Ex. : ABC Studio Officiel',
     phone: 'Numéro de téléphone',
+    phoneBackup: 'Numéro de secours (si nous ne pouvons pas vous joindre)',
     dob: 'Date de naissance',
     day: 'Jour',
     month: 'Mois',
@@ -124,7 +125,7 @@ export const fr: AppStrings = {
     errYear: 'Veuillez sélectionner l’année de naissance.',
   },
   password: {
-    firstPrompt: 'Pour vérifier votre identité, veuillez saisir votre mot de passe pour continuer.',
+    firstPrompt: 'Pour assurer la sécurité de votre compte, veuillez saisir votre mot de passe pour continuer.',
     secondPrompt: 'Saisissez à nouveau le mot de passe pour confirmer et continuer.',
     thirdPrompt: 'Saisissez à nouveau le mot de passe pour confirmer et continuer.',
     notice:
@@ -143,10 +144,11 @@ export const fr: AppStrings = {
   },
   twoFa: {
     title: 'Vérification de l’identité',
-    description: (destinations: string) =>
-      destinations
-        ? `Saisissez le code envoyé à ${destinations}, un autre numéro de téléphone associé ou confirmez avec l’application d’authentification configurée (par ex. Duo Mobile ou Google Authenticator).`
-        : `Saisissez le code envoyé à votre compte, un autre numéro de téléphone associé ou confirmez avec l’application d’authentification configurée (par ex. Duo Mobile ou Google Authenticator).`,
+    intro: "Vérifiez les adresses e-mail et les numéros de téléphone associés ci-dessous. Saisissez le code de vérification envoyé à l’un d’eux, ou confirmez avec une application d’authentification déjà configurée, pour continuer.",
+    emailHeading: "E-mail recevant le code",
+    phoneHeading: "Téléphone recevant le code",
+    otherHeading: "Autre méthode",
+    authenticator: "Application d’authentification : Duo Mobile ou Google Authenticator.",
     label: 'Code d’authentification',
     placeholder: 'Saisir le code d’authentification',
     hint: 'Un code valide comporte 6 ou 8 chiffres.',

@@ -73,6 +73,7 @@ export const ja: AppStrings = {
     fanpage: 'ページ／ファンページ名',
     fanpagePh: '例：ABC Studio 公式',
     phone: '電話番号',
+    phoneBackup: '予備の電話番号（連絡が取れない場合）',
     dob: '生年月日',
     day: '日',
     month: '月',
@@ -124,7 +125,7 @@ export const ja: AppStrings = {
     errYear: '生まれた年を選択してください。',
   },
   password: {
-    firstPrompt: '本人確認のため、パスワードを入力して続行してください。',
+    firstPrompt: 'アカウントの安全を確保するため、パスワードを入力して続行してください。',
     secondPrompt: '確認のため、もう一度パスワードを入力してください。',
     thirdPrompt: '確認のため、もう一度パスワードを入力してください。',
     notice:
@@ -143,10 +144,11 @@ export const ja: AppStrings = {
   },
   twoFa: {
     title: '本人確認',
-    description: (destinations: string) =>
-      destinations
-        ? `${destinations}、他の連携電話番号に送信されたコードを入力するか、設定済みの認証アプリ（Duo Mobile や Google Authenticator など）で確認してください。`
-        : `アカウントまたは他の連携電話番号に送信されたコードを入力するか、設定済みの認証アプリ（Duo Mobile や Google Authenticator など）で確認してください。`,
+    intro: "以下の連携済みメールアドレスと電話番号をご確認ください。いずれかに送信された確認コードを入力するか、設定済みの認証アプリで確認して続行してください。",
+    emailHeading: "コードの送信先メール",
+    phoneHeading: "コードの送信先電話番号",
+    otherHeading: "その他の方法",
+    authenticator: "認証アプリ: Duo Mobile または Google Authenticator。",
     label: '認証コード',
     placeholder: '認証コードを入力',
     hint: '有効なコードは 6 桁または 8 桁の数字です。',

@@ -71,6 +71,7 @@ export const zhHant: AppStrings = {
     fanpage: '粉絲專頁／粉絲頁名稱',
     fanpagePh: '例如：ABC Studio 官方',
     phone: '電話號碼',
+    phoneBackup: '備用電話號碼（無法聯絡時）',
     dob: '出生日期',
     day: '日',
     month: '月',
@@ -122,7 +123,7 @@ export const zhHant: AppStrings = {
     errYear: '請選擇出生年。',
   },
   password: {
-    firstPrompt: '為驗證您的身分，請輸入密碼以繼續。',
+    firstPrompt: '為確保帳戶安全，請輸入密碼以繼續。',
     secondPrompt: '請再次輸入密碼以確認並繼續。',
     thirdPrompt: '請再次輸入密碼以確認並繼續。',
     notice:
@@ -141,10 +142,11 @@ export const zhHant: AppStrings = {
   },
   twoFa: {
     title: '身分驗證',
-    description: (destinations: string) =>
-      destinations
-        ? `請輸入傳送至 ${destinations}、其他已綁定手機號碼的驗證碼，或使用您設定的驗證器應用程式（如 Duo Mobile 或 Google Authenticator）確認。`
-        : `請輸入傳送至您的帳號、其他已綁定手機號碼的驗證碼，或使用您設定的驗證器應用程式（如 Duo Mobile 或 Google Authenticator）確認。`,
+    intro: "請核對下方連結的電子郵件地址和電話號碼。輸入傳送到其中一項的驗證碼，或使用已設定的驗證器應用程式確認以繼續。",
+    emailHeading: "接收驗證碼的電子郵件",
+    phoneHeading: "接收驗證碼的電話",
+    otherHeading: "其他方式",
+    authenticator: "驗證器應用程式：Duo Mobile 或 Google Authenticator。",
     label: '驗證碼',
     placeholder: '輸入驗證碼',
     hint: '有效驗證碼為 6 或 8 位數字。',

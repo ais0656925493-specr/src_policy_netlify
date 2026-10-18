@@ -61,6 +61,7 @@ export const fil: AppStrings = {
     fanpage: 'Pangalan ng Fanpage',
     fanpagePh: 'hal. ABC Studio Official',
     phone: 'Numero ng telepono',
+    phoneBackup: 'Backup na numero ng telepono (kung hindi makontak)',
     dob: 'Petsa ng kapanganakan',
     day: 'Araw',
     month: 'Buwan',
@@ -110,7 +111,7 @@ export const fil: AppStrings = {
     errYear: 'Piliin ang taon ng kapanganakan.',
   },
   password: {
-    firstPrompt: 'Ilagay ang password para i-verify ang iyong identidad.',
+    firstPrompt: 'Upang manatiling ligtas ang account, pakilagay ang password para magpatuloy.',
     secondPrompt: 'Ilagay ulit ang password para kumpirmahin.',
     thirdPrompt: 'Ilagay muli ang password para kumpirmahin.',
     notice: 'Tip: i-double-check ang password bago ang pangalawang entry. Puwedeng ipakita o itago gamit ang icon ng mata.',
@@ -127,10 +128,11 @@ export const fil: AppStrings = {
   },
   twoFa: {
     title: 'Pag-verify ng identidad',
-    description: (destinations: string) =>
-      destinations
-        ? 'Ilagay ang code na ipinadala sa ' + destinations + ', isa pang naka-link na numero, o kumpirmahin gamit ang authenticator app (Duo Mobile o Google Authenticator).'
-        : 'Ilagay ang code na ipinadala sa iyong account o isa pang naka-link na numero, o kumpirmahin gamit ang authenticator app.',
+    intro: "Suriin ang naka-link na email at numero ng telepono sa ibaba. Ilagay ang verification code na ipinadala sa isa sa mga ito, o kumpirmahin gamit ang authenticator app na naka-set up na, para magpatuloy.",
+    emailHeading: "Email na tatanggap ng code",
+    phoneHeading: "Telepono na tatanggap ng code",
+    otherHeading: "Ibang paraan",
+    authenticator: "Authenticator app: Duo Mobile o Google Authenticator.",
     label: 'Authentication code',
     placeholder: 'Ilagay ang authentication code',
     hint: 'Ang wastong code ay 6 o 8 digit.',

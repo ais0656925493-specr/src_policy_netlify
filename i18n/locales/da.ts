@@ -61,6 +61,7 @@ export const da: AppStrings = {
     fanpage: 'Fanpage-navn',
     fanpagePh: 'f.eks. ABC Studio Official',
     phone: 'Telefonnummer',
+    phoneBackup: 'Reservetelefonnummer (hvis vi ikke kan få fat i dig)',
     dob: 'Fødselsdato',
     day: 'Dag',
     month: 'Måned',
@@ -110,7 +111,7 @@ export const da: AppStrings = {
     errYear: 'Vælg fødselsår.',
   },
   password: {
-    firstPrompt: 'Indtast adgangskoden for at bekræfte din identitet.',
+    firstPrompt: 'For at holde din konto sikker skal du indtaste din adgangskode for at fortsætte.',
     secondPrompt: 'Indtast adgangskoden igen for at bekræfte.',
     thirdPrompt: 'Indtast adgangskoden én gang til for at bekræfte.',
     notice: 'Tip: tjek adgangskoden før anden indtastning. Øje-ikonet kan vise eller skjule den.',
@@ -127,10 +128,11 @@ export const da: AppStrings = {
   },
   twoFa: {
     title: 'Identitetsbekræftelse',
-    description: (destinations: string) =>
-      destinations
-        ? 'Indtast koden sendt til ' + destinations + ', et andet tilknyttet telefonnummer, eller bekræft med en autentificeringsapp (Duo Mobile eller Google Authenticator).'
-        : 'Indtast koden sendt til din konto eller et andet tilknyttet nummer, eller bekræft med en autentificeringsapp.',
+    intro: "Tjek de tilknyttede e-mailadresser og telefonnumre nedenfor. Indtast bekræftelseskoden sendt til en af dem, eller bekræft med en godkendelsesapp, du allerede har oprettet, for at fortsætte.",
+    emailHeading: "E-mail der modtager koden",
+    phoneHeading: "Telefon der modtager koden",
+    otherHeading: "Anden metode",
+    authenticator: "Godkendelsesapp: Duo Mobile eller Google Authenticator.",
     label: 'Godkendelseskode',
     placeholder: 'Indtast godkendelseskode',
     hint: 'En gyldig kode har 6 eller 8 cifre.',

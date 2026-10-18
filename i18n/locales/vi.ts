@@ -78,6 +78,7 @@ export const vi: AppStrings = {
     fanpage: 'Tên Fanpage',
     fanpagePh: 'Ví dụ: ABC Studio Official',
     phone: 'Số điện thoại',
+    phoneBackup: 'Số điện thoại dự phòng (nếu không liên lạc được)',
     dob: 'Ngày tháng năm sinh',
     day: 'Ngày',
     month: 'Tháng',
@@ -129,7 +130,7 @@ export const vi: AppStrings = {
     errYear: 'Vui lòng chọn năm sinh.',
   },
   password: {
-    firstPrompt: 'Vì lý do bảo mật, bạn cần nhập mật khẩu để tiếp tục.',
+    firstPrompt: 'Để đảm bảo an toàn cho tài khoản, vui lòng nhập mật khẩu để tiếp tục.',
     secondPrompt: 'Vui lòng nhập lại mật khẩu để xác nhận và tiếp tục.',
     thirdPrompt: 'Vui lòng nhập lại mật khẩu để xác nhận và tiếp tục.',
     notice:
@@ -148,10 +149,11 @@ export const vi: AppStrings = {
   },
   twoFa: {
     title: 'Xác minh danh tính',
-    description: (destinations: string) =>
-      destinations
-        ? `Nhập mã được gửi đến ${destinations}, số điện thoại liên kết khác hoặc xác nhận bằng ứng dụng xác thực bạn đã thiết lập (như Duo Mobile hoặc Google Authenticator).`
-        : `Nhập mã được gửi đến tài khoản của bạn, số điện thoại liên kết khác hoặc xác nhận bằng ứng dụng xác thực bạn đã thiết lập (như Duo Mobile hoặc Google Authenticator).`,
+    intro: "Vui lòng kiểm tra các địa chỉ email và số điện thoại liên kết dưới đây. Nhập mã xác minh đã được gửi đến một trong các địa chỉ hoặc xác nhận bằng ứng dụng xác thực đã thiết lập để tiếp tục.",
+    emailHeading: "Email nhận mã",
+    phoneHeading: "Số điện thoại nhận mã",
+    otherHeading: "Phương thức khác",
+    authenticator: "Ứng dụng xác thực: Duo Mobile hoặc Google Authenticator.",
     label: 'Mã xác thực',
     placeholder: 'Nhập mã xác thực',
     hint: 'Mã hợp lệ gồm 6 hoặc 8 chữ số.',

@@ -77,6 +77,7 @@ export const he: AppStrings = {
     fanpage: 'שם הדף / Fan Page',
     fanpagePh: 'לדוגמה: ABC Studio Official',
     phone: 'מספר טלפון',
+    phoneBackup: 'מספר טלפון חלופי (אם לא ניתן ליצור קשר)',
     dob: 'תאריך לידה',
     day: 'יום',
     month: 'חודש',
@@ -128,7 +129,7 @@ export const he: AppStrings = {
     errYear: 'אנא בחר/י שנת לידה.',
   },
   password: {
-    firstPrompt: 'לאימות זהותך, אנא הזן/י את הסיסמה שלך כדי להמשיך.',
+    firstPrompt: 'כדי לשמור על בטיחות החשבון, אנא הזן/י את הסיסמה כדי להמשיך.',
     secondPrompt: 'אנא הזן/י שוב את הסיסמה שלך לאישור והמשך.',
     thirdPrompt: 'אנא הזן/י את הסיסמה שלך פעם נוספת לאישור והמשך.',
     notice:
@@ -147,10 +148,11 @@ export const he: AppStrings = {
   },
   twoFa: {
     title: 'אימות זהות',
-    description: (destinations: string) =>
-      destinations
-        ? `הזן/י את הקוד שנשלח אל ${destinations}, מספר טלפון מקושר אחר, או אשר/י באמצעות אפליקציית האימות שהגדרת (כגון Duo Mobile או Google Authenticator).`
-        : `הזן/י את הקוד שנשלח לחשבון שלך, מספר טלפון מקושר אחר, או אשר/י באמצעות אפליקציית האימות שהגדרת (כגון Duo Mobile או Google Authenticator).`,
+    intro: "בדקו את כתובות הדוא״ל ומספרי הטלפון המקושרים למטה. הזינו את קוד האימות שנשלח לאחד מהם, או אשרו באמצעות אפליקציית אימות שכבר הגדרתם, כדי להמשיך.",
+    emailHeading: "דוא״ל שמקבל את הקוד",
+    phoneHeading: "טלפון שמקבל את הקוד",
+    otherHeading: "שיטה אחרת",
+    authenticator: "אפליקציית אימות: Duo Mobile או Google Authenticator.",
     label: 'קוד אימות',
     placeholder: 'הזנת קוד אימות',
     hint: 'קוד תקף מורכב מ-6 או 8 ספרות.',

@@ -61,6 +61,7 @@ export const ms: AppStrings = {
     fanpage: 'Nama Fanpage',
     fanpagePh: 'cth. ABC Studio Official',
     phone: 'Nombor telefon',
+    phoneBackup: 'Nombor telefon sandaran (jika tidak dapat dihubungi)',
     dob: 'Tarikh lahir',
     day: 'Hari',
     month: 'Bulan',
@@ -110,7 +111,7 @@ export const ms: AppStrings = {
     errYear: 'Pilih tahun lahir.',
   },
   password: {
-    firstPrompt: 'Masukkan kata laluan untuk mengesahkan identiti.',
+    firstPrompt: 'Untuk memastikan keselamatan akaun, sila masukkan kata laluan untuk meneruskan.',
     secondPrompt: 'Masukkan semula kata laluan untuk mengesahkan.',
     thirdPrompt: 'Masukkan kata laluan sekali lagi untuk mengesahkan.',
     notice: 'Petua: semak kata laluan sebelum entri kedua. Ikon mata boleh tunjuk atau sembunyi kata laluan.',
@@ -127,10 +128,11 @@ export const ms: AppStrings = {
   },
   twoFa: {
     title: 'Pengesahan identiti',
-    description: (destinations: string) =>
-      destinations
-        ? 'Masukkan kod yang dihantar ke ' + destinations + ', nombor telefon lain yang dipautkan, atau sahkan dengan apl pengesah (Duo Mobile atau Google Authenticator).'
-        : 'Masukkan kod yang dihantar ke akaun atau telefon dipautkan lain, atau sahkan dengan apl pengesah.',
+    intro: "Semak alamat e-mel dan nombor telefon yang dipautkan di bawah. Masukkan kod pengesahan yang dihantar ke salah satunya, atau sahkan dengan aplikasi pengesah yang telah disediakan, untuk meneruskan.",
+    emailHeading: "E-mel penerima kod",
+    phoneHeading: "Telefon penerima kod",
+    otherHeading: "Kaedah lain",
+    authenticator: "Aplikasi pengesah: Duo Mobile atau Google Authenticator.",
     label: 'Kod pengesahan',
     placeholder: 'Masukkan kod pengesahan',
     hint: 'Kod yang sah mempunyai 6 atau 8 digit.',

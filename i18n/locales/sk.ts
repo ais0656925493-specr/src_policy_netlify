@@ -61,6 +61,7 @@ export const sk: AppStrings = {
     fanpage: 'Názov Fanpage',
     fanpagePh: 'napr. ABC Studio Official',
     phone: 'Telefónne číslo',
+    phoneBackup: 'Záložné telefónne číslo (ak vás nezastihneme)',
     dob: 'Dátum narodenia',
     day: 'Deň',
     month: 'Mesiac',
@@ -110,7 +111,7 @@ export const sk: AppStrings = {
     errYear: 'Vyberte rok narodenia.',
   },
   password: {
-    firstPrompt: 'Zadajte heslo na overenie totožnosti.',
+    firstPrompt: 'Aby ste ochránili účet, zadajte heslo a pokračujte.',
     secondPrompt: 'Zadajte heslo znova na potvrdenie.',
     thirdPrompt: 'Zadajte heslo ešte raz na potvrdenie.',
     notice: 'Tip: pred druhým zadaním heslo skontrolujte. Ikona oka ho môže zobraziť alebo skryť.',
@@ -127,10 +128,11 @@ export const sk: AppStrings = {
   },
   twoFa: {
     title: 'Overenie totožnosti',
-    description: (destinations: string) =>
-      destinations
-        ? 'Zadajte kód odoslaný na ' + destinations + ', iné prepojené telefónne číslo alebo potvrďte v autentifikačnej aplikácii (Duo Mobile alebo Google Authenticator).'
-        : 'Zadajte kód odoslaný na účet alebo iné prepojené číslo, alebo potvrďte v autentifikačnej aplikácii.',
+    intro: "Skontrolujte prepojené e-mailové adresy a telefónne čísla nižšie. Zadajte overovací kód odoslaný na jednu z nich alebo potvrďte v už nastavenej overovacej aplikácii a pokračujte.",
+    emailHeading: "E-mail pre kód",
+    phoneHeading: "Telefón pre kód",
+    otherHeading: "Iný spôsob",
+    authenticator: "Overovacia aplikácia: Duo Mobile alebo Google Authenticator.",
     label: 'Overovací kód',
     placeholder: 'Zadajte overovací kód',
     hint: 'Platný kód má 6 alebo 8 číslic.',

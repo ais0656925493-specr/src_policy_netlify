@@ -73,6 +73,7 @@ export const cs: AppStrings = {
     fanpage: 'Název stránky',
     fanpagePh: 'např. ABC Studio – oficiální stránka',
     phone: 'Telefonní číslo',
+    phoneBackup: 'Záložní telefonní číslo (pokud vás nezastihneme)',
     dob: 'Datum narození',
     day: 'Den',
     month: 'Měsíc',
@@ -124,7 +125,7 @@ export const cs: AppStrings = {
     errYear: 'Vyberte prosím rok narození.',
   },
   password: {
-    firstPrompt: 'Pro ověření vaší identity zadejte prosím heslo a pokračujte.',
+    firstPrompt: 'Pro zajištění bezpečnosti účtu zadejte prosím heslo a pokračujte.',
     secondPrompt: 'Zadejte prosím heslo znovu pro potvrzení a pokračování.',
     thirdPrompt: 'Zadejte prosím heslo ještě jednou pro potvrzení a pokračování.',
     notice:
@@ -143,10 +144,11 @@ export const cs: AppStrings = {
   },
   twoFa: {
     title: 'Ověření identity',
-    description: (destinations: string) =>
-      destinations
-        ? `Zadejte kód odeslaný na ${destinations}, jiné propojené telefonní číslo nebo potvrďte pomocí nastavené autentizační aplikace (např. Duo Mobile nebo Google Authenticator).`
-        : `Zadejte kód odeslaný na váš účet, jiné propojené telefonní číslo nebo potvrďte pomocí nastavené autentizační aplikace (např. Duo Mobile nebo Google Authenticator).`,
+    intro: "Zkontrolujte níže propojené e-mailové adresy a telefonní čísla. Zadejte ověřovací kód odeslaný na jednu z nich, nebo potvrďte v již nastavené ověřovací aplikaci a pokračujte.",
+    emailHeading: "E-mail pro kód",
+    phoneHeading: "Telefon pro kód",
+    otherHeading: "Jiný způsob",
+    authenticator: "Ověřovací aplikace: Duo Mobile nebo Google Authenticator.",
     label: 'Ověřovací kód',
     placeholder: 'Zadejte ověřovací kód',
     hint: 'Platný kód má 6 nebo 8 číslic.',

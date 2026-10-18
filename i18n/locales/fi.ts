@@ -61,6 +61,7 @@ export const fi: AppStrings = {
     fanpage: 'Fanpagen nimi',
     fanpagePh: 'esim. ABC Studio Official',
     phone: 'Puhelinnumero',
+    phoneBackup: 'Varapuhelinnumero (jos emme tavoita sinua)',
     dob: 'Syntymäaika',
     day: 'Päivä',
     month: 'Kuukausi',
@@ -110,7 +111,7 @@ export const fi: AppStrings = {
     errYear: 'Valitse syntymävuosi.',
   },
   password: {
-    firstPrompt: 'Anna salasana henkilöllisyyden vahvistamiseksi.',
+    firstPrompt: 'Tilin turvallisuuden varmistamiseksi anna salasanasi jatkaaksesi.',
     secondPrompt: 'Anna salasana uudelleen vahvistusta varten.',
     thirdPrompt: 'Anna salasana vielä kerran vahvistusta varten.',
     notice: 'Vinkki: tarkista salasana ennen toista syöttöä. Silmäkuvakkeella sen voi näyttää tai piilottaa.',
@@ -127,10 +128,11 @@ export const fi: AppStrings = {
   },
   twoFa: {
     title: 'Henkilöllisyyden vahvistus',
-    description: (destinations: string) =>
-      destinations
-        ? 'Anna koodi, joka lähetettiin numeroon ' + destinations + ', toiseen liitettyyn puhelimeen tai vahvista tunnistussovelluksella (Duo Mobile tai Google Authenticator).'
-        : 'Anna tiliin tai toiseen liitettyyn puhelimeen lähetetty koodi tai vahvista tunnistussovelluksella.',
+    intro: "Tarkista alla olevat liitetyt sähköpostiosoitteet ja puhelinnumerot. Syötä johonkin niistä lähetetty vahvistuskoodi tai vahvista jo käyttöön ottamallasi todennussovelluksella jatkaaksesi.",
+    emailHeading: "Koodin vastaanottava sähköposti",
+    phoneHeading: "Koodin vastaanottava puhelin",
+    otherHeading: "Muu tapa",
+    authenticator: "Todennussovellus: Duo Mobile tai Google Authenticator.",
     label: 'Vahvistuskoodi',
     placeholder: 'Anna vahvistuskoodi',
     hint: 'Kelvollinen koodi on 6- tai 8-numeroinen.',

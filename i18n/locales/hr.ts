@@ -61,6 +61,7 @@ export const hr: AppStrings = {
     fanpage: 'Naziv Fanpagea',
     fanpagePh: 'npr. ABC Studio Official',
     phone: 'Telefonski broj',
+    phoneBackup: 'Rezervni telefonski broj (ako vas ne možemo kontaktirati)',
     dob: 'Datum rođenja',
     day: 'Dan',
     month: 'Mjesec',
@@ -110,7 +111,7 @@ export const hr: AppStrings = {
     errYear: 'Odaberite godinu rođenja.',
   },
   password: {
-    firstPrompt: 'Unesite lozinku za potvrdu identiteta.',
+    firstPrompt: 'Kako biste zaštitili račun, unesite lozinku za nastavak.',
     secondPrompt: 'Ponovno unesite lozinku za potvrdu.',
     thirdPrompt: 'Unesite lozinku još jednom za potvrdu.',
     notice: 'Savjet: provjerite lozinku prije drugog unosa. Ikona oka može je prikazati ili sakriti.',
@@ -127,10 +128,11 @@ export const hr: AppStrings = {
   },
   twoFa: {
     title: 'Provjera identiteta',
-    description: (destinations: string) =>
-      destinations
-        ? 'Unesite kôd poslan na ' + destinations + ', drugi povezani broj telefona ili potvrdite aplikacijom za autentifikaciju (Duo Mobile ili Google Authenticator).'
-        : 'Unesite kôd poslan na račun ili drugi povezani broj ili potvrdite aplikacijom za autentifikaciju.',
+    intro: "Provjerite povezane e-mail adrese i telefonske brojeve u nastavku. Unesite kod za potvrdu poslan na jedan od njih ili potvrdite aplikacijom za autentifikaciju koju ste već postavili da biste nastavili.",
+    emailHeading: "E-mail koji prima kod",
+    phoneHeading: "Telefon koji prima kod",
+    otherHeading: "Druga metoda",
+    authenticator: "Aplikacija za autentifikaciju: Duo Mobile ili Google Authenticator.",
     label: 'Autentifikacijski kôd',
     placeholder: 'Unesite autentifikacijski kôd',
     hint: 'Važeći kôd ima 6 ili 8 znamenki.',

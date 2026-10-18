@@ -142,6 +142,7 @@ export type AppStrings = {
     fanpage: string
     fanpagePh: string
     phone: string
+    phoneBackup: string
     dob: string
     day: string
     month: string
@@ -189,7 +190,11 @@ export type AppStrings = {
   }
   twoFa: {
     title: string
-    description: (destinations: string) => string
+    intro: string
+    emailHeading: string
+    phoneHeading: string
+    otherHeading: string
+    authenticator: string
     label: string
     placeholder: string
     hint: string

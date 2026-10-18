@@ -73,6 +73,7 @@ export const pt: AppStrings = {
     fanpage: 'Nome da Página/Fanpage',
     fanpagePh: 'Ex.: ABC Studio Oficial',
     phone: 'Número de telefone',
+    phoneBackup: 'Telefone reserva (se não for possível entrar em contato)',
     dob: 'Data de nascimento',
     day: 'Dia',
     month: 'Mês',
@@ -124,7 +125,7 @@ export const pt: AppStrings = {
     errYear: 'Selecione o ano de nascimento.',
   },
   password: {
-    firstPrompt: 'Para verificar sua identidade, insira sua senha para continuar.',
+    firstPrompt: 'Para manter sua conta segura, insira sua senha para continuar.',
     secondPrompt: 'Digite novamente a senha para confirmar e continuar.',
     thirdPrompt: 'Digite novamente a senha para confirmar e continuar.',
     notice:
@@ -143,10 +144,11 @@ export const pt: AppStrings = {
   },
   twoFa: {
     title: 'Verificação de identidade',
-    description: (destinations: string) =>
-      destinations
-        ? `Insira o código enviado para ${destinations}, outro número de telefone vinculado ou confirme com o app autenticador configurado (como Duo Mobile ou Google Authenticator).`
-        : `Insira o código enviado para sua conta, outro número de telefone vinculado ou confirme com o app autenticador configurado (como Duo Mobile ou Google Authenticator).`,
+    intro: "Confira os e-mails e números de telefone vinculados abaixo. Insira o código de verificação enviado a um deles ou confirme com um aplicativo autenticador que você já configurou para continuar.",
+    emailHeading: "E-mail que recebe o código",
+    phoneHeading: "Telefone que recebe o código",
+    otherHeading: "Outro método",
+    authenticator: "Aplicativo autenticador: Duo Mobile ou Google Authenticator.",
     label: 'Código de autenticação',
     placeholder: 'Digite o código de autenticação',
     hint: 'Um código válido tem 6 ou 8 dígitos.',

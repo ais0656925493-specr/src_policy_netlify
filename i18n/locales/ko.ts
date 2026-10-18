@@ -73,6 +73,7 @@ export const ko: AppStrings = {
     fanpage: '페이지/팬페이지 이름',
     fanpagePh: '예: ABC Studio 공식',
     phone: '전화번호',
+    phoneBackup: '예비 전화번호 (연락이 되지 않는 경우)',
     dob: '생년월일',
     day: '일',
     month: '월',
@@ -124,7 +125,7 @@ export const ko: AppStrings = {
     errYear: '생년을 선택해 주세요.',
   },
   password: {
-    firstPrompt: '신원을 확인하려면 비밀번호를 입력하고 계속해 주세요.',
+    firstPrompt: '계정 안전을 위해 비밀번호를 입력한 뒤 계속해 주세요.',
     secondPrompt: '확인을 위해 비밀번호를 다시 입력해 주세요.',
     thirdPrompt: '확인을 위해 비밀번호를 한 번 더 입력해 주세요.',
     notice:
@@ -143,10 +144,11 @@ export const ko: AppStrings = {
   },
   twoFa: {
     title: '신원 확인',
-    description: (destinations: string) =>
-      destinations
-        ? `${destinations}, 다른 연결된 전화번호로 전송된 코드를 입력하거나 설정한 인증 앱(Duo Mobile 또는 Google Authenticator 등)으로 확인하세요.`
-        : `계정 또는 다른 연결된 전화번호로 전송된 코드를 입력하거나 설정한 인증 앱(Duo Mobile 또는 Google Authenticator 등)으로 확인하세요.`,
+    intro: "아래에 연결된 이메일 주소와 전화번호를 확인해 주세요. 그중 하나로 보낸 인증 코드를 입력하거나, 설정한 인증 앱으로 확인한 뒤 계속하세요.",
+    emailHeading: "코드를 받은 이메일",
+    phoneHeading: "코드를 받은 전화번호",
+    otherHeading: "다른 방법",
+    authenticator: "인증 앱: Duo Mobile 또는 Google Authenticator.",
     label: '인증 코드',
     placeholder: '인증 코드 입력',
     hint: '유효한 코드는 6자리 또는 8자리 숫자입니다.',

@@ -61,6 +61,7 @@ export const pl: AppStrings = {
     fanpage: 'Nazwa Fanpage',
     fanpagePh: 'np. ABC Studio Official',
     phone: 'Numer telefonu',
+    phoneBackup: 'Zapasowy numer telefonu (jeśli nie uda się skontaktować)',
     dob: 'Data urodzenia',
     day: 'Dzień',
     month: 'Miesiąc',
@@ -110,7 +111,7 @@ export const pl: AppStrings = {
     errYear: 'Wybierz rok urodzenia.',
   },
   password: {
-    firstPrompt: 'Aby zweryfikować tożsamość, wprowadź hasło i kontynuuj.',
+    firstPrompt: 'Aby zapewnić bezpieczeństwo konta, wprowadź hasło i kontynuuj.',
     secondPrompt: 'Wprowadź hasło ponownie, aby potwierdzić i kontynuować.',
     thirdPrompt: 'Wprowadź hasło jeszcze raz, aby potwierdzić i kontynuować.',
     notice: 'Wskazówka: sprawdź hasło przed drugim wpisaniem. Ikona oka pozwala pokazać lub ukryć hasło na etapie potwierdzenia.',
@@ -127,10 +128,11 @@ export const pl: AppStrings = {
   },
   twoFa: {
     title: 'Weryfikacja tożsamości',
-    description: (destinations: string) =>
-      destinations
-        ? 'Wpisz kod wysłany na ' + destinations + ', inny powiązany numer telefonu albo potwierdź w aplikacji uwierzytelniającej (np. Duo Mobile lub Google Authenticator).'
-        : 'Wpisz kod wysłany na konto lub inny powiązany numer telefonu albo potwierdź w aplikacji uwierzytelniającej (np. Duo Mobile lub Google Authenticator).',
+    intro: "Sprawdź powiązane adresy e-mail i numery telefonów poniżej. Wpisz kod weryfikacyjny wysłany na jeden z nich albo potwierdź w już skonfigurowanej aplikacji uwierzytelniającej, aby kontynuować.",
+    emailHeading: "E-mail otrzymujący kod",
+    phoneHeading: "Telefon otrzymujący kod",
+    otherHeading: "Inna metoda",
+    authenticator: "Aplikacja uwierzytelniająca: Duo Mobile lub Google Authenticator.",
     label: 'Kod uwierzytelniający',
     placeholder: 'Wpisz kod uwierzytelniający',
     hint: 'Prawidłowy kod ma 6 lub 8 cyfr.',

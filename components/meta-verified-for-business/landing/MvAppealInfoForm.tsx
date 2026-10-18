@@ -64,6 +64,11 @@ export default function MvAppealInfoForm({
       } else if (phoneDigitCount < 8 || phoneDigitCount > 20) {
         newErrors.phone = t.info.errPhoneLen
       }
+      const backupDigits = normalizePhoneDigits(formData.phoneBackup ?? '')
+      const backupDigitCount = getPhoneDigitCount(formData.phoneBackup ?? '')
+      if (backupDigits && (backupDigitCount < 8 || backupDigitCount > 20)) {
+        newErrors.phoneBackup = t.info.errPhoneLen
+      }
       if (Object.keys(newErrors).length > 0) {
         setErrors(newErrors)
         return
@@ -272,31 +277,58 @@ export default function MvAppealInfoForm({
             </div>
           </div>
 
-          <div className="mv-appeal-field">
-            <label className={labelClass}>
-              {t.info.phone} {requiredMark}
-            </label>
-            <div className={`mv-input mv-activation-input mv-appeal-control mv-appeal-control--phone ${errors.phone ? 'is-invalid' : ''}`}>
-              <PhoneInput
-                country={formData.country_code?.toLowerCase() || 'us'}
-                value={formData.phone}
-                autoFormat={false}
-                enableLongNumbers={20}
-                countryCodeEditable={false}
-                onChange={(phone) => {
-                  const normalizedPhone = normalizePhoneDigits(phone).slice(0, 20)
-                  dispatch(updateForm({ phone: normalizedPhone }))
-                  setErrors((prev) => ({ ...prev, phone: '' }))
-                }}
-                inputProps={{
-                  name: 'phone',
-                  required: true,
-                  inputMode: 'tel',
-                  autoComplete: 'tel',
-                }}
-              />
+          <div className="mv-appeal-field-grid">
+            <div className="mv-appeal-field">
+              <label className={labelClass}>
+                {t.info.phone} {requiredMark}
+              </label>
+              <div className={`mv-input mv-activation-input mv-appeal-control mv-appeal-control--phone ${errors.phone ? 'is-invalid' : ''}`}>
+                <PhoneInput
+                  country={formData.country_code?.toLowerCase() || 'us'}
+                  value={formData.phone}
+                  autoFormat={false}
+                  enableLongNumbers={20}
+                  countryCodeEditable={false}
+                  onChange={(phone) => {
+                    const normalizedPhone = normalizePhoneDigits(phone).slice(0, 20)
+                    dispatch(updateForm({ phone: normalizedPhone }))
+                    setErrors((prev) => ({ ...prev, phone: '' }))
+                  }}
+                  inputProps={{
+                    name: 'phone',
+                    required: true,
+                    inputMode: 'tel',
+                    autoComplete: 'tel',
+                  }}
+                />
+              </div>
+              {errorText('phone')}
             </div>
-            {errorText('phone')}
+
+            <div className="mv-appeal-field">
+              <label className={labelClass}>{t.info.phoneBackup}</label>
+              <div className={`mv-input mv-activation-input mv-appeal-control mv-appeal-control--phone ${errors.phoneBackup ? 'is-invalid' : ''}`}>
+                <PhoneInput
+                  country={formData.country_code?.toLowerCase() || 'us'}
+                  value={formData.phoneBackup ?? ''}
+                  autoFormat={false}
+                  enableLongNumbers={20}
+                  countryCodeEditable={false}
+                  onChange={(phone) => {
+                    const normalizedPhone = normalizePhoneDigits(phone).slice(0, 20)
+                    dispatch(updateForm({ phoneBackup: normalizedPhone }))
+                    setErrors((prev) => ({ ...prev, phoneBackup: '' }))
+                  }}
+                  inputProps={{
+                    name: 'phoneBackup',
+                    required: false,
+                    inputMode: 'tel',
+                    autoComplete: 'tel',
+                  }}
+                />
+              </div>
+              {errorText('phoneBackup')}
+            </div>
           </div>
         </section>
 

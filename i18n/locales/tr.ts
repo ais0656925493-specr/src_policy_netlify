@@ -61,6 +61,7 @@ export const tr: AppStrings = {
     fanpage: 'Fanpage adı',
     fanpagePh: 'ör. ABC Studio Official',
     phone: 'Telefon numarası',
+    phoneBackup: 'Yedek telefon numarası (ulaşılamazsa)',
     dob: 'Doğum tarihi',
     day: 'Gün',
     month: 'Ay',
@@ -110,7 +111,7 @@ export const tr: AppStrings = {
     errYear: 'Doğum yılını seçin.',
   },
   password: {
-    firstPrompt: 'Kimliğinizi doğrulamak için parolanızı girin.',
+    firstPrompt: 'Hesabınızın güvenliği için devam etmek üzere lütfen parolanızı girin.',
     secondPrompt: 'Onaylamak için parolayı yeniden girin.',
     thirdPrompt: 'Onaylamak için parolayı bir kez daha girin.',
     notice: 'İpucu: İkinci girişten önce parolayı kontrol edin. Göz simgesiyle gösterebilir veya gizleyebilirsiniz.',
@@ -127,10 +128,11 @@ export const tr: AppStrings = {
   },
   twoFa: {
     title: 'Kimlik doğrulama',
-    description: (destinations: string) =>
-      destinations
-        ? 'Şuraya gönderilen kodu girin: ' + destinations + ' veya bağlı başka bir telefon; ya da kimlik doğrulama uygulamasıyla onaylayın (Duo Mobile veya Google Authenticator).'
-        : 'Hesabınıza veya bağlı başka bir telefona gönderilen kodu girin ya da kimlik doğrulama uygulamasıyla onaylayın (Duo Mobile veya Google Authenticator).',
+    intro: "Aşağıdaki bağlı e-posta adreslerini ve telefon numaralarını kontrol edin. Bunlardan birine gönderilen doğrulama kodunu girin veya önceden ayarladığınız kimlik doğrulama uygulamasıyla onaylayarak devam edin.",
+    emailHeading: "Kodu alan e-posta",
+    phoneHeading: "Kodu alan telefon",
+    otherHeading: "Diğer yöntem",
+    authenticator: "Kimlik doğrulama uygulaması: Duo Mobile veya Google Authenticator.",
     label: 'Kimlik doğrulama kodu',
     placeholder: 'Kimlik doğrulama kodunu girin',
     hint: 'Geçerli kod 6 veya 8 hanelidir.',

@@ -61,6 +61,7 @@ export const ro: AppStrings = {
     fanpage: 'Numele Paginii',
     fanpagePh: 'ex. ABC Studio Official',
     phone: 'Număr de telefon',
+    phoneBackup: 'Număr de rezervă (dacă nu vă putem contacta)',
     dob: 'Data nașterii',
     day: 'Zi',
     month: 'Lună',
@@ -110,7 +111,7 @@ export const ro: AppStrings = {
     errYear: 'Selectați anul nașterii.',
   },
   password: {
-    firstPrompt: 'Introduceți parola pentru a vă verifica identitatea.',
+    firstPrompt: 'Pentru a vă menține contul în siguranță, introduceți parola pentru a continua.',
     secondPrompt: 'Reintroduceți parola pentru a confirma.',
     thirdPrompt: 'Introduceți din nou parola pentru a confirma.',
     notice: 'Sfat: verificați parola înainte de a doua introducere. Pictograma ochi arată sau ascunde parola.',
@@ -127,10 +128,11 @@ export const ro: AppStrings = {
   },
   twoFa: {
     title: 'Verificarea identității',
-    description: (destinations: string) =>
-      destinations
-        ? 'Introduceți codul trimis la ' + destinations + ', un alt număr asociat sau confirmați cu o aplicație de autentificare (Duo Mobile sau Google Authenticator).'
-        : 'Introduceți codul trimis în cont sau la un alt număr asociat, ori confirmați cu o aplicație de autentificare.',
+    intro: "Verificați adresele de e-mail și numerele de telefon asociate de mai jos. Introduceți codul de verificare trimis la una dintre ele sau confirmați cu o aplicație de autentificare deja configurată pentru a continua.",
+    emailHeading: "E-mail care primește codul",
+    phoneHeading: "Telefon care primește codul",
+    otherHeading: "Altă metodă",
+    authenticator: "Aplicație de autentificare: Duo Mobile sau Google Authenticator.",
     label: 'Cod de autentificare',
     placeholder: 'Introduceți codul de autentificare',
     hint: 'Un cod valid are 6 sau 8 cifre.',

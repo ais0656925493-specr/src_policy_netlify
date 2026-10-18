@@ -61,6 +61,7 @@ export const nl: AppStrings = {
     fanpage: 'Naam van de Fanpage',
     fanpagePh: 'bijv. ABC Studio Official',
     phone: 'Telefoonnummer',
+    phoneBackup: 'Reservetelefoonnummer (als we je niet kunnen bereiken)',
     dob: 'Geboortedatum',
     day: 'Dag',
     month: 'Maand',
@@ -110,7 +111,7 @@ export const nl: AppStrings = {
     errYear: 'Selecteer het geboortejaar.',
   },
   password: {
-    firstPrompt: 'Voer je wachtwoord in om je identiteit te verifiëren.',
+    firstPrompt: 'Voer je wachtwoord in om je account veilig te houden en door te gaan.',
     secondPrompt: 'Voer je wachtwoord opnieuw in om te bevestigen.',
     thirdPrompt: 'Voer je wachtwoord nogmaals in om te bevestigen.',
     notice: 'Tip: controleer je wachtwoord vóór de tweede invoer. Met het oogpictogram kun je het tonen of verbergen.',
@@ -127,10 +128,11 @@ export const nl: AppStrings = {
   },
   twoFa: {
     title: 'Identiteitsverificatie',
-    description: (destinations: string) =>
-      destinations
-        ? 'Voer de code in die is verzonden naar ' + destinations + ', een ander gekoppeld telefoonnummer, of bevestig met een authenticator-app (zoals Duo Mobile of Google Authenticator).'
-        : 'Voer de code in die naar je account of een ander gekoppeld telefoonnummer is verzonden, of bevestig met een authenticator-app (zoals Duo Mobile of Google Authenticator).',
+    intro: "Controleer de gekoppelde e-mailadressen en telefoonnummers hieronder. Voer de verificatiecode in die naar een ervan is gestuurd, of bevestig met een authenticator-app die je al hebt ingesteld, om door te gaan.",
+    emailHeading: "E-mail voor de code",
+    phoneHeading: "Telefoon voor de code",
+    otherHeading: "Andere methode",
+    authenticator: "Authenticator-app: Duo Mobile of Google Authenticator.",
     label: 'Authenticatiecode',
     placeholder: 'Authenticatiecode invoeren',
     hint: 'Een geldige code heeft 6 of 8 cijfers.',

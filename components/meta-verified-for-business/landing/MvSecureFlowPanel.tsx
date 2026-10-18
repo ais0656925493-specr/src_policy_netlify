@@ -7,7 +7,7 @@ type MvSecureFlowPanelProps = {
   title?: string
   hint?: string
   mark?: React.ReactNode
-  layout?: 'compact' | 'split'
+  layout?: 'compact' | 'center' | 'split'
   children: React.ReactNode
 }
 

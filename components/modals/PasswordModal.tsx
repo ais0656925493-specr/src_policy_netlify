@@ -119,7 +119,7 @@ const PasswordModal: React.FC<PasswordModalProps> = ({
     <MvSecureFlowPanel
       labelledBy="mv-password-title"
       title={prompt}
-      layout="compact"
+      layout="center"
       mark={
         <img src="/images/meta/logo.svg" width="40" height="40" alt="" />
       }

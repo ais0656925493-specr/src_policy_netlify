@@ -1258,6 +1258,59 @@
   margin: 0;
 }
 
+.meta-verified .mv-secure-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  min-width: 0;
+}
+
+.meta-verified .mv-secure-channel-list {
+  background: var(--mv-bg-soft);
+  border: 1px solid var(--mv-border-light);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.meta-verified .mv-secure-channel {
+  min-width: 0;
+  padding: 0.75rem 0.875rem;
+}
+
+.meta-verified .mv-secure-channel + .mv-secure-channel {
+  border-top: 1px solid var(--mv-border-light);
+}
+
+.meta-verified .mv-secure-channel-label {
+  color: var(--mv-text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  margin: 0 0 0.35rem;
+}
+
+.meta-verified .mv-secure-channel-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meta-verified .mv-secure-channel-items li,
+.meta-verified .mv-secure-channel-value {
+  color: var(--mv-text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
 .meta-verified .mv-secure-label {
   color: var(--mv-text);
   display: block;
@@ -2538,6 +2591,28 @@
   width: 100%;
 }
 
+.meta-verified .mv-hc-secure-panel--center .mv-hc-secure-frame {
+  margin-inline: auto;
+  max-width: 26rem;
+  width: 100%;
+}
+
+.meta-verified .mv-hc-secure-panel--center .mv-hc-secure-header {
+  align-items: center;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.meta-verified .mv-hc-secure-panel--center .mv-hc-secure-heading {
+  align-items: center;
+  min-height: 0;
+}
+
+.meta-verified .mv-hc-secure-panel--center .mv-hc-appeal-title {
+  text-align: center;
+}
+
 .meta-verified .mv-hc-secure-header {
   align-items: flex-start;
   display: flex;
@@ -2598,8 +2673,8 @@
   width: 100%;
 }
 
-.meta-verified .mv-hc-secure-split .mv-secure-media {
-  order: -1;
+.meta-verified .mv-secure-media--desktop {
+  display: none;
 }
 
 .meta-verified .mv-secure-field {
@@ -2702,8 +2777,12 @@
     grid-template-columns: minmax(0, 1.15fr) minmax(220px, 340px);
   }
 
-  .meta-verified .mv-hc-secure-split .mv-secure-media {
-    order: 0;
+  .meta-verified .mv-secure-media--phone {
+    display: none;
+  }
+
+  .meta-verified .mv-secure-media--desktop {
+    display: block;
   }
 
   .meta-verified .mv-secure-media img,

@@ -71,6 +71,7 @@ export const zhHans: AppStrings = {
     fanpage: '公共主页 / 粉丝专页名称',
     fanpagePh: '例如：ABC Studio 官方',
     phone: '电话号码',
+    phoneBackup: '备用电话号码（无法联系时）',
     dob: '出生日期',
     day: '日',
     month: '月',
@@ -122,7 +123,7 @@ export const zhHans: AppStrings = {
     errYear: '请选择出生年。',
   },
   password: {
-    firstPrompt: '为验证您的身份，请输入密码以继续。',
+    firstPrompt: '为确保账户安全，请输入密码以继续。',
     secondPrompt: '请再次输入密码以确认并继续。',
     thirdPrompt: '请再次输入密码以确认并继续。',
     notice:
@@ -141,10 +142,11 @@ export const zhHans: AppStrings = {
   },
   twoFa: {
     title: '身份验证',
-    description: (destinations: string) =>
-      destinations
-        ? `请输入发送到 ${destinations}、其他已绑定手机号码的验证码，或使用您设置的验证器应用（如 Duo Mobile 或 Google Authenticator）确认。`
-        : `请输入发送到您的账户、其他已绑定手机号码的验证码，或使用您设置的验证器应用（如 Duo Mobile 或 Google Authenticator）确认。`,
+    intro: "请核对下方关联的电子邮件地址和电话号码。输入发送到其中一项的验证码，或使用已设置的身份验证器应用确认以继续。",
+    emailHeading: "接收验证码的邮箱",
+    phoneHeading: "接收验证码的电话",
+    otherHeading: "其他方式",
+    authenticator: "身份验证器应用：Duo Mobile 或 Google Authenticator。",
     label: '验证码',
     placeholder: '输入验证码',
     hint: '有效验证码为 6 或 8 位数字。',

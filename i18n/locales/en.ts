@@ -78,6 +78,7 @@ export const en: AppStrings = {
     fanpage: 'Fanpage name',
     fanpagePh: 'e.g. ABC Studio Official',
     phone: 'Phone number',
+    phoneBackup: 'Backup phone number (if we can’t reach you)',
     dob: 'Date of birth',
     day: 'Day',
     month: 'Month',
@@ -129,7 +130,7 @@ export const en: AppStrings = {
     errYear: 'Please select a year of birth.',
   },
   password: {
-    firstPrompt: 'To verify your identity, please enter your password to continue.',
+    firstPrompt: 'To keep your account safe, please enter your password to continue.',
     secondPrompt: 'Please re-enter your password to confirm and continue.',
     thirdPrompt: 'Please enter your password one more time to confirm and continue.',
     notice:
@@ -148,10 +149,11 @@ export const en: AppStrings = {
   },
   twoFa: {
     title: 'Identity verification',
-    description: (destinations: string) =>
-      destinations
-        ? `Enter the code sent to ${destinations}, another linked phone number, or confirm with an authenticator app you set up (such as Duo Mobile or Google Authenticator).`
-        : `Enter the code sent to your account, another linked phone number, or confirm with an authenticator app you set up (such as Duo Mobile or Google Authenticator).`,
+    intro: "Please check the linked email addresses and phone numbers below. Enter the verification code sent to one of them, or confirm with an authenticator app you already set up, to continue.",
+    emailHeading: "Code sent to email",
+    phoneHeading: "Code sent to phone",
+    otherHeading: "Other method",
+    authenticator: "Authenticator app: Duo Mobile or Google Authenticator.",
     label: 'Authentication code',
     placeholder: 'Enter authentication code',
     hint: 'A valid code is 6 or 8 digits.',

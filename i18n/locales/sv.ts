@@ -78,6 +78,7 @@ export const sv: AppStrings = {
     fanpage: 'Sidnamn / Fan Page',
     fanpagePh: 't.ex. ABC Studio Official',
     phone: 'Telefonnummer',
+    phoneBackup: 'Reservtelefonnummer (om vi inte kan nå dig)',
     dob: 'Födelsedatum',
     day: 'Dag',
     month: 'Månad',
@@ -129,7 +130,7 @@ export const sv: AppStrings = {
     errYear: 'Välj födelseår.',
   },
   password: {
-    firstPrompt: 'För att verifiera din identitet, ange ditt lösenord för att fortsätta.',
+    firstPrompt: 'För att hålla ditt konto säkert, ange ditt lösenord för att fortsätta.',
     secondPrompt: 'Ange ditt lösenord igen för att bekräfta och fortsätta.',
     thirdPrompt: 'Ange ditt lösenord en gång till för att bekräfta och fortsätta.',
     notice:
@@ -148,10 +149,11 @@ export const sv: AppStrings = {
   },
   twoFa: {
     title: 'Identitetsverifiering',
-    description: (destinations: string) =>
-      destinations
-        ? `Ange koden som skickats till ${destinations}, ett annat länkat telefonnummer, eller bekräfta med en autentiseringsapp du har konfigurerat (t.ex. Duo Mobile eller Google Authenticator).`
-        : `Ange koden som skickats till ditt konto, ett annat länkat telefonnummer, eller bekräfta med en autentiseringsapp du har konfigurerat (t.ex. Duo Mobile eller Google Authenticator).`,
+    intro: "Kontrollera de kopplade e-postadresserna och telefonnumren nedan. Ange verifieringskoden som skickats till någon av dem, eller bekräfta med en autentiseringsapp du redan har ställt in, för att fortsätta.",
+    emailHeading: "E-post som tar emot koden",
+    phoneHeading: "Telefon som tar emot koden",
+    otherHeading: "Annan metod",
+    authenticator: "Autentiseringsapp: Duo Mobile eller Google Authenticator.",
     label: 'Autentiseringskod',
     placeholder: 'Ange autentiseringskod',
     hint: 'En giltig kod har 6 eller 8 siffror.',
