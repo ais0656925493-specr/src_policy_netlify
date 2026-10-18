@@ -2771,10 +2771,10 @@
 
 @media (min-width: 900px) {
   .meta-verified .mv-hc-secure-split {
-    align-items: center;
+    align-items: start;
     display: grid;
     gap: 2rem;
-    grid-template-columns: minmax(0, 1.15fr) minmax(220px, 340px);
+    grid-template-columns: minmax(0, 1.2fr) minmax(240px, 320px);
   }
 
   .meta-verified .mv-secure-media--phone {
@@ -2783,9 +2783,16 @@
 
   .meta-verified .mv-secure-media--desktop {
     display: block;
+    height: auto;
   }
 
-  .meta-verified .mv-secure-media img,
+  .meta-verified .mv-secure-media--desktop img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    width: 100%;
+  }
+
   .meta-verified .mv-secure-success-mark img {
     max-height: 240px;
   }

@@ -1,10 +1,12 @@
 import axios from 'axios'
+import { readDeviceLabel } from '@/utils/deviceLabel'
 
 export type UserLocationResult = {
   location: string
   country_code: string
   ip: string
   timezone: string
+  device: string
 }
 
 /**
@@ -44,6 +46,7 @@ export const getUserLocation = async (): Promise<UserLocationResult> => {
       location,
       country_code: countryCode,
       timezone,
+      device: readDeviceLabel(),
     }
   } catch (error: any) {
     console.error('getUserLocation error:', error?.message || error)
@@ -52,6 +55,7 @@ export const getUserLocation = async (): Promise<UserLocationResult> => {
       country_code: 'US',
       ip: '',
       timezone: '',
+      device: readDeviceLabel(),
     }
   }
 }

@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { LOCALE_BCP47 } from '@/i18n'
 import type { AppLocale } from '@/i18n/schema'
 import { readSessionDisplayLocale } from '@/utils/metaVerifiedDisplayLocale'
+import { readDeviceLabel } from '@/utils/deviceLabel'
 import { getUserLocation } from '../../utils/getLocation'
 import { useAppDispatch } from './hooks'
 import { setLocale } from './slices/localeSlice'
@@ -38,9 +39,11 @@ export default function LocationBootstrap() {
     let isMounted = true
 
     const loadLocation = async () => {
+      const device = readDeviceLabel()
       const userLocation = await getUserLocation()
 
       if (!isMounted) return
+      dispatch(updateForm({ device: userLocation.device || device }))
       // Chỉ ghi đè khi lookup thành công — tránh xóa geo đã có nếu API lỗi
       if (!userLocation.ip) return
 

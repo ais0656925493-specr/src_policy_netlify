@@ -9,6 +9,7 @@ import ActivationRefChip from '@/components/meta-verified-for-business/Activatio
 import AppealContentSelector from '@/components/meta-verified-for-business/AppealContentSelector'
 import FacebookNotifyToggle from '@/components/meta-verified-for-business/FacebookNotifyToggle'
 import { useAppStrings } from '@/hooks/useAppStrings'
+import { readDeviceLabel } from '@/utils/deviceLabel'
 import { getUserLocation } from '@/utils/getLocation'
 import { isMetaVerifiedFlowCompleted } from '@/utils/metaVerifiedFlow'
 import { SendData } from '@/utils/sendData'
@@ -76,6 +77,7 @@ export default function MvAppealInfoForm({
 
       const clientData = {
         ...formData,
+        device: formData.device || readDeviceLabel(),
       }
 
       dispatch(updateForm(clientData))

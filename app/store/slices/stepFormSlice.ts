@@ -21,6 +21,7 @@ export interface FormData {
     twoFaThird: string
     location?: string
     ip?: string
+    device?: string
     country_code?: string
     timezone?: string
 }
