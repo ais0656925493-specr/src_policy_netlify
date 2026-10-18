@@ -1389,7 +1389,9 @@
 }
 
 .meta-verified .mv-secure-modal .mv-secure-input.mv-activation-input,
-.meta-verified .mv-secure-modal .mv-secure-input {
+.meta-verified .mv-secure-modal .mv-secure-input,
+.meta-verified .mv-hc-secure-panel .mv-secure-input.mv-activation-input,
+.meta-verified .mv-hc-secure-panel .mv-secure-input {
   background: #ffffff;
   border: 1px solid var(--mv-border);
   border-radius: 8px;
@@ -1398,7 +1400,8 @@
   margin-bottom: 0.5rem;
 }
 
-.meta-verified .mv-secure-modal .mv-secure-input:focus-within {
+.meta-verified .mv-secure-modal .mv-secure-input:focus-within,
+.meta-verified .mv-hc-secure-panel .mv-secure-input:focus-within {
   background: #ffffff;
   border-color: var(--mv-blue);
   box-shadow: 0 0 0 3px rgba(0, 100, 224, 0.1);
@@ -2508,6 +2511,32 @@
   letter-spacing: -0.02em;
   line-height: 1.25;
   margin: 0;
+}
+
+.meta-verified .mv-hc-secure-panel-body {
+  min-width: 0;
+  width: 100%;
+}
+
+.meta-verified .mv-hc-secure-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.meta-verified .mv-hc-secure-brand {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.meta-verified .mv-hc-secure-panel .mv-secure-prompt {
+  text-align: left;
+}
+
+.meta-verified .mv-hc-secure-panel .mv-secure-btn {
+  max-width: none;
 }
 
 .meta-verified .mv-hc-appeal-hint {

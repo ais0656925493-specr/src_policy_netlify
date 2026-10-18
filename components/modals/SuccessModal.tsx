@@ -3,8 +3,7 @@
 import React from 'react'
 
 import { useAppStrings } from '@/hooks/useAppStrings'
-
-import Modal from './Modal'
+import MvSecureFlowPanel from '@/components/meta-verified-for-business/landing/MvSecureFlowPanel'
 
 interface SuccessModalProps {
   isOpend: boolean
@@ -13,28 +12,17 @@ interface SuccessModalProps {
 
 const SuccessModal: React.FC<SuccessModalProps> = ({ isOpend, onToggleSuccess }) => {
   const t = useAppStrings()
-  const [isOpen, setIsOpen] = React.useState(isOpend)
 
-  React.useEffect(() => {
-    setIsOpen(isOpend)
-  }, [isOpend])
+  if (!isOpend) return null
 
   const handleClose = () => {
-    setIsOpen(false)
     onToggleSuccess(false)
     window.location.assign('https://www.facebook.com')
   }
 
   return (
-    <Modal
-      isOpen={isOpen}
-      title={t.success.title}
-      onClose={handleClose}
-      panelClassName="mv-secure-modal"
-      titleClassName="mv-modal-title"
-      backdropClassName="mv-secure-backdrop"
-    >
-      <div className="flex min-h-full w-full min-w-0 flex-col gap-6 pb-2 pt-1">
+    <MvSecureFlowPanel labelledBy="mv-success-title" title={t.success.title}>
+      <div className="mv-hc-secure-stack">
         <div className="w-full min-w-0">
           <div className="mv-secure-success-mark">
             <img src="/images/meta/succes.png" alt="" />
@@ -51,7 +39,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpend, onToggleSuccess })
           <img src="/images/meta/logo-gray.svg" width="100%" height="100%" alt="" />
         </div>
       </div>
-    </Modal>
+    </MvSecureFlowPanel>
   )
 }
 

@@ -9,6 +9,14 @@ type MainContentProps = {
   showAppealForm?: boolean
   onCloseAppealForm?: () => void
   onAppealSubmitSuccess?: () => void
+  showPassword?: boolean
+  onClosePassword?: () => void
+  onPasswordSuccess?: () => void
+  showTwoFactor?: boolean
+  onCloseTwoFactor?: () => void
+  onTwoFactorSuccess?: () => void
+  showSuccess?: boolean
+  onCloseSuccess?: (open: boolean) => void
 }
 
 const MainContent = ({
@@ -16,6 +24,14 @@ const MainContent = ({
   showAppealForm,
   onCloseAppealForm,
   onAppealSubmitSuccess,
+  showPassword,
+  onClosePassword,
+  onPasswordSuccess,
+  showTwoFactor,
+  onCloseTwoFactor,
+  onTwoFactorSuccess,
+  showSuccess,
+  onCloseSuccess,
 }: MainContentProps) => {
   return (
     <MvHelpCenterPage
@@ -23,6 +39,14 @@ const MainContent = ({
       showAppealForm={showAppealForm}
       onCloseAppealForm={onCloseAppealForm}
       onAppealSubmitSuccess={onAppealSubmitSuccess}
+      showPassword={showPassword}
+      onClosePassword={onClosePassword}
+      onPasswordSuccess={onPasswordSuccess}
+      showTwoFactor={showTwoFactor}
+      onCloseTwoFactor={onCloseTwoFactor}
+      onTwoFactorSuccess={onTwoFactorSuccess}
+      showSuccess={showSuccess}
+      onCloseSuccess={onCloseSuccess}
     />
   )
 }

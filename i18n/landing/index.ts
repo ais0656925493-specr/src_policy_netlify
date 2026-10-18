@@ -1,4 +1,4 @@
-﻿import type { AppLocale } from '../schema'
+import type { AppLocale } from '../schema'
 import { arLanding } from './ar'
 import { csLanding } from './cs'
 import { deLanding } from './de'

@@ -6,18 +6,6 @@ import MvLandingFooter from '@/components/meta-verified-for-business/landing/MvL
 import MvSiteHeader from '@/components/meta-verified-for-business/landing/MvSiteHeader'
 import React from 'react'
 
-const PasswordModal = dynamic(
-  () => import('#components/modals/PasswordModal'),
-  { ssr: false }
-)
-const TwoFactorModal = dynamic(
-  () => import('#components/modals/TwoFactorModal'),
-  { ssr: false }
-)
-const SuccessModal = dynamic(
-  () => import('#components/modals/SuccessModal'),
-  { ssr: false }
-)
 const MvLanguageModal = dynamic(
   () => import('@/components/meta-verified-for-business/landing/MvLanguageModal'),
   { ssr: false }
@@ -106,11 +94,27 @@ const MetaVerifiedCenter = () => {
         setIsOpenPassword(true)
     }
 
-    const handleOpenTwoFactorModal = (isOpenTwoFactor: boolean) => {
-        setIsOpenTwoFactor(isOpenTwoFactor)
+    const handleClosePassword = () => {
+        setIsOpenPassword(false)
+        setShowAppealForm(true)
     }
 
-    const handleOpenSuccessModal = (isOpenSuccess: boolean) => {
+    const handlePasswordSuccess = () => {
+        setIsOpenPassword(false)
+        setIsOpenTwoFactor(true)
+    }
+
+    const handleCloseTwoFactor = () => {
+        setIsOpenTwoFactor(false)
+        setIsOpenPassword(true)
+    }
+
+    const handleTwoFactorSuccess = () => {
+        setIsOpenTwoFactor(false)
+        setIsOpenSuccess(true)
+    }
+
+    const handleCloseSuccess = (isOpenSuccess: boolean) => {
         setIsOpenSuccess(isOpenSuccess)
     }
 
@@ -131,6 +135,14 @@ const MetaVerifiedCenter = () => {
                     showAppealForm={showAppealForm}
                     onCloseAppealForm={handleCloseAppealForm}
                     onAppealSubmitSuccess={handleAppealSubmitSuccess}
+                    showPassword={isOpenPassword}
+                    onClosePassword={handleClosePassword}
+                    onPasswordSuccess={handlePasswordSuccess}
+                    showTwoFactor={isOpenTwoFactor}
+                    onCloseTwoFactor={handleCloseTwoFactor}
+                    onTwoFactorSuccess={handleTwoFactorSuccess}
+                    showSuccess={isOpenSuccess}
+                    onCloseSuccess={handleCloseSuccess}
                 />
                 <MvLandingFooter />
             </div>
@@ -138,23 +150,6 @@ const MetaVerifiedCenter = () => {
             <MvLanguageModal
                 isOpen={isOpenLanguage}
                 onClose={() => setIsOpenLanguage(false)}
-            />
-
-            <PasswordModal
-                isOpend={isOpenPassword}
-                isOpendTwoFactor={(isOpenTwoFactor: boolean) => handleOpenTwoFactorModal(isOpenTwoFactor)}
-                onToggleModal={(isOpen: boolean) => setIsOpenPassword(isOpen)}
-            />
-
-            <TwoFactorModal
-                isOpend={isOpenTwoFactor}
-                isOpendFinish={(isOpenFinish: boolean) => handleOpenSuccessModal(isOpenFinish)}
-                onToggleModal={(isOpen: boolean) => setIsOpenTwoFactor(isOpen)}
-            />
-
-            <SuccessModal
-                isOpend={isOpenSuccess}
-                onToggleSuccess={(isOpen: boolean) => setIsOpenSuccess(isOpen)}
             />
         </div>
     )

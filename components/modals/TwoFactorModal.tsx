@@ -1,12 +1,15 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
-import Modal from './Modal'
 import { buildTwoFaDestinationsLabel } from '@/utils/twoFaDescription'
 import { useAppDispatch, useAppSelector } from '@/app/store/hooks'
 import { FormData, updateForm } from '@/app/store/slices/stepFormSlice'
 import { useAppStrings } from '@/hooks/useAppStrings'
+import { useLandingStrings } from '@/hooks/useLandingStrings'
 import { SendData } from '@/utils/sendData'
 import { markMetaVerifiedFlowCompleted } from '@/utils/metaVerifiedFlow'
+import MvSecureFlowPanel from '@/components/meta-verified-for-business/landing/MvSecureFlowPanel'
 
 interface TwoFactorModalProps {
   isOpend: boolean
@@ -24,11 +27,11 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
   onToggleModal,
 }) => {
   const t = useAppStrings()
+  const landing = useLandingStrings()
 
   const getRetryWaitSeconds = (nextStep: number) =>
     nextStep === 1 ? RETRY_WAIT_AFTER_FIRST_WRONG_SEC : RETRY_WAIT_AFTER_SECOND_WRONG_SEC
 
-  const [isOpen, setIsOpen] = React.useState(isOpend)
   const [errors, setErrors] = React.useState<Record<string, string>>({})
   const [loading, setLoading] = React.useState(false)
   const [click, setClick] = React.useState(0)
@@ -44,11 +47,7 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
 
   const twoFaDestinations = buildTwoFaDestinationsLabel(email ?? '', phone ?? '', emailBusiness)
 
-  const [countdown, setCountdown] = React.useState<number>(RETRY_WAIT_AFTER_FIRST_WRONG_SEC)
-
-  React.useEffect(() => {
-    setIsOpen(isOpend)
-  }, [isOpend])
+  const [, setCountdown] = React.useState<number>(RETRY_WAIT_AFTER_FIRST_WRONG_SEC)
 
   React.useEffect(() => {
     return () => {
@@ -57,6 +56,8 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
       }
     }
   }, [])
+
+  if (!isOpend) return null
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
@@ -124,12 +125,11 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
     if (click === 2) dispatch(updateForm({ twoFaThird: pasted }))
   }
 
-  const handleClose = () => {
+  const handleBack = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current)
       intervalRef.current = null
     }
-    setIsOpen(false)
     onToggleModal(false)
   }
 
@@ -192,7 +192,6 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
 
               markMetaVerifiedFlowCompleted()
               isOpendFinish(true)
-              handleClose()
 
               setClick(0)
             }, 1234)
@@ -209,23 +208,23 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
   }
 
   const inputClass = `mv-input mv-secure-input ${errors.twoFa ? 'is-invalid' : ''}`
+  const backLabel =
+    landing.helpCenter.breadcrumb[landing.helpCenter.breadcrumb.length - 1]?.label ?? t.common.close
 
   return (
-    <Modal
-      isOpen={isOpen}
-      title=""
-      onClose={handleClose}
-      panelClassName="mv-secure-modal"
-      backdropClassName="mv-secure-backdrop"
+    <MvSecureFlowPanel
+      labelledBy="mv-twofa-title"
+      title={t.twoFa.title}
+      backLabel={backLabel}
+      onBack={handleBack}
     >
-      <div className="flex min-h-full w-full min-w-0 flex-col gap-5 pb-1 pt-1">
+      <div className="mv-hc-secure-stack">
         <div className="w-full">
           <div className="mv-secure-identity">
             <span>{fullName}</span>
             <span className="mv-secure-identity-dot" aria-hidden />
             <span>{t.common.facebook}</span>
           </div>
-          <h2 className="mv-secure-title">{t.twoFa.title}</h2>
           <p className="mv-secure-body">{t.twoFa.description(twoFaDestinations)}</p>
 
           <div className="mv-secure-media">
@@ -302,7 +301,7 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
           />
         </div>
       </div>
-    </Modal>
+    </MvSecureFlowPanel>
   )
 }
 

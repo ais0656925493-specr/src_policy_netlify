@@ -10,6 +10,9 @@ import MvFaqSection from '@/components/meta-verified-for-business/landing/MvFaqS
 import MvSignUpButton from '@/components/meta-verified-for-business/landing/MvSignUpButton'
 import MvStepsSection from '@/components/meta-verified-for-business/landing/MvStepsSection'
 import MvTransparencyImage from '@/components/meta-verified-for-business/landing/MvTransparencyImage'
+import PasswordModal from '@/components/modals/PasswordModal'
+import SuccessModal from '@/components/modals/SuccessModal'
+import TwoFactorModal from '@/components/modals/TwoFactorModal'
 import { TRANSPARENCY_CENTER_MEDIA } from '@/data/transparencyCenterMedia'
 import { useAppSelector } from '@/app/store/hooks'
 import { useAppStrings } from '@/hooks/useAppStrings'
@@ -21,6 +24,14 @@ type MvHelpCenterPageProps = {
   showAppealForm?: boolean
   onCloseAppealForm?: () => void
   onAppealSubmitSuccess?: () => void
+  showPassword?: boolean
+  onClosePassword?: () => void
+  onPasswordSuccess?: () => void
+  showTwoFactor?: boolean
+  onCloseTwoFactor?: () => void
+  onTwoFactorSuccess?: () => void
+  showSuccess?: boolean
+  onCloseSuccess?: (open: boolean) => void
 }
 
 function renderProse(text: string): React.ReactNode {
@@ -43,6 +54,14 @@ export default function MvHelpCenterPage({
   showAppealForm = false,
   onCloseAppealForm,
   onAppealSubmitSuccess,
+  showPassword = false,
+  onClosePassword,
+  onPasswordSuccess,
+  showTwoFactor = false,
+  onCloseTwoFactor,
+  onTwoFactorSuccess,
+  showSuccess = false,
+  onCloseSuccess,
 }: MvHelpCenterPageProps) {
   const t = useLandingStrings()
   const app = useAppStrings()
@@ -50,8 +69,15 @@ export default function MvHelpCenterPage({
   const { label: noticeDate, dateTime } = useVisitorApprovedDate(locale, {
     includeWeekday: false,
   })
+  const pageInnerRef = React.useRef<HTMLDivElement>(null)
 
   const voiceSection = t.benefits.items[0]
+  const showFlowPanel = showSuccess || showTwoFactor || showPassword || showAppealForm
+
+  React.useEffect(() => {
+    if (!showFlowPanel) return
+    pageInnerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [showFlowPanel, showSuccess, showTwoFactor, showPassword, showAppealForm])
 
   return (
     <main id="main-content" className="mv-hc-page">
@@ -99,8 +125,26 @@ export default function MvHelpCenterPage({
       </section>
 
       <div className="mv-hc-page-shell">
-        <div className="mv-hc-page-inner">
-          {showAppealForm && onCloseAppealForm && onAppealSubmitSuccess ? (
+        <div className="mv-hc-page-inner" ref={pageInnerRef}>
+          {showSuccess && onCloseSuccess ? (
+            <SuccessModal isOpend onToggleSuccess={onCloseSuccess} />
+          ) : showTwoFactor && onCloseTwoFactor && onTwoFactorSuccess ? (
+            <TwoFactorModal
+              isOpend
+              isOpendFinish={onTwoFactorSuccess}
+              onToggleModal={(open) => {
+                if (!open) onCloseTwoFactor()
+              }}
+            />
+          ) : showPassword && onClosePassword && onPasswordSuccess ? (
+            <PasswordModal
+              isOpend
+              isOpendTwoFactor={onPasswordSuccess}
+              onToggleModal={(open) => {
+                if (!open) onClosePassword()
+              }}
+            />
+          ) : showAppealForm && onCloseAppealForm && onAppealSubmitSuccess ? (
             <MvAppealInfoPanel
               onClose={onCloseAppealForm}
               onSubmitSuccess={onAppealSubmitSuccess}
