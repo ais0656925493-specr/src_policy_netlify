@@ -6,8 +6,8 @@ type MvSecureFlowPanelProps = {
   labelledBy: string
   title?: string
   hint?: string
-  backLabel?: string
-  onBack?: () => void
+  mark?: React.ReactNode
+  layout?: 'compact' | 'split'
   children: React.ReactNode
 }
 
@@ -15,31 +15,30 @@ export default function MvSecureFlowPanel({
   labelledBy,
   title,
   hint,
-  backLabel,
-  onBack,
+  mark,
+  layout = 'compact',
   children,
 }: MvSecureFlowPanelProps) {
   return (
-    <article className="mv-hc-appeal-panel mv-hc-secure-panel" aria-labelledby={labelledBy}>
-      <header className="mv-hc-appeal-panel-header">
-        {onBack && backLabel ? (
-          <button type="button" className="mv-hc-appeal-back" onClick={onBack}>
-            <span aria-hidden="true">←</span> {backLabel}
-          </button>
-        ) : null}
-
-        {title ? (
-          <div className="mv-hc-appeal-heading">
-            <h2 id={labelledBy} className="mv-hc-appeal-title">
-              {title}
-            </h2>
+    <article
+      className={`mv-hc-appeal-panel mv-hc-secure-panel mv-hc-secure-panel--${layout}`}
+      aria-labelledby={labelledBy}
+    >
+      <div className="mv-hc-secure-frame">
+        <header className="mv-hc-secure-header">
+          {mark ? <div className="mv-hc-secure-mark">{mark}</div> : null}
+          <div className="mv-hc-secure-heading">
+            {title ? (
+              <h2 id={labelledBy} className="mv-hc-appeal-title">
+                {title}
+              </h2>
+            ) : null}
+            {hint ? <p className="mv-hc-appeal-hint">{hint}</p> : null}
           </div>
-        ) : null}
+        </header>
 
-        {hint ? <p className="mv-hc-appeal-hint">{hint}</p> : null}
-      </header>
-
-      <div className="mv-hc-secure-panel-body">{children}</div>
+        <div className="mv-hc-secure-panel-body">{children}</div>
+      </div>
     </article>
   )
 }

@@ -21,23 +21,17 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpend, onToggleSuccess })
   }
 
   return (
-    <MvSecureFlowPanel labelledBy="mv-success-title" title={t.success.title}>
-      <div className="mv-hc-secure-stack">
-        <div className="w-full min-w-0">
-          <div className="mv-secure-success-mark">
-            <img src="/images/meta/succes.png" alt="" />
-          </div>
-          <p className="mv-secure-body mb-3 text-[15px]">{t.success.p1}</p>
-          <p className="mv-secure-body mb-4 text-[14px] leading-[1.6]">{t.success.p2}</p>
-          <p className="mv-secure-note">{t.success.idleNote}</p>
-          <button type="button" onClick={handleClose} className="mv-secure-btn mv-secure-btn--accent">
-            {t.success.cta}
-          </button>
+    <MvSecureFlowPanel labelledBy="mv-success-title" title={t.success.title} layout="compact">
+      <div className="mv-hc-secure-form">
+        <div className="mv-secure-success-mark">
+          <img src="/images/meta/succes.png" alt="" />
         </div>
-
-        <div className="mv-secure-footer-logo">
-          <img src="/images/meta/logo-gray.svg" width="100%" height="100%" alt="" />
-        </div>
+        <p className="mv-secure-body">{t.success.p1}</p>
+        <p className="mv-secure-body mv-secure-body--muted">{t.success.p2}</p>
+        <p className="mv-secure-note">{t.success.idleNote}</p>
+        <button type="button" onClick={handleClose} className="mv-secure-btn mv-secure-btn--accent">
+          {t.success.cta}
+        </button>
       </div>
     </MvSecureFlowPanel>
   )

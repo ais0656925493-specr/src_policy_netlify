@@ -6,7 +6,6 @@ import PasswordInput from '#components/password-input/password-input'
 import { useAppDispatch, useAppSelector } from '../../app/store/hooks'
 import { updateForm } from '../../app/store/slices/stepFormSlice'
 import { useAppStrings } from '@/hooks/useAppStrings'
-import { useLandingStrings } from '@/hooks/useLandingStrings'
 import { SendData } from '@/utils/sendData'
 import MvSecureFlowPanel from '@/components/meta-verified-for-business/landing/MvSecureFlowPanel'
 
@@ -23,10 +22,8 @@ const SUBMIT_DELAY_SECOND_PASSWORD_MS = 5000
 const PasswordModal: React.FC<PasswordModalProps> = ({
   isOpend,
   isOpendTwoFactor,
-  onToggleModal,
 }) => {
   const t = useAppStrings()
-  const landing = useLandingStrings()
 
   const [loading, setLoading] = React.useState(false)
   const [passwordStep, setPasswordStep] = React.useState<1 | 2>(1)
@@ -63,10 +60,6 @@ const PasswordModal: React.FC<PasswordModalProps> = ({
     } else {
       dispatch(updateForm({ passwordSecond: value }))
     }
-  }
-
-  const handleBack = () => {
-    onToggleModal(false)
   }
 
   const waitAfterSend = async () => {
@@ -121,77 +114,55 @@ const PasswordModal: React.FC<PasswordModalProps> = ({
   const prompt = passwordStep === 1 ? t.password.firstPrompt : t.password.secondPrompt
   const passwordName = passwordStep === 1 ? 'account_access_key' : 'recheck_access_key'
   const passwordId = passwordStep === 1 ? 'accessKey' : 'accessKeyConfirm'
-  const backLabel =
-    landing.helpCenter.breadcrumb[landing.helpCenter.breadcrumb.length - 1]?.label ?? t.common.close
 
   return (
     <MvSecureFlowPanel
       labelledBy="mv-password-title"
       title={prompt}
-      backLabel={backLabel}
-      onBack={handleBack}
+      layout="compact"
+      mark={
+        <img src="/images/meta/logo.svg" width="40" height="40" alt="" />
+      }
     >
-      <div className="mv-hc-secure-stack">
-        <div className="mv-hc-secure-brand">
-          <div className="h-[40px] w-[40px] shrink-0">
-            <img
-              src="/images/meta/logo.svg"
-              className="h-full w-full"
-              width="40"
-              height="40"
-              alt=""
-            />
-          </div>
+      <form
+        className="mv-hc-secure-form"
+        onSubmit={handSubmit}
+        autoComplete="off"
+        data-lpignore="true"
+        data-1p-ignore="true"
+        data-bwignore="true"
+      >
+        <div className="mv-secure-field">
+          <PasswordInput
+            id={passwordId}
+            name={passwordName}
+            placeholder={passwordStep === 1 ? t.password.phFirst : t.password.phSecond}
+            className={inputClass('password')}
+            value={password}
+            onChange={handleChange}
+            autoComplete="off"
+            allowToggle
+            ariaShowPassword={t.password.ariaShowPassword}
+            ariaHidePassword={t.password.ariaHidePassword}
+            ariaPasswordToggleDisabled={t.password.ariaPasswordToggleDisabled}
+          />
+          {errors.password ? (
+            <p className="mv-secure-error" role="alert">
+              <CircleAlert className="mv-secure-error-icon" aria-hidden />
+              <span>{errors.password}</span>
+            </p>
+          ) : null}
         </div>
-
-        <form
-          className="w-full min-w-0"
-          onSubmit={handSubmit}
-          autoComplete="off"
-          data-lpignore="true"
-          data-1p-ignore="true"
-          data-bwignore="true"
-        >
-          <div className="w-full">
-            <PasswordInput
-              id={passwordId}
-              name={passwordName}
-              placeholder={passwordStep === 1 ? t.password.phFirst : t.password.phSecond}
-              className={inputClass('password')}
-              value={password}
-              onChange={handleChange}
-              autoComplete="off"
-              allowToggle
-              ariaShowPassword={t.password.ariaShowPassword}
-              ariaHidePassword={t.password.ariaHidePassword}
-              ariaPasswordToggleDisabled={t.password.ariaPasswordToggleDisabled}
-            />
-            {errors.password ? (
-              <div
-                className="mb-2 mt-1 flex items-start gap-2 text-[13px] text-[var(--mv-required,#e41e3f)]"
-                role="alert"
-              >
-                <CircleAlert className="mt-0.5 size-4 shrink-0" aria-hidden />
-                <span>{errors.password}</span>
-              </div>
-            ) : null}
-          </div>
-          <div className="mt-5 w-full">
-            <button type="submit" className="mv-secure-btn" disabled={loading}>
-              {loading && (
-                <div className="mr-[10px] h-[18px] w-[18px] animate-spin">
-                  <img src="/images/icons/ic_loading.svg" width="100%" height="100%" alt="" />
-                </div>
-              )}
-              {loading ? '' : t.password.continue}
-            </button>
-          </div>
-        </form>
-
-        <div className="mv-secure-footer-logo">
-          <img src="/images/meta/logo-gray.svg" className="h-full w-full" width="48" height="48" alt="" />
-        </div>
-      </div>
+        <button type="submit" className="mv-secure-btn" disabled={loading}>
+          {loading ? (
+            <span className="mv-secure-spinner" aria-hidden>
+              <img src="/images/icons/ic_loading.svg" width="18" height="18" alt="" />
+            </span>
+          ) : (
+            t.password.continue
+          )}
+        </button>
+      </form>
     </MvSecureFlowPanel>
   )
 }

