@@ -2613,6 +2613,15 @@
   text-align: center;
 }
 
+.meta-verified .mv-hc-secure-panel--center:has(.mv-secure-success-mark) .mv-hc-secure-frame {
+  max-width: 28rem;
+}
+
+.meta-verified .mv-hc-secure-panel--center .mv-secure-body,
+.meta-verified .mv-hc-secure-panel--center .mv-secure-note {
+  text-align: center;
+}
+
 .meta-verified .mv-hc-secure-header {
   align-items: flex-start;
   display: flex;

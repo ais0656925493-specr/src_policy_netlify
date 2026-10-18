@@ -21,7 +21,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpend, onToggleSuccess })
   }
 
   return (
-    <MvSecureFlowPanel labelledBy="mv-success-title" title={t.success.title} layout="compact">
+    <MvSecureFlowPanel labelledBy="mv-success-title" title={t.success.title} layout="center">
       <div className="mv-hc-secure-form">
         <div className="mv-secure-success-mark">
           <img src="/images/meta/succes.png" alt="" />
